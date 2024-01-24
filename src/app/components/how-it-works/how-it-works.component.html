@@ -1,0 +1,29 @@
+<h1>How it works</h1>
+
+<section class="header-section">
+  <div class="timeline">
+    <p-timeline [value]="events" layout="vertical">
+      <ng-template pTemplate="content" let-event>
+        <small class="p-text-secondary">{{ event.date }}</small>
+      </ng-template>
+      <ng-template pTemplate="opposite" let-event>
+        {{ event.status }}
+      </ng-template>
+    </p-timeline>
+  </div>
+  <div class="image">
+    <img src="https://images.pexels.com/photos/133458/pexels-photo-133458.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+  </div>
+</section>
+
+<section class="footer-section">
+  <div class="image">
+    <img src="https://images.pexels.com/photos/133458/pexels-photo-133458.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+  </div>
+  <p-panel class="description" [showHeader]="false">
+    <div class="scriptures">
+      <h2>Our role</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius vero voluptatem maiores ullam exercitationem iusto est! Impedit voluptatum sapiente nihil, nam libero facilis, tempora quibusdam atque laborum omnis totam. Officiis itaque deleniti, exercitationem consectetur molestiae, distinctio nulla odit error odio doloribus soluta vitae, dolorem recusandae fugit ut a deserunt? Quia quae ex assumenda libero. Vitae dolore veniam delectus doloribus assumenda!</p>
+    </div>
+  </p-panel>
+</section>
