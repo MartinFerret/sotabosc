@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+:root {
+  --dl-color-main: rgba(102, 57, 183, 1);
+  --dl-color-main-opac: rgba(102, 57, 183, 0.8);
+  --dl-color-main2-hover: rgba(102, 57, 183, 0.5);
+  --dl-color-main3: rgba(125, 87, 194, 1);
+  --dl-color-main-table: rgba(240, 236, 245, 1);
+  --dl-color-default-violet4: rgba(240, 236, 245, 1);
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-color-default-gris: rgba(118, 118, 118, 1);
+  --dl-color-default-noir: rgba(0, 0, 0, 1);
+  --dl-color-default-blanc: rgba(255, 255, 255, 1);
+  --dl-color-default-rouge: rgba(251, 60, 69, 1);
+  --dl-color-default-grisfonc: rgba(56, 56, 56, 1);
+  --dl-color-default-grisclair: rgba(241, 241, 241, 1);
+  --dl-color-default-grismoyen: rgba(193, 193, 193, 1);
+  --dl-color-default-orangealerte: rgba(251, 163, 59, 1);
+}
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+  font-family: 'Roboto', serif;
+  margin: 0;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
