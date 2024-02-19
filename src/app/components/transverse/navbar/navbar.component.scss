@@ -14,5 +14,11 @@
         margin-right: 5rem !important;
       }
     }
+
+    & .p-menubar-end {
+      & .p-element {
+        margin-right: 1rem !important;
+      }
+    }
   }
 }

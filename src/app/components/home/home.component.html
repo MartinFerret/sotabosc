@@ -1,14 +1,14 @@
 <section>
   <p-panel [showHeader]="false">
     <div class="image">
-      <img ngSrc="./assets/images/logo.png" height="500" width="500" alt="">
+      <img ngSrc="./assets/images/logo.jpg" height="1000" width="1000" alt="">
     </div>
     <div class="hero">
-      <h1>{{ "TITLE" | translate }}</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius vero voluptatem maiores ullam exercitationem iusto est! Impedit voluptatum sapiente nihil, nam libero facilis, tempora quibusdam atque laborum omnis totam. Officiis itaque deleniti, exercitationem consectetur molestiae, distinctio nulla odit error odio doloribus soluta vitae, dolorem recusandae fugit ut a deserunt? Quia quae ex assumenda libero. Vitae dolore veniam delectus doloribus assumenda!</p>
+      <h2>{{ "HOME.HERO.TITLE" | translate }}</h2>
+      <p>{{ "HOME.HERO.TEXT" | translate }}</p>
       <div class="hero__buttons">
-        <p-button label="Who we are"></p-button>
-        <p-button label="Events" styleClass="p-button-outlined"></p-button>
+        <p-button [label]="'HOME.HERO.WHO_BUTTON' | translate"></p-button>
+        <p-button [label]="'HOME.HERO.PEDAGOGY_BUTTON' | translate" styleClass="p-button-outlined" routerLink="/events"></p-button>
       </div>
     </div>
   </p-panel>
@@ -18,17 +18,17 @@
   <div class="explanations">
     <div class="explanations__wrapper step-one">
       <div>
-        <p-button label="How it works"></p-button>
+        <p-button [label]="'GLOBAL.HOW_IT_WORKS' | translate"></p-button>
       </div>
     </div>
     <div class="explanations__wrapper step-two">
       <div>
-        <p-button label="Our space"></p-button>
+        <p-button [label]="'GLOBAL.OUR_SPACE' | translate"></p-button>
       </div>
     </div>
     <div class="explanations__wrapper step-three">
       <div>
-        <p-button label="FAQ"></p-button>
+        <p-button [label]="'GLOBAL.FAQ' | translate"></p-button>
       </div>
     </div>
   </div>
@@ -36,20 +36,21 @@
 
 <section>
   <div class="citation">
-    <p>“ Every child is in some way a genius, and every genius a child. ”</p>
+    <p>“ {{ "HOME.GREEN_BANNER.CITATION" | translate }} ”</p>
+    <p>{{ "HOME.GREEN_BANNER.AUTHOR" | translate }}</p>
   </div>
 </section>
 
 <section>
   <div class="motivation">
     <div class="motivation__block">
-      <p>Early childhood education in nature (1 to 6 years)</p>
+      <p>{{ "HOME.MOTIVATION.STEP_ONE" | translate }}</p>
     </div>
     <div class="motivation__block">
-      <p>Childhood, forest and animals</p>
+      <p>{{ "HOME.MOTIVATION.STEP_TWO" | translate }}</p>
     </div>
     <div class="motivation__block">
-      <p>Reduced ratios and respectful look</p>
+      <p>{{ "HOME.MOTIVATION.STEP_THREE" | translate }}</p>
     </div>
   </div>
 </section>
@@ -57,13 +58,13 @@
 <section>
   <div class="photos">
     <div class="photos__left">
-      <img ngSrc="https://images.pexels.com/photos/534584/pexels-photo-534584.jpeg?auto=compress&cs=tinysrgb&w=600"  height="342" width="351" />
-      <img ngSrc="https://images.pexels.com/photos/2781814/pexels-photo-2781814.jpeg?auto=compress&cs=tinysrgb&w=600"  height="342" width="351" />
-      <img ngSrc="https://images.pexels.com/photos/4964542/pexels-photo-4964542.jpeg?auto=compress&cs=tinysrgb&w=600"  height="342" width="351" />
-      <img ngSrc="https://images.pexels.com/photos/7634891/pexels-photo-7634891.jpeg?auto=compress&cs=tinysrgb&w=600"  height="342" width="351" />
+      <img src="./assets/images/home/home-footer-2-test.jpg" alt="photo" />
+      <img src="./assets/images/home/home-footer-3.jpg" alt="photo" />
+      <img src="../../../assets/images/our-space/home-footer-4.jpg" alt="photo" />
+      <img src="https://images.pexels.com/photos/7634891/pexels-photo-7634891.jpeg?auto=compress&cs=tinysrgb&w=600"  alt="photo" />
     </div>
     <div class="photos__right">
-      <img ngSrc="https://images.pexels.com/photos/132428/pexels-photo-132428.jpeg?auto=compress&cs=tinysrgb&w=600"  height="342" width="351" />
+      <img ngSrc="./assets/images/home/home-footer-1.jpg"  height="342" width="351" alt="photo" />
     </div>
   </div>
 </section>

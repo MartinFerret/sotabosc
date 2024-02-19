@@ -13,6 +13,7 @@ import {EventService} from "../../../../services/event.service";
 import {FileSelectEvent, FileUploadEvent, FileUploadModule} from "primeng/fileupload";
 import {NgForOf, NgIf} from "@angular/common";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-create-event',
@@ -28,6 +29,7 @@ import {AngularFireStorage} from "@angular/fire/compat/storage";
     InputTextareaModule,
     ToastModule,
     FileUploadModule,
+    TranslateModule,
   ],
   templateUrl: './create-event.component.html',
   styleUrl: './create-event.component.scss'
@@ -37,7 +39,7 @@ export class CreateEventComponent implements OnInit {
   fireStorage = inject(AngularFireStorage);
   eventService = inject(EventService);
 
-  eventNumber: number = 0;
+  eventNumber: number = 1;
 
   eventForm = new FormGroup({
     id: new FormControl(0, [Validators.required]),
@@ -48,6 +50,7 @@ export class CreateEventComponent implements OnInit {
     image: new FormControl(''),
     price: new FormControl(10, [Validators.required]),
     isOpen: new FormControl(true, [Validators.required]),
+    googleFormLink: new FormControl(''),
   });
 
   ngOnInit() {
@@ -87,7 +90,7 @@ export class CreateEventComponent implements OnInit {
 
   getNumberEvents() {
     this.eventService.getEvents().subscribe((m) => {
-      this.eventNumber = m.length;
+      this.eventNumber = m.length + 1;
     })
   }
 
@@ -103,6 +106,7 @@ export class CreateEventComponent implements OnInit {
       isOpen: formValues.isOpen ?? false,
       price: formValues.price ?? 0,
       imageUrl: '',
+      googleFormLink: formValues.googleFormLink ?? '',
     };
   }
 }

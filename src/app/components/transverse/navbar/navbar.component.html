@@ -1,5 +1,11 @@
-<p-menubar [model]="items">
-  <ng-template pTemplate="start">
-    <img ngSrc="./assets/images/logo.png" height="80" width="80" class="mr-2" alt="" priority="" />
-  </ng-template>
-</p-menubar>
+@if (config()) {
+  <app-event-bar></app-event-bar>
+}
+<div>
+  <p-menubar [model]="items">
+    <ng-template pTemplate="start">
+      <img ngSrc="./assets/images/logo.jpg" height="80" width="80" class="mr-2" alt="" [priority]="true" />
+    </ng-template>
+  </p-menubar>
+</div>
+

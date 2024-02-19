@@ -1,0 +1,22 @@
+<p-sidebar
+  [(visible)]="displaySidebar"
+  (onHide)="sidenavClose()"
+  [fullScreen]="sizeUpPanel"
+  position="right"
+  [styleClass]="sizeUpPanel ? '' : 'w-30rem'"
+>
+  <div class="flex justify-content-between flex-wrap align-items-center">
+    @if (eventToEdit) {
+      <h2>Event to edit</h2>
+    }
+    <p-button
+      icon="pi pi-window-maximize"
+      (click)="sizeUpPanelAction()"
+    ></p-button>
+  </div>
+  <p-divider></p-divider>
+  <app-modify-form
+  [eventToEdit]="eventToEdit"
+  (eventToPersist)="editExistingEvent($event)"
+  ></app-modify-form>
+</p-sidebar>

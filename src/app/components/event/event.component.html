@@ -1,0 +1,23 @@
+<h1>Our Events</h1>
+
+<section>
+    @for (event of events$; track event.id) {
+      <div class="container">
+        <p-panel [showHeader]="false">
+          <div class="image">
+            <img [src]="event.imageUrl | async" alt="">
+            <div class="badge">
+              <p-badge [value]="event.isOpen ? 'Current' : 'Passed'" [severity]="event.isOpen ? 'success' : 'danger'"></p-badge>
+            </div>
+          </div>
+          <div class="informations">
+            <h2 class="title">{{ event.title }}</h2>
+            <p class="date">On {{ event.date }} at {{ event.hour }}</p> -
+            <p class="price">{{ event.price | currency: 'EUR' }} / family</p>
+            <p class="description">{{ event.description }}</p>
+            <p-button label="Register"></p-button>
+          </div>
+        </p-panel>
+      </div>
+    }
+</section>
