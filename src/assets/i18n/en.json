@@ -1,3 +1,77 @@
 {
-  "TITLE": "Discover our school"
+  "HOME": {
+    "HERO": {
+      "TITLE": "BENVINGUDES A LA NOSTRA ESCOLETA A LA NATURA!",
+      "TEXT": "Al setembre de 2021 neix Espai Sotabosc, un projecte educatiu no homologat que acull\n\ninfants fins als 6 anys.\n\nEl nostre entorn d'aprenentatge és la natura. La vivim i la coneixem a partir d'un\nacompanyament de les persones adultes des del respecte, la calma, l'amor i la presència.\nEstem ubicades a prop del poble d'El Catllar, a les instal·lacions de la Granja-Escola Corral\n\ndeNeri, de les quals també podem gaudir diàriament.",
+      "WHO_BUTTON": "Qui som",
+      "PEDAGOGY_BUTTON": "La nostra pedagogia"
+    },
+    "GREEN_BANNER": {
+      "CITATION": "El temps a la natura no és només oci, és una inversió en la salut dels fills i filles i en la nostra pròpia.",
+      "AUTHOR": "Richard Louv"
+    },
+    "MOTIVATION": {
+      "STEP_ONE": "Educació infantil a la natura (1 a 6 anys)",
+      "STEP_TWO": "Infància, bosc i animals",
+      "STEP_THREE": "Ràtios reduïdes i mirada respectuosa"
+    }
+  },
+  "GLOBAL": {
+    "HOME": "Inici",
+    "HOW_IT_WORKS": "Com funciona",
+    "WHO_WE_ARE": "Qui som",
+    "OUR_SPACE": "El nostre espai",
+    "FAQ": "Preguntes freqüents",
+    "CONTACT": "Contacte",
+    "CREATE": "Crear"
+  },
+  "HOW_IT_WORKS": {
+    "DAY_IN_SOTABOSC": "Un dia a Sotabosc",
+    "MOMENTS_OF_THE_DAY": "Moments del dia",
+    "ROLE_TITLE": "El paper de les acompanyants",
+    "ROLE_TEXT_PART_ONE": "Acompanyem als infants amb amor, empatia i una mirada atenta i\nrespectuosa, reconeixent-los com a individus capaços i únics. Entenem que cada\ncriatura és una mestra en potència, ensenyant-nos coses noves cada dia amb la\nseva innocència i curiositat.",
+    "ROLE_TEXT_PART_TWO": "És fonamental establir límits per proporcionar-los seguretat física i emocional.\nMitjançant aquests límits, els ajudem a comprendre les normes socials i a\ndesenvolupar habilitats per a la vida.",
+    "ROLE_TEXT_PART_THREE": "Una part important de la nostra feina és preparar propostes i dinàmiques\nadaptades a cada nivell evolutiu dels infants. Això es fa mitjançant una\nobservació constant i acurada dels infants en el seu entorn natural. Per tal de\ngarantir una comunicació efectiva amb les famílies, també proporcionem\ninformes escrits sobre el desenvolupament global dels infants a l'espai.",
+    "ROLE_TEXT_PART_FOUR": "Com a acompanyants d'una escoleta d'educació infantil a la natura, el nostre\nobjectiu és proporcionar un entorn segur, estimulant i enriquidor on els nens\npuguin créixer, explorar i aprendre amb plenitud. Per tant, també tenim\nconeixements sobre l’entorn natural que ens envolta."
+  },
+  "OUR_SPACE": {
+    "INDOOR_TITLE": "Interior",
+    "OUTDOOR_TITLE": "Exterior",
+    "INDOOR_TEXT": "Tenim un petit refugi on podem passar\nestones a l'interior i també ens serveix de\npunt de trobada als matins i a les\nrecollides amb les famílies.\nL'espai es divideix principalment en dues\nsales que disposen de materials diversos i\non preparem propostes per la lliure\n\ncirculació dels infants per l'espai, basant-\nnos en els seus interessos i necessitats\n\ndel moment.",
+    "INDOOR_TEXT_SECOND": "Aquest espai consta de dues sales:",
+    "INDOOR_TEXT_LIST_ONE": "Sala de les farigoles (a partir dels 2 anys).",
+    "INDOOR_TEXT_LIST_TWO": "Sala dels romanís ( 1- 2 anys). Aquesta també disposa d’una sala dormitori i d’un WC."
+  },
+  "WHO_WE_ARE":{
+    "TITLE": "Qui som",
+    "OUR_PROJECT": "EL NOSTRE PROJECTE",
+    "OUR_PEDAGOGY": "LA NOSTRA PEDAGOGIA",
+    "TEXT_ONE": "Som un projecte que es crea des de la il·lusió per acompanyar la infància en un entorn diari\nprivilegiat, com és la natura i amb la motivació de poder generar aprenentatges a partir de\nviure-la activament.",
+    "TEXT_TWO": "Creem espais i propostes on es respecta el ritme i la diversitat de cada persona que forma\npart del projecte. Els grups son d’edats heterogènies, afavorint així un entorn enriquidor i\ninclusiu que fomenti el desenvolupament personal i social dels infants.",
+    "TEXT_THREE": "Sostenim, validem i respectem tots els estats emocionals de cada infant. A partir de\nl'observació i la presència de les adultes, podem entendre i conèixer les seves necessitats i\naixí acompanyar-les millor.",
+    "TEXT_FOUR": "Per poder fer que totes les paraules anteriors siguin la nostra realitat, mantenim unes\nràtios reduïdes: 5 infants per 1 acompanyant d'1 a 2 anys i 8 infants per 1 acompanyant de\n2 a 6 anys.",
+    "TEXT_FIVE": "Les famílies son una part molt important del projecte. Som un espai que oferim la\npossibilitat de generar comunitat, trobar-nos i poder fer-nos un cop de mà, compartir-nos i\nescoltar-nos.",
+    "TEXT_SIX": "La comunicació de les acompanyants amb les famílies és diària i en persona. Generem una\nrelació propera i de confiança que ens facilita l'acompanyament de cada infant per les dues\nparts.",
+    "PEDAGOGY_TEXT_ONE": "Ens basem en diferents pedagogies actives on un dels punts en comú és el\nrespecte a totes les dimensions de l’infant, tot afavorint la seva autonomia i\naprenentatges a partir de les experiències i vivències.\nCreiem en el seu poder innat per aprendre a partir de la curiositat i les\nconnexions emocionals profundes. Aquestes les creem en la interacció amb\nl’entorn i amb el joc lliure.",
+    "PEDAGOGY_TEXT_TWO": "Per nosaltres és bàsica la confiança en la\ninfància, considerar-les persones capaces i no\nlimitar-les amb les creences de l'adult egoista.",
+    "PEDAGOGY_TEXT_THREE": "La metodologia d'escola bosc hi està molt present en el nostre projecte. És\nuna pedagogia basada en les escoles de bosc dels països nòrdics, on habiten el\nbosc de forma diària.",
+    "PEDAGOGY_TEXT_FOUR": "Nosaltres anem al bosc tres dies a la setmana, utilitzem\nmaterials que ens aporta l'entorn per al joc lliure i les dinàmiques dirigides (pals,\nfulles, fruits, arbres...) i seguim un ritme curat i calmat, el que marca la natura.",
+    "PEDAGOGY_TEXT_FIVE": "El contacte amb els animals és beneficiós per als infants, ja que estimula i motiva,\nfacilitant l'aprenentatge i l'interès real. També ajuda a gestionar emocions com\nla impulsivitat o la ràbia perquè l'animal posa límits de forma natural. A més,\npromou l'adquisició d'habilitats socials, empatia, responsabilitat i rutines.",
+    "PEDAGOGY_TEXT_SIX": "Els animals són éssers que viuen el present, per tant, ensenyen a viure el moment.\nEn un món dominat per les pantalles i la immediatesa, els animals i la natura ens\najuden a viure conscients, respectant els ritmes naturals.",
+    "PEDAGOGY_TEXT_SEVEN": "Les vivències en una escola a l’aire lliure són un regal pel desenvolupament dels\ninfants, proporcionant-los valors i un sistema nerviós equilibrat per a la vida.",
+    "PEDAGOGY_TEXT_EIGHT": "Un grup heterogeni en edats pot afavorir un entorn enriquidor i inclusiu que\nfomenti el desenvolupament personal i social dels infants.",
+    "PEDAGOGY_TEXT_NINE": "L’Aprenentatge entre iguals (e diferents edats formen part del mateix grup social),\nel desenvolupament social ( la interacció entre infants de diferents edats, ajuda a\ndesenvolupar habilitats socials i a comprendre la diversitat), l’exemple (els infants\nmés grans poden actuar com a models de comportament per als més petits i a la inversa, ajudant-se amb noves habilitats i actituds) i la diversitat (les propostes i els jocs\npoden adaptar-se a diferents nivells de desenvolupament i d'interessos, proporcionant estímuls més rics i variats per al creixement i el desenvolupament dels infants. Tenir\nla mateixa edat, no vol dir trobar-se en el mateix moment evolutiu."
+  },
+  "ADMIN": {
+    "FORM": {
+      "TITLE": "Títol",
+      "DESCRIPTION": "Descripció",
+      "HOUR": "Hores",
+      "DATE": "Data",
+      "PRICE": "Preu",
+      "GOOGLE_LINK": "Enllaç al formulari de Google",
+      "STATUS": "Estat",
+      "UPLOAD_IMAGE": "Carrega una imatge"
+    }
+  }
 }
