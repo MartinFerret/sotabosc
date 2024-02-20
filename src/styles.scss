@@ -5,13 +5,16 @@
   --sbc-black: black;
   --sbc-green: #2dac7b;
   --sbc-green-secondary: #b6c570;
+  --sbc-green-ternary: #5cbca4;
+  --sbc-brown: #7f6362;
+  --sbc-brown-secondary: #c2c5a5;
 }
 
 html,
 body {
   height: 100%;
   background-color: var(--sbc-white);
-  font-family: 'Inter var', sans-serif;
+  font-family: 'Inter var', 'sans-serif';
   margin: 0;
   padding: 0 1.2rem;
   box-sizing: border-box;
@@ -32,4 +35,30 @@ body {
 .p-timeline-event-marker {
   background-color: var(--sbc-green) !important;
   border: none;
+}
+
+.p-timeline small {
+  font-size: .9em;
+}
+
+.p-menuitem-link {
+  background: white;
+}
+
+.p-menuitem-link:hover {
+  border-bottom: 2px solid var(--sbc-green);
+}
+
+.p-menuitem-content {
+  background: white;
+}
+
+.p-accordion-tab {
+  width: 60% !important;
+  margin: 2rem auto;
+}
+
+.p-accordion-header-link {
+  background-color: var(--sbc-green) !important;
+  color: var(--sbc-white);
 }

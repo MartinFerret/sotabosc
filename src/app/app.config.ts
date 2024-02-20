@@ -1,5 +1,10 @@
 import {ApplicationConfig, importProvidersFrom} from '@angular/core';
-import {provideRouter, withComponentInputBinding} from '@angular/router';
+import {
+  InMemoryScrollingOptions,
+  provideRouter,
+  withComponentInputBinding,
+  withInMemoryScrolling
+} from '@angular/router';
 import { routes } from './app.routes';
 import {provideAnimations} from "@angular/platform-browser/animations";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
@@ -17,15 +22,20 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
+const scrollConfig: InMemoryScrollingOptions = {
+  scrollPositionRestoration: 'top',
+  anchorScrolling: 'enabled',
+};
+
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withComponentInputBinding()), importProvidersFrom([
+  providers: [provideRouter(routes, withComponentInputBinding(), withInMemoryScrolling(scrollConfig)), importProvidersFrom([
     AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage())
-  ]), provideAnimations(), provideClientHydration(), provideHttpClient(), TranslateModule.forRoot({
-    defaultLanguage: 'en',
+  ]), provideAnimations(), provideHttpClient(), TranslateModule.forRoot({
+    defaultLanguage: 'ca',
     loader: {
       provide: TranslateLoader,
       useFactory: HttpLoaderFactory,

@@ -2,9 +2,14 @@
   .p-menubar {
     border: none;
     background-color: white !important;
+    position: fixed;
+    z-index: 100;
+    border-radius: 0;
+    width: 100%;
+    top:0;
 
     & .p-menubar-start {
-      margin-right: 300px !important;
+      margin-right: 8rem !important;
     }
 
     & .p-element {

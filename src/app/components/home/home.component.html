@@ -1,14 +1,14 @@
 <section>
   <p-panel [showHeader]="false">
     <div class="image">
-      <img ngSrc="./assets/images/logo.jpg" height="1000" width="1000" alt="">
+      <img ngSrc="./assets/images/home/logo-hero.jpg" height="1000" width="1000" alt="" [priority]="true">
     </div>
     <div class="hero">
       <h2>{{ "HOME.HERO.TITLE" | translate }}</h2>
       <p>{{ "HOME.HERO.TEXT" | translate }}</p>
       <div class="hero__buttons">
-        <p-button [label]="'HOME.HERO.WHO_BUTTON' | translate"></p-button>
-        <p-button [label]="'HOME.HERO.PEDAGOGY_BUTTON' | translate" styleClass="p-button-outlined" routerLink="/events"></p-button>
+        <p-button [label]="'HOME.HERO.PEDAGOGY_BUTTON' | translate" [routerLink]="['/la-nostra-pedagogia']"></p-button>
+        <p-button [label]="'HOME.HERO.DAY_IN_SOTABOSC' | translate" [routerLink]="['/un-dia-a-sotabosc']" routerLink="/events" styleClass="p-button-outlined"></p-button>
       </div>
     </div>
   </p-panel>
@@ -17,18 +17,18 @@
 <section>
   <div class="explanations">
     <div class="explanations__wrapper step-one">
-      <div>
-        <p-button [label]="'GLOBAL.HOW_IT_WORKS' | translate"></p-button>
+      <div class="center">
+        <p-button [label]="'HOME.HERO.DAY_IN_SOTABOSC' | translate" [routerLink]="['/un-dia-a-sotabosc']"></p-button>
       </div>
     </div>
     <div class="explanations__wrapper step-two">
       <div>
-        <p-button [label]="'GLOBAL.OUR_SPACE' | translate"></p-button>
+        <p-button [label]="'GLOBAL.OUR_SPACE' | translate" [routerLink]="['/el-nostre-espai']"></p-button>
       </div>
     </div>
     <div class="explanations__wrapper step-three">
       <div>
-        <p-button [label]="'GLOBAL.FAQ' | translate"></p-button>
+        <p-button [label]="'GLOBAL.FAQ' | translate" [routerLink]="['/preguntes-freqüents']"></p-button>
       </div>
     </div>
   </div>
@@ -44,12 +44,15 @@
 <section>
   <div class="motivation">
     <div class="motivation__block">
+      <fa-icon [icon]="faTree" size="4x"></fa-icon>
       <p>{{ "HOME.MOTIVATION.STEP_ONE" | translate }}</p>
     </div>
     <div class="motivation__block">
+      <fa-icon [icon]="faPaw" size="4x"></fa-icon>
       <p>{{ "HOME.MOTIVATION.STEP_TWO" | translate }}</p>
     </div>
     <div class="motivation__block">
+      <fa-icon [icon]="faSeedling" size="4x"></fa-icon>
       <p>{{ "HOME.MOTIVATION.STEP_THREE" | translate }}</p>
     </div>
   </div>
@@ -58,13 +61,13 @@
 <section>
   <div class="photos">
     <div class="photos__left">
-      <img src="./assets/images/home/home-footer-2-test.jpg" alt="photo" />
-      <img src="./assets/images/home/home-footer-3.jpg" alt="photo" />
-      <img src="../../../assets/images/our-space/home-footer-4.jpg" alt="photo" />
-      <img src="https://images.pexels.com/photos/7634891/pexels-photo-7634891.jpeg?auto=compress&cs=tinysrgb&w=600"  alt="photo" />
+      <img ngSrc="./assets/images/home/home-footer-2.jpg" alt="photo" height="1200" width="1600"/>
+      <img ngSrc="./assets/images/home/home-6.jpg" alt="photo" height="392" width="523"/>
+      <img ngSrc="./assets/images/home/home-7.jpg" alt="photo" height="392" width="523"/>
+      <img ngSrc="./assets/images/home/home-footer-3.jpg" alt="photo" height="1200" width="1600"/>
     </div>
     <div class="photos__right">
-      <img ngSrc="./assets/images/home/home-footer-1.jpg"  height="342" width="351" alt="photo" />
+      <img ngSrc="./assets/images/home/home-footer-1.jpg" height="1600" width="1200" alt="photo" />
     </div>
   </div>
 </section>

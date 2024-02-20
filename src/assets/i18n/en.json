@@ -4,7 +4,8 @@
       "TITLE": "BENVINGUDES A LA NOSTRA ESCOLETA A LA NATURA!",
       "TEXT": "Al setembre de 2021 neix Espai Sotabosc, un projecte educatiu no homologat que acull\n\ninfants fins als 6 anys.\n\nEl nostre entorn d'aprenentatge és la natura. La vivim i la coneixem a partir d'un\nacompanyament de les persones adultes des del respecte, la calma, l'amor i la presència.\nEstem ubicades a prop del poble d'El Catllar, a les instal·lacions de la Granja-Escola Corral\n\ndeNeri, de les quals també podem gaudir diàriament.",
       "WHO_BUTTON": "Qui som",
-      "PEDAGOGY_BUTTON": "La nostra pedagogia"
+      "PEDAGOGY_BUTTON": "La Nostra Pedagogia",
+      "DAY_IN_SOTABOSC": "Un Dia a Sotabosc"
     },
     "GREEN_BANNER": {
       "CITATION": "El temps a la natura no és només oci, és una inversió en la salut dels fills i filles i en la nostra pròpia.",
@@ -26,9 +27,9 @@
     "CREATE": "Crear"
   },
   "HOW_IT_WORKS": {
-    "DAY_IN_SOTABOSC": "Un dia a Sotabosc",
-    "MOMENTS_OF_THE_DAY": "Moments del dia",
-    "ROLE_TITLE": "El paper de les acompanyants",
+    "DAY_IN_SOTABOSC": "Un Dia a Sotabosc",
+    "MOMENTS_OF_THE_DAY": "MOMENTS DEL DIA",
+    "ROLE_TITLE": "EL PAPER DE LES ACOMPANYANTS",
     "ROLE_TEXT_PART_ONE": "Acompanyem als infants amb amor, empatia i una mirada atenta i\nrespectuosa, reconeixent-los com a individus capaços i únics. Entenem que cada\ncriatura és una mestra en potència, ensenyant-nos coses noves cada dia amb la\nseva innocència i curiositat.",
     "ROLE_TEXT_PART_TWO": "És fonamental establir límits per proporcionar-los seguretat física i emocional.\nMitjançant aquests límits, els ajudem a comprendre les normes socials i a\ndesenvolupar habilitats per a la vida.",
     "ROLE_TEXT_PART_THREE": "Una part important de la nostra feina és preparar propostes i dinàmiques\nadaptades a cada nivell evolutiu dels infants. Això es fa mitjançant una\nobservació constant i acurada dels infants en el seu entorn natural. Per tal de\ngarantir una comunicació efectiva amb les famílies, també proporcionem\ninformes escrits sobre el desenvolupament global dels infants a l'espai.",
@@ -38,7 +39,7 @@
     "INDOOR_TITLE": "Interior",
     "OUTDOOR_TITLE": "Exterior",
     "INDOOR_TEXT": "Tenim un petit refugi on podem passar\nestones a l'interior i també ens serveix de\npunt de trobada als matins i a les\nrecollides amb les famílies.\nL'espai es divideix principalment en dues\nsales que disposen de materials diversos i\non preparem propostes per la lliure\n\ncirculació dels infants per l'espai, basant-\nnos en els seus interessos i necessitats\n\ndel moment.",
-    "INDOOR_TEXT_SECOND": "Aquest espai consta de dues sales:",
+    "INDOOR_TEXT_SECOND": "Aquest espai consta de dues sales :",
     "INDOOR_TEXT_LIST_ONE": "Sala de les farigoles (a partir dels 2 anys).",
     "INDOOR_TEXT_LIST_TWO": "Sala dels romanís ( 1- 2 anys). Aquesta també disposa d’una sala dormitori i d’un WC."
   },

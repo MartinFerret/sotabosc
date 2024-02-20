@@ -3,6 +3,7 @@ import {TranslateModule} from "@ngx-translate/core";
 import {DividerModule} from "primeng/divider";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHandshake, faTree, faPaw, faHeart } from '@fortawesome/free-solid-svg-icons';
+import {NgOptimizedImage} from "@angular/common";
 
 
 @Component({
@@ -11,7 +12,8 @@ import { faHandshake, faTree, faPaw, faHeart } from '@fortawesome/free-solid-svg
   imports: [
     TranslateModule,
     DividerModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgOptimizedImage
   ],
   templateUrl: './who-we-are.component.html',
   styleUrl: './who-we-are.component.scss'

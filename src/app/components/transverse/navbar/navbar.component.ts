@@ -40,26 +40,32 @@ export class NavbarComponent implements OnInit {
         icon: 'pi pi-home'
       },
       {
-        label: 'Qui som',
-        routerLink: ['/who-we-are'],
+        label: 'La nostra pedagogia',
+        routerLink: ['/la-nostra-pedagogia'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-star'
       },
       {
-        label: 'Com funciona',
-        routerLink: ['/how-it-works'],
+        label: 'Un dia a Sotabosc',
+        routerLink: ['/un-dia-a-sotabosc'],
         routerLinkActiveOptions: true,
-        icon: 'pi pi-cog'
+        icon: 'pi pi-sun'
       },
       {
         label: 'El nostre espai',
-        routerLink: ['/our-space'],
+        routerLink: ['/el-nostre-espai'],
         routerLinkActiveOptions: true,
-        icon: 'pi pi-cloud'
+        icon: 'pi pi-heart'
+      },
+      {
+        label: 'Preguntes freqüents',
+        routerLink: ['/preguntes-freqüents'],
+        routerLinkActiveOptions: true,
+        icon: 'pi pi-search'
       },
       {
         label: 'Contacte',
-        routerLink: ['/contact'],
+        routerLink: ['/contacte'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-envelope'
       }
@@ -71,7 +77,6 @@ export class NavbarComponent implements OnInit {
       const config = m.data();
       if (config) {
         this.config.set(config['isActive']);
-        console.log(config);
       }
     })
   }

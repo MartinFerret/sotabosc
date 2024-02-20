@@ -1,9 +1,9 @@
-<h1>{{ "WHO_WE_ARE.TITLE" | translate }}</h1>
+<h1>{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</h1>
 <p-divider></p-divider>
 <div class="we">
   <div class="we__hero">
     <div class="we__hero__image">
-      <img loading="lazy" src="./assets/images/who-we-are/who-we-are-1.jpg" alt="" />
+      <img ngSrc="./assets/images/who-we-are/who-we-are-1.jpg" [priority]="true" alt="" height="550" width="850"/>
     </div>
     <div class="we__hero__description">
       <h2>{{ "WHO_WE_ARE.OUR_PROJECT" | translate }}</h2>
@@ -18,7 +18,7 @@
 
   <div class="we__pedagogy">
     <div class="we__pedagogy__image">
-      <img src="./assets/images/who-we-are/who-we-are-2.jpg" alt="" />
+      <img ngSrc="./assets/images/who-we-are/who-we-are-2.jpg" alt="" height="550" width="850"/>
     </div>
     <div class="we__pedagogy__description">
       <h2>{{ "WHO_WE_ARE.OUR_PEDAGOGY" | translate }}</h2>
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="we__pedagogy__description__blocks__block">
-          <div>
+          <div class="test">
             <fa-icon [icon]="faTree" size="4x"></fa-icon>
           </div>
           <div class="tree">
@@ -50,7 +50,7 @@
 
   <div class="we__pedagogy__two">
     <div class="we__pedagogy__two__image reversed">
-      <img src="./assets/images/ourspace-childreading.webp" alt="" />
+      <img ngSrc="./assets/images/who-we-are/who-we-are-5.jpg" alt="" height="550" width="850"/>
     </div>
     <div class="we__pedagogy__two__description">
       <div class="we__pedagogy__two__description__blocks">
@@ -60,11 +60,11 @@
             <fa-icon [icon]="faPaw" size="4x"></fa-icon>
           </div>
           <div class="paw">
-            {{ "WHO_WE_ARE.PEDAGOGY_TEXT_FIVE" | translate }}
+            <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_FIVE" | translate }}</p>
             <br><br>
-            {{ "WHO_WE_ARE.PEDAGOGY_TEXT_SIX" | translate }}
+            <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_SIX" | translate }}</p>
             <br><br>
-            {{ "WHO_WE_ARE.PEDAGOGY_TEXT_SEVEN" | translate }}
+            <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_SEVEN" | translate }}</p>
           </div>
         </div>
         <div class="we__pedagogy__two__description__blocks__block">
@@ -72,9 +72,9 @@
             <fa-icon [icon]="faHeart" size="4x"></fa-icon>
           </div>
           <div class="heart">
-            {{ "WHO_WE_ARE.PEDAGOGY_TEXT_EIGHT" | translate }}
+            <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_EIGHT" | translate }}</p>
             <br><br>
-            {{ "WHO_WE_ARE.PEDAGOGY_TEXT_NINE" | translate }}
+            <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_NINE" | translate }}</p>
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 :host ::ng-deep {
   h1 {
     text-align: center;
-    margin-top: 3rem;
     font-size: 4rem;
+    margin-top: 7rem;
   }
 
   section.header-section {
@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: -5rem;
 
     & .timeline {
       width: 50%;
@@ -20,12 +21,8 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-
-      & h2 {
-        font-size: 2rem;
-        padding: 0 0 1rem 0;
-      }
     }
+
 
     & .image {
       width: 50%;
@@ -88,4 +85,27 @@
       }
     }
   }
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
+  position: relative;
+  z-index: 8;
+  color: var(--sbc-white);
+}
+
+h2::before {
+  content: "";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: var(--sbc-green);
+  transform: rotate(2deg);
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+  z-index: -1;
 }

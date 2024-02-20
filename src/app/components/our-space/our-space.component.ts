@@ -1,6 +1,7 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {TranslateModule} from "@ngx-translate/core";
 import {DividerModule} from "primeng/divider";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-our-space',
@@ -8,7 +9,8 @@ import {DividerModule} from "primeng/divider";
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     TranslateModule,
-    DividerModule
+    DividerModule,
+    NgOptimizedImage
   ],
   templateUrl: './our-space.component.html',
   styleUrl: './our-space.component.scss'
