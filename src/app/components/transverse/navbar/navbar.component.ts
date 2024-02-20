@@ -1,9 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {MenuItem} from "primeng/api";
 import {MenubarModule} from "primeng/menubar";
 import {InputTextModule} from "primeng/inputtext";
 import {NgOptimizedImage} from "@angular/common";
 import {ButtonModule} from "primeng/button";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-navbar',
@@ -20,45 +21,45 @@ import {ButtonModule} from "primeng/button";
 export class NavbarComponent implements OnInit {
 
   items: MenuItem[] = [] as MenuItem[];
+  translateService = inject(TranslateService);
 
   ngOnInit() {
     this.items = [
       {
-        label: 'Inici',
+        label: this.translateService.instant('GLOBAL.HOME'),
         routerLink: ['/'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-home'
       },
       {
-        label: 'La nostra pedagogia',
+        label: this.translateService.instant('GLOBAL.OUR_PEDAGOGY'),
         routerLink: ['/la-nostra-pedagogia'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-star'
       },
       {
-        label: 'Un dia a Sotabosc',
+        label: this.translateService.instant('GLOBAL.DAY_IN_SOTABOSC'),
         routerLink: ['/un-dia-a-sotabosc'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-sun'
       },
       {
-        label: 'El nostre espai',
+        label: this.translateService.instant('GLOBAL.OUR_SPACE'),
         routerLink: ['/el-nostre-espai'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-heart'
       },
       {
-        label: 'Preguntes freqüents',
+        label: this.translateService.instant('GLOBAL.FAQ'),
         routerLink: ['/preguntes-freqüents'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-search'
       },
       {
-        label: 'Contacte',
+        label: this.translateService.instant('GLOBAL.CONTACT'),
         routerLink: ['/contacte'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-envelope'
       }
     ]
-  }
-}
+  }  }

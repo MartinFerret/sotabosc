@@ -12,7 +12,7 @@
       "AUTHOR": "Richard Louv"
     },
     "MOTIVATION": {
-      "STEP_ONE": "Educació infantil a la natura (1 a 6 anys)",
+      "STEP_ONE": "Educació infantil a la natura (18 meses a 6 anys)",
       "STEP_TWO": "Infància, bosc i animals",
       "STEP_THREE": "Ràtios reduïdes i mirada respectuosa"
     }
@@ -24,7 +24,9 @@
     "OUR_SPACE": "El nostre espai",
     "FAQ": "Preguntes freqüents",
     "CONTACT": "Contacte",
-    "CREATE": "Crear"
+    "CREATE": "Crear",
+    "OUR_PEDAGOGY": "La nostra pedagogia",
+    "DAY_IN_SOTABOSC": "Un dia a Sotabosc"
   },
   "HOW_IT_WORKS": {
     "DAY_IN_SOTABOSC": "Un Dia a Sotabosc",
