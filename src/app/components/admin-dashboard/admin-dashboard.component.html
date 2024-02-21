@@ -1,0 +1,16 @@
+<section>
+  <p-tabView>
+    <p-tabPanel header="Creation event">
+      <app-create-event></app-create-event>
+    </p-tabPanel>
+    <p-tabPanel header="Activation banner event" [disabled]="true">
+      <app-banner-panel></app-banner-panel>
+    </p-tabPanel>
+    <p-tabPanel header="Overview">
+      <app-overview
+      [events$]="events$"
+      (deleteEvent)="eventDeletions($event)"
+      ></app-overview>
+    </p-tabPanel>
+  </p-tabView>
+</section>

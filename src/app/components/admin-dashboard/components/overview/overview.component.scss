@@ -1,0 +1,8 @@
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+
+  & .p-element {
+    margin: 0 1rem !important;
+  }
+}
