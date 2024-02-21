@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import {eventResolver} from "./resolvers/event.resolver";
 
 export const routes: Routes = [
   {
@@ -17,9 +18,30 @@ export const routes: Routes = [
     title: 'La nostra pedagogia'
   },
   {
+    path: 'events',
+    loadComponent: () => import('./components/event/event.component').then(c => c.EventComponent),
+    resolve: {
+      events: eventResolver,
+    },
+    title: 'Inici'
+  },
+  {
+    path: 'admin',
+    loadComponent: () => import('./components/admin-dashboard/admin-dashboard.component').then(c => c.AdminDashboardComponent),
+    resolve: {
+      events: eventResolver,
+    },
+    title: 'Admin'
+  },
+  {
     path: 'el-nostre-espai',
     loadComponent: () => import('./components/our-space/our-space.component').then(c => c.OurSpaceComponent),
     title: 'El nostre espai'
+  },
+  {
+    path: 'sotabosc_admin',
+    loadComponent: () => import('./components/transverse/admin-interface/admin-interface.component').then((c) => c.AdminInterfaceComponent),
+    title: 'Inici'
   },
   {
     path: 'contacte',

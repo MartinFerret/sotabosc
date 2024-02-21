@@ -1,8 +1,8 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {PanelModule} from "primeng/panel";
 import {ButtonModule} from "primeng/button";
 import {NgOptimizedImage} from "@angular/common";
-import {TranslateModule, } from "@ngx-translate/core";
+import {TranslateModule} from "@ngx-translate/core";
 import {RouterLink} from "@angular/router";
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 import {faSeedling, faPaw, faTree} from '@fortawesome/free-solid-svg-icons';
@@ -25,4 +25,5 @@ export class HomeComponent {
   faSeedling = faSeedling;
   faPaw = faPaw;
   faTree = faTree;
+
 }

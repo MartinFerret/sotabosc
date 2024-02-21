@@ -1,0 +1,65 @@
+<p-confirmDialog></p-confirmDialog>
+<app-sidebar
+  *ngIf="displaySidebar"
+  [displaySidebar]="displaySidebar"
+  [eventToEdit]="eventToEdit"
+  (eventToPersist)="modifyEvent($event)"
+>
+</app-sidebar>
+<section>
+  <h1>Events summary</h1>
+  @if (events$?.length) {
+    <p-table
+      [multiSortMeta]="tableData.filters"
+      [rowHover]="true"
+      [rowsPerPageOptions]="tableData.rowPerPage"
+      [rows]="25"
+      [value]="events$ ?? []"
+      dataKey="id"
+      styleClass="p-datatable-striped mt-2"
+      [columns]="tableData.headers"
+    >
+      <ng-template pTemplate="header">
+        <tr>
+          @for (data of tableData.headers; track tableData.headers) {
+            <th
+              [id]="data.field"
+            >
+              <div class="text-overflow-ellipsis">
+                {{ data.header }}
+              </div>
+            </th>
+          }
+          <th id="actionBtn">Accions</th>
+        </tr>
+      </ng-template>
+      <ng-template
+        let-event
+        pTemplate="body"
+      >
+        <tr>
+          <td>{{ event.title | titlecase }}</td>
+          <td>{{ event.description }}</td>
+          <td>{{ event.date }}</td>
+          <td>{{ event.hour }}</td>
+          <td>{{ event.price | currency: 'EUR' }}</td>
+          <td>{{ event.isOpen ? 'Open' : 'Closed' }}</td>
+          <td>
+            <div class="buttons-container">
+              <p-button
+                [icon]="'pi pi-pencil'"
+                (click)="editEventAndDisplaySidebar(event)"
+                styleClass="p-button-sm p-button-text"
+              ></p-button>
+              <p-button
+                [icon]="'pi pi-trash'"
+                (click)="confirmDeletion(event.title)"
+                styleClass="p-button-sm p-button-text"
+              ></p-button>
+            </div>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  }
+</section>

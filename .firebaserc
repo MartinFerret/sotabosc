@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sotabosc-944d1"
+  },
+  "targets": {
+    "sotabosc-944d1": {
+      "hosting": {
+        "sotabosc-angular-firebase": [
+          "sotabosc-944d1"
+        ]
+      }
+    }
+  }
+}
