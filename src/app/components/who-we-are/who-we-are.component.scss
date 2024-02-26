@@ -1,14 +1,18 @@
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 7rem;
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   position: relative;
   z-index:8;
   color: var(--sbc-white);
+}
+
+p {
+  font-size: .9rem;
 }
 
 h2::before {
