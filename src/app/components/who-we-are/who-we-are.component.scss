@@ -44,7 +44,7 @@ h2::before {
 
     &__image,
     &__description {
-      width: 45%;
+      width: 47%;
       height: 100%;
     }
 
@@ -71,7 +71,7 @@ h2::before {
       }
 
       & p {
-        max-width: 70%;
+        max-width: 80%;
       }
     }
   }
@@ -87,7 +87,7 @@ h2::before {
 
     &__image,
     &__description {
-      width: 50%;
+      width: 70%;
       height: 100%;
     }
 
@@ -130,7 +130,7 @@ h2::before {
           padding: 0 5rem;
 
           & p {
-            min-width: 90%;
+            min-width: 80%;
             margin: 0 8rem;
           }
         }
