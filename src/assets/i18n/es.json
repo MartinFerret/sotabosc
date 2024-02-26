@@ -1,0 +1,108 @@
+{
+  "HOME": {
+    "HERO": {
+      "TITLE": "BIENVENIDOS A NUESTRA ESCUELA EN LA NATURALEZA!",
+      "TEXT": "En septiembre de 2021 nace Espai Sotabosc, un proyecto educativo no homologado que acoge a\nniños hasta los 6 años. Nuestro entorno de aprendizaje es la naturaleza. La vivimos y conocemos a través de un\nacompañamiento desde el respeto, la calma, el amor y la presencia. Estamos ubicadas en el\npueblo de El Catllar, en las instalaciones de la Granja-Escuela Corral de Neri, de las que también\npodemos disfrutar a diario.",
+      "WHO_BUTTON": "Quien somos",
+      "PEDAGOGY_BUTTON": "Nuestra pedagogia",
+      "DAY_IN_SOTABOSC": "Un Dia en Sotabosc"
+    },
+    "GREEN_BANNER": {
+      "CITATION": "El tiempo en la naturaleza no es sólo ocio, sino una inversión en la salud de los\nhijos e hijas y en la nuestra propia.",
+      "AUTHOR": "Richard Louv"
+    },
+    "MOTIVATION": {
+      "STEP_ONE": "Educación infantil en la naturaleza (18 meses a\n6 años)",
+      "STEP_TWO": "Infancia, bosque y animales",
+      "STEP_THREE": "Ratios reducidas y mirada respetuosa"
+    }
+  },
+  "GLOBAL": {
+    "HOME": "Inicio",
+    "HOW_IT_WORKS": "Como funciona",
+    "WHO_WE_ARE": "Quien somos",
+    "OUR_SPACE": "Nuestro espacio",
+    "FAQ": "Preguntas frecuentes",
+    "CONTACT": "Contacto",
+    "CREATE": "Crear",
+    "EVENTS": "Noticias",
+    "OUR_PEDAGOGY": "Nuestra pedagogia",
+    "DAY_IN_SOTABOSC": "Un dia en Sotabosc"
+  },
+  "HOW_IT_WORKS": {
+    "DAY_IN_SOTABOSC": "Un Dia a Sotabosc",
+    "MOMENTS_OF_THE_DAY": "MOMENTS DEL DIA",
+    "ROLE_TITLE": "EL PAPEL DE LAS ACOMPAÑANTES",
+    "ROLE_TEXT_PART_ONE": "Acompañamos a los niños con amor, empatía y una mirada atenta y respetuosa,\nreconociéndolos como individuos capaces y únicos. Entendemos que cada criatura es una\nmaestra en potencia, enseñándonos cosas nuevas cada día con su inocencia y curiosidad.",
+    "ROLE_TEXT_PART_TWO": "Es fundamental establecer límites para proporcionarles seguridad física y emocional. Mediante\nestos límites, les ayudamos a comprender las normas sociales y desarrollar habilidades para la\nvida.",
+    "ROLE_TEXT_PART_THREE": "Una parte importante de nuestro trabajo es preparar propuestas y dinámicas adaptadas a cada\nnivel evolutivo de los niños. Esto se hace mediante una observación constante y cuidadosa de los\nniños en su entorno natural. Para garantizar una comunicación efectiva con las familias, también\nproporcionamos informes escritos sobre el desarrollo global de los niños en el espacio.",
+    "ROLE_TEXT_PART_FOUR": "Como acompañantes de una escuela de educación infantil en la naturaleza, nuestro objetivo es\nproporcionar un entorno seguro, estimulante y enriquecedor donde los niños puedan crecer,\nexplorar y aprender con plenitud. Por tanto, también tenemos conocimientos sobre el entorno\nnatural que nos rodea."
+  },
+  "OUR_SPACE": {
+    "MAIN_TITLE": "Instalaciones",
+    "INDOOR_TITLE": "Interior",
+    "OUTDOOR_TITLE": "Exterior",
+    "INDOOR_TEXT": "Tenemos un pequeño refugio donde podemos pasar ratos en el interior y también\nnos sirve de punto de encuentro por las mañanas y en las recogidas con las familias. El espacio\nse divide principalmente en dos salas que disponen de materiales diversos y en las que\npreparamos propuestas para la libre circulación de los niños por el espacio, basándonos en sus\nintereses y necesidades del momento.",
+    "INDOOR_TEXT_SECOND": "Este espacio cuesta con dos salas :",
+    "INDOOR_TEXT_LIST_ONE": "Sala de los « farigoles » (a partir de los 2 años).",
+    "INDOOR_TEXT_LIST_TWO": "Sala de los « romanis » (1-2 años). Ésta también dispone de una sala dormitorio y de un WC.",
+    "OUTDOOR_GARDEN_TITLE": "El jardín del refugio",
+    "OUTDOOR_GARDEN_TEXT": "El espacio exterior que rodea el refugio, está preparado para\nfomentar el juego libre, con diversos espacios y materiales, algunos de ellos creados por las\nfamilias de la escuelita. Los elementos de los espacios de juego están elaborados con\nconsideración hacia la naturaleza, utilizando los recursos disponibles y priorizando materiales\nnaturales, teniendo en cuenta su aspecto estético.",
+    "OUTDOOR_BOSC_TITLE": "El bosque",
+    "OUTDOOR_BOSC_TEXT": "Sólo necesitamos abrir una de las puertas de nuestra finca, para poder cruzar un\ncamino y llegar al bosque. Nos rodea un bosque mediterráneo de pinos, lentisco, romero, etc.\nCon muchos espacios por descubrir todos los días.",
+    "OUTDOOR_FARM_TITLE": "La granja",
+    "OUTDOOR_FARM_TEXT": "En la finca colindante a la nuestra, está la Granja-Escuela Corral de Neri. Con más de\n25 años de experiencia, es un espacio preparado para la infancia donde encontraremos animales\ne instalaciones lúdicas, de las que podemos disfrutar a diario."
+  },
+  "WHO_WE_ARE":{
+    "TITLE": "Quien somos",
+    "OUR_PROJECT": "NUESTRO PROYECTO",
+    "OUR_PEDAGOGY": "Nuestra pedagogia",
+    "TEXT_ONE": "Somos un proyecto que se crea desde la ilusión por acompañar a la infancia en un\nentorno diario privilegiado, como es la naturaleza y con la motivación de poder generar\naprendizajes a partir de vivirla activamente.",
+    "TEXT_TWO": "Creamos espacios y propuestas donde se respeta el ritmo y la diversidad de cada persona que\nforma parte del proyecto. Los grupos son de edades heterogéneas, favoreciendo así un entorno\nenriquecedor e inclusivo que fomente el desarrollo personal y social de los niños y niñas.",
+    "TEXT_THREE": "Sostenemos, validamos y respetamos todos los estados emocionales de cada niño. A partir de la\nobservación y presencia de los adultos, podemos entender y conocer sus necesidades y así\nacompañarlas mejor.",
+    "TEXT_FOUR": "Para poder hacer que todas las palabras anteriores sean realidad, mantenemos unas ratios\nreducidas: 5 niños por 1 acompañante de 18 meses a 2 años y 8 niños por 1 acompañante de 2 a\n6 años.",
+    "TEXT_FIVE": "Las familias son una parte importante del proyecto. Somos un espacio que ofrece la posibilidad\nde generar comunidad, encontrarnos y poder echarnos una mano, compartirnos y escucharnos.",
+    "TEXT_SIX": "La comunicación de las acompañantes con las familias es diaria y en persona. Generamos una\nrelación cercana y de confianza que nos facilita el acompañamiento de cada niño por ambas\npartes.",
+    "PEDAGOGY_TEXT_ONE": "Nos basamos en diferentes pedagogías activas donde uno de los puntos en común\nes el respeto a todas las dimensiones del niño, favoreciendo su autonomía y aprendizajes a partir\nde las experiencias y vivencias. Creemos en su poder innato para aprender a partir de la\ncuriosidad y las conexiones emocionales profundas. Estos se crean en la interacción con el\nentorno y con el juego libre.",
+    "PEDAGOGY_TEXT_TWO": "Para nosotros, la confianza en la infancia es básica, considerándola\ncomo personas capaces y no limitándolas con las creencias del adulto egoísta.",
+    "PEDAGOGY_TEXT_THREE": "La metodología de bosque escuela está muy presente en nuestro proyecto. Es una\npedagogía basada en las escuelas de bosque de los países nórdicos, donde habitan en el bosque\nde forma diaria.",
+    "PEDAGOGY_TEXT_FOUR": "Nosotros vamos al bosque tres días a la semana, utilizamos materiales que nos\naporta el entorno para el juego libre y las dinámicas dirigidas (palos, hojas, frutos, árboles...) y\nseguimos un ritmo curado y calmado, lo que marca la naturaleza.",
+    "PEDAGOGY_TEXT_FIVE": "El contacto con los animales es beneficioso para los niños, puesto que estimula y\nmotiva, facilitando el aprendizaje y el interés real. También ayuda a gestionar emociones como la\nimpulsividad o la rabia porque el animal pone límites de forma natural. Además, promueve la\nadquisición de habilidades sociales, empatía, responsabilidad y rutinas.",
+    "PEDAGOGY_TEXT_SIX": "Los animales son seres\nque viven el presente, por tanto, enseñan a vivir el momento. En un mundo dominado por las\npantallas y la inmediatez, los animales y la naturaleza nos ayudan a vivir conscientes, respetando\nlos ritmos naturales.",
+    "PEDAGOGY_TEXT_SEVEN": "Las vivencias en una escuela al aire libre son un regalo para el desarrollo de\nlos niños, proporcionándoles valores y un sistema nervioso equilibrado para la vida.",
+    "PEDAGOGY_TEXT_EIGHT": "Un grupo heterogéneo en edades puede favorecer un entorno enriquecedor e\ninclusivo que fomente el desarrollo personal y social de los niños.",
+    "PEDAGOGY_TEXT_NINE": "El aprendizaje entre iguales\n(donde diferentes edades forman parte del mismo grupo social), el desarrollo social (la interacción\nentre niños de diferentes edades ayuda a desarrollar habilidades sociales y comprender la\ndiversidad), el ejemplo (los niños mayores pueden actuar como modelos de comportamiento para\nlos más pequeños y viceversa, ayudándose mutuamente con nuevas habilidades y actitudes) y la\ndiversidad (las propuestas y los juegos pueden adaptarse a distintos niveles de desarrollo y de\nintereses, proporcionando estímulos más ricos y variados para el crecimiento y el desarrollo de\nlos niños). Tener la misma edad no significa encontrarse en el mismo momento evolutivo."
+  },
+  "ADMIN": {
+    "FORM": {
+      "TITLE": "Titulo",
+      "DESCRIPTION": "Descripcion",
+      "HOUR": "Horas",
+      "DATE": "Fecha",
+      "PRICE": "Precio",
+      "GOOGLE_LINK": "Enlace al formulario de Google",
+      "STATUS": "Estado",
+      "UPLOAD_IMAGE": "Carga una imagen"
+    }
+  },
+  "CONTACT": {
+    "CONTACT_US": "Contactanos",
+    "QUESTIONS": "¿Tienes alguna duda? Ponte en contacto con nosotros.",
+    "EMAIL": "Correo electronico",
+    "FOLLOW_US": "Siguenos",
+    "LOCALIZATION": "Localizacion",
+    "FIND_US": "Encuentranos"
+  },
+  "FAQ": {
+    "TITLE": "Preguntas Frecuentes",
+    "QUESTION_ONE": "¿Es necesario algún tipo de ropa especial para una escuela al aire libre?",
+    "REPLY_ONE": "No, sólo hace falta que sea ropa cómoda que permita un movimiento libre en los diferentes\nespacios que visitamos día a día. Además de una mochila para llevar a las salidas al bosque.",
+    "QUESTION_TWO": "¿Cuándo llueve salis al exterior?",
+    "REPLY_TWO_PART_ONE": "“no hay mal tiempo, sino ropa inadecuada”.",
+    "REPLY_TWO_PART_TWO": "Con los petos impermeables y las botas de agua, lo\nmejor que puede pasarnos es un día de lluvia para disfrutar del agua, los charcos y el barro.",
+    "QUESTION_THREE": "¿Existe servicio de acogida o el horario es fijo?",
+    "REPLY_THREE": "Sí, hay servicio de acogida a las 8h por la mañana y hasta las 16h por la tarde (podemos hablar y\nadaptarnos en casos con otras necesidades).",
+    "QUESTION_FOUR": "¿Qué beneficios tiene una escuela en la naturaleza?",
+    "REPLY_FOUR": "El entorno exterior es un recurso rico y dinámico que ofrece una amplia gama de experiencias\neducativas y naturales que enriquecen el crecimiento y el desarrollo de los niños de forma\nintegral."
+  }
+}

@@ -12,6 +12,7 @@ import {EventService} from "../../../../services/event.service";
 import {FileUploadEvent, FileUploadModule} from "primeng/fileupload";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
 import {TranslateModule} from "@ngx-translate/core";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-create-event',
@@ -36,17 +37,18 @@ export class CreateEventComponent implements OnInit {
   toastService = inject(MessageService);
   fireStorage = inject(AngularFireStorage);
   eventService = inject(EventService);
+  router = inject(Router);
 
   eventNumber: number = 1;
 
   eventForm = new FormGroup({
     id: new FormControl(0, [Validators.required]),
-    title: new FormControl('', [Validators.required]),
+    title: new FormControl(''),
     description: new FormControl('', [Validators.required]),
     date: new FormControl('', [Validators.required]),
     hour: new FormControl('', [Validators.required]),
     image: new FormControl(''),
-    price: new FormControl(10, [Validators.required]),
+    price: new FormControl(10),
     isOpen: new FormControl(true, [Validators.required]),
     googleFormLink: new FormControl(''),
   });
@@ -55,16 +57,17 @@ export class CreateEventComponent implements OnInit {
     this.getNumberEvents();
   }
 
-  createEvent() {
+   createEvent() {
     const newEvent: Event = this.buildFormValues();
     if (this.eventForm.valid) {
-      this.eventService.createEvent(newEvent, this.eventForm.value.title ?? '');
+       this.eventService.createEvent(newEvent, this.eventForm.value.title ?? '');
       this.toastService.add({
         icon: 'pi pi-check',
         severity: 'success',
         detail: 'Esdeveniment creat amb èxit'
       })
       this.eventForm.reset();
+      this.router.navigateByUrl('/noticias');
     } else {
       this.toastService.add({
         icon: 'pi pi-times',

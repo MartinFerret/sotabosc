@@ -10,7 +10,7 @@ import {
   updateDoc
 } from "@angular/fire/firestore";
 import {Observable} from "rxjs";
-import {Event, EventBar} from "../models/event.model";
+import {Event} from "../models/event.model";
 import {Constants} from "../components/constants";
 
 @Injectable({

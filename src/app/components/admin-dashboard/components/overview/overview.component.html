@@ -1,20 +1,21 @@
 <p-confirmDialog></p-confirmDialog>
-<app-sidebar
-  *ngIf="displaySidebar"
-  [displaySidebar]="displaySidebar"
-  [eventToEdit]="eventToEdit"
-  (eventToPersist)="modifyEvent($event)"
->
-</app-sidebar>
+@if (displaySidebar()) {
+  <app-sidebar
+    [displaySidebar]="displaySidebar()"
+    [eventToEdit]="eventToEdit"
+    (eventToPersist)="modifyEvent($event)"
+  >
+  </app-sidebar>
+}
 <section>
   <h1>Events summary</h1>
-  @if (events$?.length) {
+  @if (events()?.length) {
     <p-table
       [multiSortMeta]="tableData.filters"
       [rowHover]="true"
       [rowsPerPageOptions]="tableData.rowPerPage"
       [rows]="25"
-      [value]="events$ ?? []"
+      [value]="events() ?? []"
       dataKey="id"
       styleClass="p-datatable-striped mt-2"
       [columns]="tableData.headers"
@@ -54,7 +55,7 @@
               <p-button
                 [icon]="'pi pi-trash'"
                 (click)="confirmDeletion(event.title)"
-                styleClass="p-button-sm p-button-text"
+                styleClass="p-button-sm p-button-text p-button-outlined"
               ></p-button>
             </div>
           </td>

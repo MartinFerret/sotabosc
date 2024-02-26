@@ -4,5 +4,9 @@
     & .p-tabview-nav-link {
       border: 1px solid lightgrey;
     }
+
+    .p-highlight > a > span {
+      color: var(--sbc-green) !important;
+    }
   }
 }

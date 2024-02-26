@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {PanelModule} from "primeng/panel";
 import {ButtonModule} from "primeng/button";
 import {NgOptimizedImage} from "@angular/common";
@@ -21,9 +21,8 @@ import {faSeedling, faPaw, faTree} from '@fortawesome/free-solid-svg-icons';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent  {
   faSeedling = faSeedling;
   faPaw = faPaw;
   faTree = faTree;
-
 }

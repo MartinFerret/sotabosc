@@ -3,7 +3,7 @@
   <form [formGroup]="eventForm">
     <span class="p-float-label input">
       <input pInputText id="title" [formControl]="eventForm.controls.title"/>
-      <label for="title">{{ "ADMIN.FORM.TITLE" | translate }} *</label>
+      <label for="title">{{ "ADMIN.FORM.TITLE" | translate }}</label>
     </span>
     <span class="p-float-label input">
       <textarea pInputTextarea rows="10" cols="30" id="description" [formControl]="eventForm.controls.description"></textarea>
@@ -19,7 +19,7 @@
     </span>
     <span class="p-float-label input">
       <p-inputNumber id="price" [formControl]="eventForm.controls.price"/>
-      <label for="price">{{ "ADMIN.FORM.PRICE" | translate }} *</label>
+      <label for="price">{{ "ADMIN.FORM.PRICE" | translate }}</label>
     </span>
     <span class="p-float-label input">
       <input pInputText id="googleFormLink" [formControl]="eventForm.controls.googleFormLink"/>

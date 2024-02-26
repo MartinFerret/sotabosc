@@ -1,11 +1,9 @@
 import {
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
   Component,
   EventEmitter,
-  inject,
+  inject, input,
   Input,
-  Output
+  Output, signal
 } from '@angular/core';
 import {TableDataColumnModel} from "../../../../models/column.model";
 import {CurrencyPipe, NgForOf, NgIf, TitleCasePipe} from "@angular/common";
@@ -15,13 +13,12 @@ import {ConfirmService} from "../../../../services/confirm.service";
 import {ConfirmationService} from "primeng/api";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
 import {SidebarComponent} from "./components/sidebar/sidebar.component";
-import * as events from "events";
 import {EventService} from "../../../../services/event.service";
+import {toSignal} from "@angular/core/rxjs-interop";
 
 @Component({
   selector: 'app-overview',
   standalone: true,
-  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ConfirmService, ConfirmationService],
   imports: [
     NgIf,
@@ -38,13 +35,12 @@ import {EventService} from "../../../../services/event.service";
 })
 export class OverviewComponent {
 
-  private readonly _cdref = inject(ChangeDetectorRef);
   private readonly _confirmService = inject(ConfirmService);
   private readonly _eventService = inject(EventService);
   eventToEdit! : any;
-  @Input({required: true}) events$: Event[] | undefined;
+  events = input.required<Event[] | undefined>()
   @Output() deleteEvent = new EventEmitter<string>();
-  displaySidebar!: boolean;
+  displaySidebar = signal(false);
 
   tableData: TableDataColumnModel = {
     headers: [
@@ -74,16 +70,15 @@ export class OverviewComponent {
   }
   eventDeletion(title: string) {
     this.deleteEvent.emit(title);
-    this._cdref.markForCheck();
   }
 
   editEventAndDisplaySidebar(event: Event) {
-    this.displaySidebar = true;
+    this.displaySidebar.set(true);
     this.eventToEdit = event;
   }
 
   modifyEvent(event: any) {
     this._eventService.modifyEvent(this.eventToEdit.title, event);
-    this.displaySidebar = false;
+    this.displaySidebar.set(false);
   }
 }

@@ -35,7 +35,7 @@ export class AdminDashboardComponent implements OnInit {
     })
   }
 
-  eventDeletions(title: string) {
-    this.#eventService.deleteEvent(title);
+  async eventDeletions(title: string) {
+    await this.#eventService.deleteEvent(title);
   }
 }

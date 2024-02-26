@@ -7,6 +7,9 @@
     border-radius: 0;
     width: 100%;
     top:0;
+    left: 0;
+    right: 0;
+    font-size: .9rem;
 
     & .p-menubar-start {
       margin-right: 8rem !important;
@@ -26,4 +29,4 @@
       }
     }
   }
-}
+  }

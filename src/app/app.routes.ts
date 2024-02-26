@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
-import {eventResolver} from "./resolvers/event.resolver";
+import {EventService} from "./services/event.service";
+import {inject} from "@angular/core";
 
 export const routes: Routes = [
   {
@@ -18,10 +19,10 @@ export const routes: Routes = [
     title: 'La nostra pedagogia'
   },
   {
-    path: 'events',
+    path: 'noticias',
     loadComponent: () => import('./components/event/event.component').then(c => c.EventComponent),
     resolve: {
-      events: eventResolver,
+      events: () => inject(EventService).getEvents(),
     },
     title: 'Inici'
   },
@@ -29,7 +30,7 @@ export const routes: Routes = [
     path: 'admin',
     loadComponent: () => import('./components/admin-dashboard/admin-dashboard.component').then(c => c.AdminDashboardComponent),
     resolve: {
-      events: eventResolver,
+      events: () => inject(EventService).getEvents(),
     },
     title: 'Admin'
   },

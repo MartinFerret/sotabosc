@@ -25,6 +25,7 @@
     "FAQ": "Preguntes freqüents",
     "CONTACT": "Contacte",
     "CREATE": "Crear",
+    "EVENTS": "Noticias",
     "OUR_PEDAGOGY": "La nostra pedagogia",
     "DAY_IN_SOTABOSC": "Un dia a Sotabosc"
   },
@@ -38,12 +39,19 @@
     "ROLE_TEXT_PART_FOUR": "Com a acompanyants d'una escoleta d'educació infantil a la natura, el nostre\nobjectiu és proporcionar un entorn segur, estimulant i enriquidor on els nens\npuguin créixer, explorar i aprendre amb plenitud. Per tant, també tenim\nconeixements sobre l’entorn natural que ens envolta."
   },
   "OUR_SPACE": {
+    "MAIN_TITLE": "Instal.lacions",
     "INDOOR_TITLE": "Interior",
     "OUTDOOR_TITLE": "Exterior",
     "INDOOR_TEXT": "Tenim un petit refugi on podem passar\nestones a l'interior i també ens serveix de\npunt de trobada als matins i a les\nrecollides amb les famílies.\nL'espai es divideix principalment en dues\nsales que disposen de materials diversos i\non preparem propostes per la lliure\n\ncirculació dels infants per l'espai, basant-\nnos en els seus interessos i necessitats\n\ndel moment.",
     "INDOOR_TEXT_SECOND": "Aquest espai consta de dues sales :",
     "INDOOR_TEXT_LIST_ONE": "Sala de les farigoles (a partir dels 2 anys).",
-    "INDOOR_TEXT_LIST_TWO": "Sala dels romanís ( 1- 2 anys). Aquesta també disposa d’una sala dormitori i d’un WC."
+    "INDOOR_TEXT_LIST_TWO": "Sala dels romanís ( 1- 2 anys). Aquesta també disposa d’una sala dormitori i d’un WC.",
+    "OUTDOOR_GARDEN_TITLE": "El jardí del refugi",
+    "OUTDOOR_GARDEN_TEXT": "L’espai exterior que envolta\nel refugi, està preparat per fomentar el joc\nlliure, amb diversos espais i materials, alguns\nd'ells creats per les famílies de l'escoleta.\nEls elements dels espais de joc, estan elaborats\namb consideració cap a la natura, utilitzant els\nrecursos disponibles i prioritzant materials\nnaturals, tot tenint en compte el seu aspecte\nestètic.",
+    "OUTDOOR_BOSC_TITLE": "El bosc",
+    "OUTDOOR_BOSC_TEXT": "Només ens cal obrir una de les portes\nde la nostra finca, per poder creuar un camí i\narribar al bosc. Ens envolta un bosc\nmediterrani de pins, llentiscle, romaní, etc.\nAmb molts espais per descobrir cada dia.",
+    "OUTDOOR_FARM_TITLE": "La granja",
+    "OUTDOOR_FARM_TEXT": " A la finca confrontada a la nostra, hi\nha la Granja- Escola Corral de Neri. Amb més\nde 25 anys d’experiència, és un espai preparat\nper la infància on trobarem animals i\ninstal·lacions lúdiques, de les quals podem\ngaudir diàriament."
   },
   "WHO_WE_ARE":{
     "TITLE": "Qui som",
@@ -76,5 +84,25 @@
       "STATUS": "Estat",
       "UPLOAD_IMAGE": "Carrega una imatge"
     }
+  },
+  "CONTACT": {
+    "CONTACT_US": "Contacta'ns",
+    "QUESTIONS": "Tens algun dubte? Posa't en contacte amb nosaltres.",
+    "EMAIL": "Correu electronic",
+    "FOLLOW_US": "Segueix-nos",
+    "LOCALIZATION": "Localizacio",
+    "FIND_US": "Ens trobaras a"
+  },
+  "FAQ": {
+    "TITLE": "Preguntes Freqüents",
+    "QUESTION_ONE": "Cal algun tipus de roba especial per una escola a l’aire lliure?",
+    "REPLY_ONE": "No, només cal que sigui roba còmoda que permeti un moviment lliure en els diferents espais que\nvisitem dia a dia. A més a més d’una motxilla per portar a les sortides al bosc.",
+    "QUESTION_TWO": "Quan plou sortiu a l’exterior?",
+    "REPLY_TWO_PART_ONE": "“no hi ha mal temps, sinó roba inadequada”.",
+    "REPLY_TWO_PART_TWO": "Amb els petos impermeables i les botes d’aigua, el millor que ens pot passar és un dia de pluja per\n\ngaudir de l’aigua, els tolls i el fang.",
+    "QUESTION_THREE": "Hi ha servei d’acollida o l’horari és fix?",
+    "REPLY_THREE": "Sí, hi ha servei d’acollida a les 8h al matí i fins les 16h a la tarda (podem parlar i adaptar-nos de\n        casos amb altres necessitats).",
+    "QUESTION_FOUR": "Quins beneficis té una escola a la natura?",
+    "REPLY_FOUR": "L'entorn exterior és un recurs ric i dinàmic que ofereix una àmplia gamma d&#39;experiències educatives i\nnaturals que enriquiren el creixement i el desenvolupament dels nens de manera integral."
   }
 }

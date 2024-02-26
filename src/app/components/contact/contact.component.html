@@ -1,26 +1,26 @@
 <section class="header">
   <div class="title">
-    <h1>Contact Us</h1>
-    <p>Have any questions ? We'd like to hear from you.</p>
+    <h1>{{ 'CONTACT.CONTACT_US' | translate }}</h1>
+    <p>{{ 'CONTACT.QUESTIONS' | translate }}</p>
   </div>
   <section class="footer">
     <div class="card">
       <fa-icon [icon]="faEnvelope" size="2x"></fa-icon>
-      <h3>Email</h3>
+      <h3>{{ 'CONTACT.EMAIL' | translate }}</h3>
       <p> espaisotabosc&#64;gmail.com</p>
-      <a href="mailto:espaisotabosc@gmail.com"><p-button [label]="'Contact us'" ></p-button></a>
+      <a href="mailto:espaisotabosc@gmail.com"><p-button [label]="'CONTACT.CONTACT_US' | translate " ></p-button></a>
     </div>
     <div class="card">
       <fa-icon [icon]="faCamera" size="2x"></fa-icon>
       <h3>Instagram</h3>
       <p>&#64;espaisotabpsc</p>
-      <a target="_blank" href="https://www.instagram.com/espaisotabosc/"><p-button [label]="'Follow us'"></p-button></a>
+      <a target="_blank" href="https://www.instagram.com/espaisotabosc/"><p-button [label]=" 'CONTACT.FOLLOW_US' | translate "></p-button></a>
     </div>
     <div class="card">
       <fa-icon [icon]="faLocationDot" size="2x"></fa-icon>
-      <h3>Localisation</h3>
+      <h3>{{ 'CONTACT.LOCALIZATION' | translate }}</h3>
       <p>El Catllar, Tarragona</p>
-      <a target="_blank" href="https://www.google.es/maps/place/Granja+Escola+Corral+de+Neri/@41.1801945,1.3056164,17z/data=!3m1!4b1!4m6!3m5!1s0x12a3fd321a8b0685:0x90a095d8d06363bc!8m2!3d41.1801945!4d1.3081913!16s%2Fg%2F1v7x_tbd?entry=ttu"><p-button [label]="'Find us'"></p-button></a>
+      <a target="_blank" href="https://www.google.es/maps/place/Granja+Escola+Corral+de+Neri/@41.1801945,1.3056164,17z/data=!3m1!4b1!4m6!3m5!1s0x12a3fd321a8b0685:0x90a095d8d06363bc!8m2!3d41.1801945!4d1.3081913!16s%2Fg%2F1v7x_tbd?entry=ttu"><p-button [label]=" 'CONTACT.FIND_US' | translate "></p-button></a>
     </div>
   </section>
 </section>
