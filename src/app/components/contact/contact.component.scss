@@ -17,6 +17,10 @@
         color: var(--sbc-white);
       }
 
+      & p {
+        font-size: .9rem;
+      }
+
       h1::before {
         content: "";
         display: block;

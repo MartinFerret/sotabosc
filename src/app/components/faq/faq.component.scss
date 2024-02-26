@@ -2,8 +2,11 @@
   section {
     & h1 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-top: 7rem;
     }
+  }
+  & p {
+    font-size: .9rem;
   }
 }
