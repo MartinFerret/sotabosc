@@ -12,7 +12,8 @@
       "AUTHOR": "Richard Louv"
     },
     "MOTIVATION": {
-      "STEP_ONE": "Educación infantil en la naturaleza (18 meses a\n6 años)",
+      "STEP_ONE": "Educación infantil en la naturaleza",
+      "STEP_ONE_PART_TWO": "(18 meses a\n6 años)",
       "STEP_TWO": "Infancia, bosque y animales",
       "STEP_THREE": "Ratios reducidas y mirada respetuosa"
     }
