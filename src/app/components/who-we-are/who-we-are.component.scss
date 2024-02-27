@@ -156,7 +156,7 @@ h2::before {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 0 5rem;
+      margin: 3rem 0;
 
       &__image,
       &__description {
@@ -168,6 +168,7 @@ h2::before {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10rem;
         & img {
           width: 100%;
           height: 550px;
@@ -180,8 +181,6 @@ h2::before {
         justify-content: center;
         align-items: center;
         text-align: justify;
-        margin-top: 5rem;
-        padding-top: 5rem;
 
         & h1 {
           margin-bottom: 15px;
