@@ -369,10 +369,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         & h2 {
           font-size: 2rem;
-          text-align: center;
         }
 
         & p {
@@ -386,8 +386,8 @@
           flex-wrap: wrap;
 
           & button {
-            margin-left: .5rem;
-            width: 7rem;
+            margin-left: 3px;
+            width: 10rem;
             text-align: center !important;
           }
         }
@@ -402,6 +402,7 @@
       flex-direction: column;
       justify-content: center;
       margin-bottom: -7rem;
+      margin-top: 3rem;
 
       & .explanations__wrapper {
         width: 110%;
