@@ -354,20 +354,18 @@
 
       & div.image {
         width: 100%;
-        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
 
         & img {
           width: 30rem;
-          height: 30rem;
+          height: auto;
         }
       }
 
       & div.hero {
         width: 100%;
-        height: 50%;
         display: flex;
         margin: 3rem 0;
         flex-direction: column;
