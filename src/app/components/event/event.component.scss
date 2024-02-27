@@ -95,9 +95,10 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 1.2rem;
+        padding: 0 1rem;
 
         & .p-panel-content {
           border: none;
@@ -105,15 +106,12 @@
 
           & .image {
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             & img {
-              width: 30rem;
-              height: 30rem;
-            }
-
-            & .badge {
-              position: absolute;
-              top: 3%;
-              right: 10%;
+              width: 100%;
+              height: 400px;
             }
           }
 
@@ -149,9 +147,8 @@
     p {
       font-size: .9rem;
     }
-
-    & .p-divider {
-      width: 80%;
+    .informations {
+      width: 100%;
     }
     }
   }

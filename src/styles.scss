@@ -65,3 +65,11 @@ body {
   color: var(--sbc-white);
 }
 
+@media only screen and (max-width: 525px) {
+  .p-accordion-tab {
+    width: 90% !important;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+  }
+}
+
