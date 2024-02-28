@@ -1,4 +1,4 @@
-import {Component, inject, OnInit, signal} from '@angular/core';
+import {Component, inject, OnChanges, OnInit, signal, SimpleChanges} from '@angular/core';
 import {MenuItem} from "primeng/api";
 import {MenubarModule} from "primeng/menubar";
 import {InputTextModule} from "primeng/inputtext";
@@ -8,6 +8,8 @@ import {EventService} from "../../../services/event.service";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
 import {EventBarComponent} from "../event-bar/event-bar.component";
 import {TranslateService} from "@ngx-translate/core";
+import {ActivatedRoute} from "@angular/router";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-navbar',
@@ -30,6 +32,7 @@ export class NavbarComponent implements OnInit {
   items: MenuItem[] = [] as MenuItem[];
   config = signal(false);
   translateService = inject(TranslateService);
+  titleService = inject(Title);
 
   ngOnInit() {
     this.loadConfig();
@@ -89,13 +92,13 @@ export class NavbarComponent implements OnInit {
           {
             label: this.translateService.instant('GLOBAL.SPANISH'),
             command: () => {
-              this.translateService.use('es')
+              this.translateService.use('es');
             },
           },
           {
             label: this.translateService.instant('GLOBAL.CATALAN'),
             command: () => {
-              this.translateService.use('ca')
+              this.translateService.use('ca');
             },
           },
         ]

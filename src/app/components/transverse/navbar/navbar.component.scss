@@ -30,6 +30,40 @@
   }
 
   .p-menubar-button {
-    margin-left: 150px;
+    position: absolute;
+    right: 2%;
+    top: 35%;
+  }
+
+  @media only screen and (min-width: 1257px) {
+    .p-menubar {
+      border: none;
+      background-color: white !important;
+      position: fixed;
+      z-index: 100;
+      border-radius: 0;
+      top:0;
+      left: 0;
+      right: 0;
+      font-size: .7rem;
+
+      & .p-menubar-start {
+        margin-right: 2px;
+      }
+
+      & .p-element {
+        margin: 0;
+
+        & .p-menuitem-link {
+          margin-right: 2px;
+        }
+      }
+
+      & .p-menubar-end {
+        & .p-element {
+          margin-right: 2px;
+        }
+      }
+    }
   }
   }
