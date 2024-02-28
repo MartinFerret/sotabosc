@@ -15,6 +15,6 @@ export class AppComponent {
   title = 'sotabosc-angular-firebase';
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('es');
+    translate.setDefaultLang('ca');
   }
 }

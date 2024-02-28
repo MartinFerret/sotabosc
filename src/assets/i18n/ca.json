@@ -2,7 +2,7 @@
   "HOME": {
     "HERO": {
       "TITLE": "BENVINGUDES A LA NOSTRA ESCOLETA A LA NATURA!",
-      "TEXT": "Al setembre de 2021 neix Espai Sotabosc, un projecte educatiu no homologat que acull\n\ninfants fins als 6 anys.\n\nEl nostre entorn d'aprenentatge és la natura. La vivim i la coneixem a partir d'un\nacompanyament de les persones adultes des del respecte, la calma, l'amor i la presència.\nEstem ubicades a prop del poble d'El Catllar, a les instal·lacions de la Granja-Escola Corral\n\ndeNeri, de les quals també podem gaudir diàriament.",
+      "TEXT": "Al setembre de 2021 neix Espai Sotabosc, un projecte educatiu no homologat que acull infants fins als 6 anys. El nostre entorn d'aprenentatge és la natura. La vivim i la coneixem a partir d'un acompanyament de les persones adultes des del respecte, la calma, l'amor i la presència. Estem ubicades a prop del poble d'El Catllar, a les instal·lacions de la Granja-Escola Corral de Neri, de les quals també podem gaudir diàriament.",
       "WHO_BUTTON": "Qui som",
       "PEDAGOGY_BUTTON": "Pedagogia",
       "DAY_IN_SOTABOSC": "Un Dia a Sotabosc"
@@ -37,7 +37,16 @@
     "ROLE_TEXT_PART_ONE": "Acompanyem als infants amb amor, empatia i una mirada atenta i\nrespectuosa, reconeixent-los com a individus capaços i únics. Entenem que cada\ncriatura és una mestra en potència, ensenyant-nos coses noves cada dia amb la\nseva innocència i curiositat.",
     "ROLE_TEXT_PART_TWO": "És fonamental establir límits per proporcionar-los seguretat física i emocional.\nMitjançant aquests límits, els ajudem a comprendre les normes socials i a\ndesenvolupar habilitats per a la vida.",
     "ROLE_TEXT_PART_THREE": "Una part important de la nostra feina és preparar propostes i dinàmiques\nadaptades a cada nivell evolutiu dels infants. Això es fa mitjançant una\nobservació constant i acurada dels infants en el seu entorn natural. Per tal de\ngarantir una comunicació efectiva amb les famílies, també proporcionem\ninformes escrits sobre el desenvolupament global dels infants a l'espai.",
-    "ROLE_TEXT_PART_FOUR": "Com a acompanyants d'una escoleta d'educació infantil a la natura, el nostre\nobjectiu és proporcionar un entorn segur, estimulant i enriquidor on els nens\npuguin créixer, explorar i aprendre amb plenitud. Per tant, també tenim\nconeixements sobre l’entorn natural que ens envolta."
+    "ROLE_TEXT_PART_FOUR": "Com a acompanyants d'una escoleta d'educació infantil a la natura, el nostre\nobjectiu és proporcionar un entorn segur, estimulant i enriquidor on els nens\npuguin créixer, explorar i aprendre amb plenitud. Per tant, també tenim\nconeixements sobre l’entorn natural que ens envolta.",
+    "TIMELINE_ONE": "Entrada relaxada : Les famílies arriben i poden passar una estona al refugi amb el seu fill o la seva filla. Després recollim els materials utilitzats i ens preparem per la rotllana.",
+    "TIMELINE_TWO": "Bon dia i dinàmica dirigida.",
+    "TIMELINE_THREE": "Ruta fins al bosc o la granja.",
+    "TIMELINE_FOUR": "Esmorzar i joc lliure : Cantem una cançó abans de començar a menjar, bon profit! Després podem jugar una estona al bosc o a algun espai de la granja.",
+    "TIMELINE_FIVE": "Tornem al refugi.",
+    "TIMELINE_SIX": "“L'hora del conte” i ens acomiadem dels infants que marxen a dinar a casa.",
+    "TIMELINE_SEVEN": "Dinar i migdiada o joc lliure.",
+    "TIMELINE_EIGHT": "Recollida relaxada."
+
   },
   "OUR_SPACE": {
     "MAIN_TITLE": "Instal.lacions",

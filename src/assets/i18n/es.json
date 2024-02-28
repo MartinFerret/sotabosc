@@ -2,7 +2,7 @@
   "HOME": {
     "HERO": {
       "TITLE": "BIENVENIDOS A NUESTRA ESCUELA EN LA NATURALEZA!",
-      "TEXT": "En septiembre de 2021 nace Espai Sotabosc, un proyecto educativo no homologado que acoge a\nniños hasta los 6 años. Nuestro entorno de aprendizaje es la naturaleza. La vivimos y conocemos a través de un\nacompañamiento desde el respeto, la calma, el amor y la presencia. Estamos ubicadas en el\npueblo de El Catllar, en las instalaciones de la Granja-Escuela Corral de Neri, de las que también\npodemos disfrutar a diario.",
+      "TEXT": "En septiembre de 2021 nace Espai Sotabosc, un proyecto educativo no homologado que acoge a niños hasta los 6 años. Nuestro entorno de aprendizaje es la naturaleza. La vivimos y conocemos a través de un acompañamiento desde el respeto, la calma, el amor y la presencia. Estamos ubicadas en el pueblo de El Catllar, en las instalaciones de la Granja-Escuela Corral de Neri, de las que también podemos disfrutar a diario.",
       "WHO_BUTTON": "Quien somos",
       "PEDAGOGY_BUTTON": "Pedagogia",
       "DAY_IN_SOTABOSC": "Un Dia en Sotabosc"
@@ -37,7 +37,15 @@
     "ROLE_TEXT_PART_ONE": "Acompañamos a los niños con amor, empatía y una mirada atenta y respetuosa,\nreconociéndolos como individuos capaces y únicos. Entendemos que cada criatura es una\nmaestra en potencia, enseñándonos cosas nuevas cada día con su inocencia y curiosidad.",
     "ROLE_TEXT_PART_TWO": "Es fundamental establecer límites para proporcionarles seguridad física y emocional. Mediante\nestos límites, les ayudamos a comprender las normas sociales y desarrollar habilidades para la\nvida.",
     "ROLE_TEXT_PART_THREE": "Una parte importante de nuestro trabajo es preparar propuestas y dinámicas adaptadas a cada\nnivel evolutivo de los niños. Esto se hace mediante una observación constante y cuidadosa de los\nniños en su entorno natural. Para garantizar una comunicación efectiva con las familias, también\nproporcionamos informes escritos sobre el desarrollo global de los niños en el espacio.",
-    "ROLE_TEXT_PART_FOUR": "Como acompañantes de una escuela de educación infantil en la naturaleza, nuestro objetivo es\nproporcionar un entorno seguro, estimulante y enriquecedor donde los niños puedan crecer,\nexplorar y aprender con plenitud. Por tanto, también tenemos conocimientos sobre el entorno\nnatural que nos rodea."
+    "ROLE_TEXT_PART_FOUR": "Como acompañantes de una escuela de educación infantil en la naturaleza, nuestro objetivo es\nproporcionar un entorno seguro, estimulante y enriquecedor donde los niños puedan crecer,\nexplorar y aprender con plenitud. Por tanto, también tenemos conocimientos sobre el entorno\nnatural que nos rodea.",
+    "TIMELINE_ONE": "Entrada relajada. Las familias llegan y pueden pasar un rato en el refugio con su\nhijo o hija. Después recogemos los materiales utilizados y nos preparamos para el círculo.",
+    "TIMELINE_TWO": "Buenos días y dinámica dirigida.",
+    "TIMELINE_THREE": "Ruta hasta el bosque o la granja.",
+    "TIMELINE_FOUR": "Desayuno y juego libre. Cantamos una canción antes de empezar a comer, buen\nprovecho! Luego podemos jugar un rato en el bosque o en algún espacio de la granja.",
+    "TIMELINE_FIVE": "Volvemos al refugio.",
+    "TIMELINE_SIX": "“La hora del cuento” y nos despedimos de los niños que se marchan a comer a casa.",
+    "TIMELINE_SEVEN": "Comida y siesta o juego libre.",
+    "TIMELINE_EIGHT": "Recogida relajada."
   },
   "OUR_SPACE": {
     "MAIN_TITLE": "Instalaciones",

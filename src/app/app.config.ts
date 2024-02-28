@@ -28,8 +28,8 @@ const scrollConfig: InMemoryScrollingOptions = {
 
 export function appInitializerFactory(translate: TranslateService) {
   return () => {
-    translate.setDefaultLang('es');
-    return translate.use('es').toPromise();
+    translate.setDefaultLang('ca');
+    return translate.use('ca').toPromise();
   };
 }
 
@@ -46,7 +46,7 @@ export const appConfig: ApplicationConfig = {
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage())
   ]), provideAnimations(), provideHttpClient(), TranslateModule.forRoot({
-    defaultLanguage: 'es',
+    defaultLanguage: 'ca',
     loader: {
       provide: TranslateLoader,
       useFactory: HttpLoaderFactory,

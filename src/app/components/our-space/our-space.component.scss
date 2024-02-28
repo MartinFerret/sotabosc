@@ -184,14 +184,18 @@ h2::before {
 }
 
 @media only screen and (max-width: 525px) {
+  h2 {
+  font-size: var(--sbc-h2-mobile);
+  }
+
   h1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: var(--sbc-h1-mobile);
     margin-top: 7rem;
   }
 
   p {
-    font-size: .9rem;
+    font-size: var(--sbc-p-mobile);
   }
 
   .ourspace {

@@ -115,7 +115,13 @@
 }
 
 @media only screen and (max-width: 525px) {
+  h2 {
+    font-size: var(--sbc-h2-mobile);
+  }
 
+  p {
+    font-size: var(--sbc-p-mobile);
+  }
   section.header-section {
     width: 100%;
     height: 1300px;

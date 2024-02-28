@@ -8,15 +8,16 @@
   --sbc-green-ternary: #5cbca4;
   --sbc-brown: #7f6362;
   --sbc-brown-secondary: #c2c5a5;
+  --sbc-h1-mobile: 1.5rem;
+  --sbc-h2-mobile: 1.2rem;
+  --sbc-p-mobile: .9rem;
 }
 
 html,
 body {
-  height: 100%;
   background-color: var(--sbc-white);
   font-family: 'Inter var', 'sans-serif';
   margin: 0;
-  width: 100%;
   padding: 0;
   box-sizing: border-box;
   font-size: 1rem;
