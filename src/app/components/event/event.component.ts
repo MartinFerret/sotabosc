@@ -8,6 +8,7 @@ import {BadgeModule} from "primeng/badge";
 import {DividerModule} from "primeng/divider";
 import {Observable} from "rxjs";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-event',
@@ -19,7 +20,8 @@ import {AngularFireStorage} from "@angular/fire/compat/storage";
     CurrencyPipe,
     ButtonModule,
     BadgeModule,
-    DividerModule
+    DividerModule,
+    TranslateModule
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './event.component.html',

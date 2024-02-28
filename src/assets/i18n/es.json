@@ -116,5 +116,8 @@
     "REPLY_THREE": "Sí, hay servicio de acogida a las 8h por la mañana y hasta las 16h por la tarde (podemos hablar y\nadaptarnos en casos con otras necesidades).",
     "QUESTION_FOUR": "¿Qué beneficios tiene una escuela en la naturaleza?",
     "REPLY_FOUR": "El entorno exterior es un recurso rico y dinámico que ofrece una amplia gama de experiencias\neducativas y naturales que enriquecen el crecimiento y el desarrollo de los niños de forma\nintegral."
+  },
+  "EVENTS": {
+    "REGISTER": "Inscribirse"
   }
 }

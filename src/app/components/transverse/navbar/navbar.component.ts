@@ -96,7 +96,8 @@ export class NavbarComponent implements OnInit {
             label: this.translateService.instant('GLOBAL.CATALAN'),
             command: () => {
               this.translateService.use('ca')
-            },          },
+            },
+          },
         ]
       }
     ]

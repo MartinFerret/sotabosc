@@ -30,7 +30,7 @@
     "OUR_PEDAGOGY": "La nostra pedagogia",
     "DAY_IN_SOTABOSC": "Un dia a Sotabosc",
     "LANG": "Idioma",
-    "SPANISH": "Espanyol",
+    "SPANISH": "Castellano",
     "CATALAN" : "Catalá"
   },
   "HOW_IT_WORKS": {
@@ -117,5 +117,8 @@
     "REPLY_THREE": "Sí, hi ha servei d’acollida a les 8h al matí i fins les 16h a la tarda (podem parlar i adaptar-nos de\n        casos amb altres necessitats).",
     "QUESTION_FOUR": "Quins beneficis té una escola a la natura?",
     "REPLY_FOUR": "L'entorn exterior és un recurs ric i dinàmic que ofereix una àmplia gamma d&#39;experiències educatives i\nnaturals que enriquiren el creixement i el desenvolupament dels nens de manera integral."
+  },
+  "EVENTS": {
+    "REGISTER": "Registrar-se"
   }
 }
