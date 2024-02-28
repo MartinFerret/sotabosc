@@ -8,7 +8,6 @@ import {EventService} from "../../../services/event.service";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
 import {EventBarComponent} from "../event-bar/event-bar.component";
 import {TranslateService} from "@ngx-translate/core";
-import {Constants} from "../../constants";
 
 @Component({
   selector: 'app-navbar',
@@ -82,6 +81,23 @@ export class NavbarComponent implements OnInit {
         routerLink: ['/contacte'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-envelope'
+      },
+      {
+        label: "Idioma",
+        icon: 'pi pi-language',
+        items: [
+          {
+            label: "Espanol",
+            command: () => {
+              this.translateService.use('es')
+            },
+          },
+          {
+            label: "Catala",
+            command: () => {
+              this.translateService.use('ca')
+            },          },
+        ]
       }
     ]
   }

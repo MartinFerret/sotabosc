@@ -28,7 +28,10 @@
     "CREATE": "Crear",
     "EVENTS": "Noticias",
     "OUR_PEDAGOGY": "Nuestra pedagogia",
-    "DAY_IN_SOTABOSC": "Un dia en Sotabosc"
+    "DAY_IN_SOTABOSC": "Un dia en Sotabosc",
+    "LANG": "Idioma",
+    "SPANISH": "Español",
+    "CATALAN" : "Catalán"
   },
   "HOW_IT_WORKS": {
     "DAY_IN_SOTABOSC": "Un Dia a Sotabosc",
