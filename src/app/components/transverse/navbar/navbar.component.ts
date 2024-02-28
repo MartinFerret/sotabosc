@@ -87,13 +87,13 @@ export class NavbarComponent implements OnInit {
         icon: 'pi pi-language',
         items: [
           {
-            label: "Espanol",
+            label: this.translateService.instant('GLOBAL.SPANISH'),
             command: () => {
               this.translateService.use('es')
             },
           },
           {
-            label: "Catala",
+            label: this.translateService.instant('GLOBAL.CATALAN'),
             command: () => {
               this.translateService.use('ca')
             },          },
