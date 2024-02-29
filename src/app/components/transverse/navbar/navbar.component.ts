@@ -8,7 +8,6 @@ import {EventService} from "../../../services/event.service";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
 import {EventBarComponent} from "../event-bar/event-bar.component";
 import {TranslateService} from "@ngx-translate/core";
-import {ActivatedRoute} from "@angular/router";
 import {Title} from "@angular/platform-browser";
 
 @Component({
@@ -32,7 +31,6 @@ export class NavbarComponent implements OnInit {
   items: MenuItem[] = [] as MenuItem[];
   config = signal(false);
   translateService = inject(TranslateService);
-  titleService = inject(Title);
 
   ngOnInit() {
     this.loadConfig();
