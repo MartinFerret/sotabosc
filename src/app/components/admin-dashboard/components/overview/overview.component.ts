@@ -2,7 +2,6 @@ import {
   Component,
   EventEmitter,
   inject, input,
-  Input,
   Output, signal
 } from '@angular/core';
 import {TableDataColumnModel} from "../../../../models/column.model";
@@ -14,7 +13,6 @@ import {ConfirmationService} from "primeng/api";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
 import {SidebarComponent} from "./components/sidebar/sidebar.component";
 import {EventService} from "../../../../services/event.service";
-import {toSignal} from "@angular/core/rxjs-interop";
 
 @Component({
   selector: 'app-overview',

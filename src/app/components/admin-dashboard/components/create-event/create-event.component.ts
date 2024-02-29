@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, inject, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {InputTextModule} from "primeng/inputtext";
 import {InputNumberModule} from "primeng/inputnumber";
@@ -13,6 +13,7 @@ import {FileUploadEvent, FileUploadModule} from "primeng/fileupload";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
 import {TranslateModule} from "@ngx-translate/core";
 import {Router} from "@angular/router";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-create-event',
@@ -33,12 +34,12 @@ import {Router} from "@angular/router";
   templateUrl: './create-event.component.html',
   styleUrl: './create-event.component.scss'
 })
-export class CreateEventComponent implements OnInit {
+export class CreateEventComponent implements OnInit, OnDestroy {
   toastService = inject(MessageService);
   fireStorage = inject(AngularFireStorage);
   eventService = inject(EventService);
   router = inject(Router);
-
+  subscription: Subscription = new Subscription();
   eventNumber: number = 1;
 
   eventForm = new FormGroup({
@@ -90,9 +91,9 @@ export class CreateEventComponent implements OnInit {
   }
 
   getNumberEvents() {
-    this.eventService.getEvents().subscribe((m) => {
+    this.subscription.add(this.eventService.getEvents().subscribe((m) => {
       this.eventNumber = m.length + 1;
-    })
+    }));
   }
 
   buildFormValues() {
@@ -109,5 +110,9 @@ export class CreateEventComponent implements OnInit {
       imageUrl: '',
       googleFormLink: formValues.googleFormLink ?? '',
     };
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }

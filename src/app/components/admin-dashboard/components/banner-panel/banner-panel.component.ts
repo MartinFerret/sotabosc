@@ -1,9 +1,7 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, inject, OnInit, Output, signal} from '@angular/core';
-import {FormControl, FormGroup, FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
 import {EventService} from "../../../../services/event.service";
 import {InputSwitchModule} from "primeng/inputswitch";
-import {EventBar} from "../../../../models/event.model";
-import {signInWithPopup} from "@angular/fire/auth";
 import {ButtonModule} from "primeng/button";
 import {Router} from "@angular/router";
 
