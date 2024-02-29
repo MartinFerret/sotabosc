@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f7de831-446d-4f70-bd31-29994ade1b1a/deploy-status)](https://app.netlify.com/sites/test-mfsbc/deploys)
+
 # SotaboscAngularFirebase
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
