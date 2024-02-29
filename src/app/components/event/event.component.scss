@@ -13,7 +13,6 @@
     flex-wrap: wrap !important;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
 
     & div.container {
       display: flex;
@@ -81,23 +80,15 @@
   @media only screen and (max-width: 1100px) {
     h1 {
       text-align: center;
-      font-size: var(--sbc-h1-mobile);
+      font-size: 2rem;
       padding-top: 3.5rem;
-    }
-
-    h2 {
-      font-size: var(--sbc-h2-mobile);
-    }
-
-    p {
-      font-size: var(--sbc-p-mobile);
     }
 
     section {
       width: 100%;
       height: auto;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap !important;
       align-items: center;
       justify-content: center;
 
@@ -105,8 +96,13 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 100%;
+        width: 30%;
         height: auto;
+
+        & .informations {
+          width: 100%;
+          height: 30%
+        }
 
         & .p-panel-content {
           border: none;
@@ -114,12 +110,11 @@
 
           & .image {
             position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
+            height: 70%;
             & img {
               width: 100%;
-              height: 400px;
+              height: 70%;
             }
           }
 
@@ -129,9 +124,9 @@
           }
 
           & p.description {
-            width: 100%;
+            width: 80%;
             text-align: justify;
-            margin-top: 1rem;
+            //margin-top: 1rem;
           }
 
           & p.date {
@@ -140,6 +135,7 @@
 
           & button {
             margin-top: 1.3rem;
+            height: 35px;
             width: 80%;
           }
         }
@@ -152,11 +148,12 @@
       font-size: 1.5rem;
     }
 
-    .informations {
-      width: 100%;
+    p {
+      font-size: .9rem;
     }
-    .action {
-      text-align: center;
+
+    & .p-divider {
+      width: 80%;
     }
     }
 
