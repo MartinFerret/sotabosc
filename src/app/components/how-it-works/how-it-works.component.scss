@@ -36,20 +36,20 @@
       align-items: center;
 
       & img {
-        width: 50%;
-        height: 70%;
+
       }
     }
   }
 
   section.footer-section {
     width: 100%;
-    height: 900px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: justify;
+    margin-top: 250px;
 
     & .description {
       width: 50%;
@@ -84,8 +84,7 @@
       align-items: center;
 
       & img {
-        width: 50%;
-        height: 70%;
+
       }
     }
   }
