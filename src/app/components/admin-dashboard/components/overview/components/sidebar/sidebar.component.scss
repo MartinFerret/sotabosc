@@ -1,0 +1,11 @@
+:host ::ng-deep {
+  .p-sidebar {
+    width: 30rem;
+  }
+
+  @media only screen and (max-width: 525px) {
+    .p-sidebar {
+      width: 27rem;
+    }
+  }
+  }

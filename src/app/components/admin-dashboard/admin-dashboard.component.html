@@ -1,16 +1,16 @@
 <section>
   <p-tabView>
-    <p-tabPanel header="Creation event">
+    <p-tabPanel header="Afegir">
       @defer () {
         <app-create-event></app-create-event>
       }
     </p-tabPanel>
-    <p-tabPanel header="Activation banner event" [disabled]="true">
+<!--    <p-tabPanel header="Desactivado" [disabled]="true">
       @defer () {
         <app-banner-panel></app-banner-panel>
       }
-    </p-tabPanel>
-    <p-tabPanel header="Overview">
+    </p-tabPanel>-->
+    <p-tabPanel header="Panorama">
       @defer () {
         <app-overview
           [events]="events$"
