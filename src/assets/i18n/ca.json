@@ -120,6 +120,7 @@
     "REPLY_FOUR": "L'entorn exterior és un recurs ric i dinàmic que ofereix una àmplia gamma d&#39;experiències educatives i\nnaturals que enriquiren el creixement i el desenvolupament dels nens de manera integral."
   },
   "EVENTS": {
-    "REGISTER": "Registrar-se"
+    "REGISTER": "Registrar-se",
+    "PASSED": "Pasado"
   }
 }

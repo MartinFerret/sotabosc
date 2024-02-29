@@ -60,6 +60,10 @@ export class EventComponent implements OnInit, OnDestroy {
     return ref.getDownloadURL();
   }
 
+  displayLabelFromState(eventState: boolean) {
+    return eventState ? 'EVENTS.REGISTER' : 'EVENTS.PASSED';
+  }
+
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }

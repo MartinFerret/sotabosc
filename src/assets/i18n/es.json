@@ -119,6 +119,7 @@
     "REPLY_FOUR": "El entorno exterior es un recurso rico y dinámico que ofrece una amplia gama de experiencias\neducativas y naturales que enriquecen el crecimiento y el desarrollo de los niños de forma\nintegral."
   },
   "EVENTS": {
-    "REGISTER": "Inscribirse"
+    "REGISTER": "Inscribirse",
+    "PASSED": "Pasat"
   }
 }
