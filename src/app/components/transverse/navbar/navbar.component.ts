@@ -36,6 +36,13 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.loadConfig();
+    this.constructMenu();
+    this.translateService.onLangChange.subscribe(() => {
+      this.constructMenu();
+    })
+  }
+
+  constructMenu() {
     this.items = [
       {
         label: this.translateService.instant('GLOBAL.HOME'),
