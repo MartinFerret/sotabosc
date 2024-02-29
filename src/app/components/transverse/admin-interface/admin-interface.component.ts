@@ -3,12 +3,14 @@ import {ButtonModule} from "primeng/button";
 import {environment} from "../../../../environments/environment";
 import {AuthService} from "../../../services/auth.service";
 import {Router} from "@angular/router";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-admin-interface',
   standalone: true,
   imports: [
-    ButtonModule
+    ButtonModule,
+    TranslateModule
   ],
   templateUrl: './admin-interface.component.html',
   styleUrl: './admin-interface.component.scss'
