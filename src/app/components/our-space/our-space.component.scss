@@ -267,7 +267,7 @@ h2::before {
 
     &__indoor {
       width: 100%;
-      height: 800px;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -281,8 +281,8 @@ h2::before {
 
         & img {
           width: 90%;
-          height: 100%;
-          margin: 0 auto;
+          height: 400px;
+          margin: 10px auto;
         }
       }
 
@@ -302,7 +302,7 @@ h2::before {
 
     &__outdoor {
       width: 100%;
-      height: 100%;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -321,7 +321,8 @@ h2::before {
 
       &__image > img {
         width: 90%;
-        height: 450px;
+        height: 550px;
+        margin: 10px auto;
       }
 
       &__explanations {

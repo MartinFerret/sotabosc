@@ -9,6 +9,9 @@
     left: 0;
     right: 0;
     font-size: .7rem;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
 
     & .p-menubar-start {
       margin-right: 8rem !important;
@@ -16,7 +19,7 @@
 
     & .p-element {
       //margin: 0 auto !important;
-
+      margin: 0 auto;
       & .p-menuitem-link {
         //margin-right: 5rem !important;
       }
@@ -52,7 +55,7 @@
       }
 
       & .p-element {
-        margin: 0;
+        margin: 0 auto;
 
         & .p-menuitem-link {
           margin-right: 2px;
