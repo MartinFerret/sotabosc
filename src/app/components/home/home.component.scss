@@ -350,4 +350,92 @@
     }
   }
 
+  @media only screen and (max-width: 525px) {
+    // Hero part.
+    .p-panel-content {
+      border: none;
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 2rem;
+
+      & div.image {
+        width: 100%;
+        height: 400px;
+
+        & img {
+          width: 100%;
+          height: 400px;
+        }
+      }
+
+      & div.hero {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        & h2 {
+          font-size: 1.5rem;
+        }
+
+        & p {
+          font-size: var(--sbc-p-mobile);
+          line-height: normal;
+        }
+
+        & .hero__buttons {
+          margin: 1.7rem;
+          flex-wrap: wrap;
+
+          & button {
+            margin-left: 10px;
+            width: 7.5rem;
+            text-align: center !important;
+          }
+        }
+      }
+    }
+  }
+  .photos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__left {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        width: 90%;
+        height: 300px;
+      }
+    }
+
+    &__right {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+
+      & img {
+        width: 90%;
+        height: 100%;
+        margin-left: .5rem;
+      }
+    }
+  }
+
 }
