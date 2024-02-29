@@ -19,7 +19,7 @@
             <p-divider></p-divider>
             <p class="description">{{ event.description }}</p>
             <div class="action">
-              <a class="link-button" href="#" target="_blank"><p-button [label]="'EVENTS.REGISTER' | translate"></p-button></a>
+              <a class="link-button" href="{{ event.googleFormLink }}" target="_blank"><p-button [label]="'EVENTS.REGISTER' | translate"></p-button></a>
             </div>
           </div>
         </p-panel>
