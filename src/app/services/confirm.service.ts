@@ -10,7 +10,7 @@ export class ConfirmService {
   ) {}
 
   openConfirm(confirm: Confirmation): void {
-    confirm.header ??= 'Are you sure ?';
+    confirm.header ??= 'Estàs segur ?';
     confirm.icon ??= 'pi pi-exclamation-triangle';
     confirm.blockScroll ??= false;
     confirm.acceptButtonStyleClass ??= 'p-button-text p-button p-component';

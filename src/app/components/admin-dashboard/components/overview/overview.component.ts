@@ -63,7 +63,7 @@ export class OverviewComponent {
 
   confirmDeletion(title: string) {
     this._confirmService.openConfirm({
-      message: `Are you sure you want to delete : ${title} ?`,
+      message: `Esteu segur que vols suprimir : ${title} ?`,
       accept: () => this.eventDeletion(title),
     })
   }

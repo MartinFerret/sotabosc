@@ -7,4 +7,13 @@
       margin: 0 1rem !important;
     }
   }
+
+  @media only screen and (max-width: 525px) {
+    .p-confirm-dialog-reject {
+      background-color: white !important;
+      border: 1px solid var(--sbc-green);
+      outline: none;
+      color: var(--sbc-green);
+    }
+  }
 }
