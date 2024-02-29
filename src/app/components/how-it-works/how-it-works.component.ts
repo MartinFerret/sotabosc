@@ -5,6 +5,7 @@ import {PanelModule} from "primeng/panel";
 import {DividerModule} from "primeng/divider";
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {TimelineItems} from "../../models/event.model";
+import {TitleService} from "../../services/title.service";
 
 @Component({
   selector: 'app-how-it-works',
@@ -21,40 +22,44 @@ import {TimelineItems} from "../../models/event.model";
 })
 export class HowItWorksComponent implements OnInit {
   events = signal([] as TimelineItems[]);
-  translateService = inject(TranslateService);
+  private readonly _translateService = inject(TranslateService);
+  private readonly _titleService = inject(TitleService);
+  constructor() {
+    this._titleService.setTitle('GLOBAL.HOW_IT_WORKS');
+  }
 
   ngOnInit() {
     this.events.set([
       {
-        status: this.translateService.instant('HOW_IT_WORKS.TIMELINE_ONE'),
+        status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_ONE'),
         date: '8h30 - 9h15',
       },
       {
-        status: this.translateService.instant('HOW_IT_WORKS.TIMELINE_TWO'),
+        status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_TWO'),
         date: '9h30 - 10h15',
       },
       {
-        status: this.translateService.instant('HOW_IT_WORKS.TIMELINE_THREE'),
+        status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_THREE'),
         date: '10h15 - 10h30',
       },
       {
-        status: this.translateService.instant('HOW_IT_WORKS.TIMELINE_FOUR'),
+        status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_FOUR'),
         date: '10h30 - 12h',
       },
       {
-        status: this.translateService.instant('HOW_IT_WORKS.TIMELINE_FIVE'),
+        status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_FIVE'),
         date: '12h',
       },
       {
-        status: this.translateService.instant('HOW_IT_WORKS.TIMELINE_SIX'),
+        status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_SIX'),
         date: '12h15',
       },
       {
-        status: this.translateService.instant('HOW_IT_WORKS.TIMELINE_SEVEN'),
+        status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_SEVEN'),
         date: '12h30',
       },
       {
-        status: this.translateService.instant('HOW_IT_WORKS.TIMELINE_EIGHT'),
+        status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_EIGHT'),
         date: '15h - 15h30',
       },
     ])

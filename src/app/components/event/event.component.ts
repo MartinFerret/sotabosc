@@ -9,6 +9,7 @@ import {DividerModule} from "primeng/divider";
 import {Observable} from "rxjs";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
 import {TranslateModule} from "@ngx-translate/core";
+import {TitleService} from "../../services/title.service";
 
 @Component({
   selector: 'app-event',
@@ -31,8 +32,12 @@ export class EventComponent implements OnInit {
 
   private readonly _activatedRoute = inject(ActivatedRoute);
   private readonly _fireStorage = inject(AngularFireStorage);
+  private readonly _titleService = inject(TitleService);
 
   events$: Event[] = [] as Event[];
+  constructor() {
+    this._titleService.setTitle('GLOBAL.EVENTS');
+  }
 
   ngOnInit() {
     this.loadEvents();

@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {ButtonModule} from "primeng/button";
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 import {faLocationDot, faEnvelope, faCamera} from '@fortawesome/free-solid-svg-icons';
 import {ReactiveFormsModule} from "@angular/forms";
 import {TranslateModule} from "@ngx-translate/core";
+import {TitleService} from "../../services/title.service";
+import {Event} from "../../models/event.model";
 
 @Component({
   selector: 'app-contact',
@@ -21,4 +23,10 @@ export class ContactComponent {
   faLocationDot = faLocationDot;
   faEnvelope = faEnvelope;
   faCamera = faCamera;
+
+  private readonly _titleService = inject(TitleService);
+
+  constructor() {
+    this._titleService.setTitle('GLOBAL.CONTACT');
+  }
 }

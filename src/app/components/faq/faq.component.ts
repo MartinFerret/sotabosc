@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {DividerModule} from "primeng/divider";
 import {AccordionModule} from "primeng/accordion";
 import {TranslateModule} from "@ngx-translate/core";
+import {TitleService} from "../../services/title.service";
 
 @Component({
   selector: 'app-faq',
@@ -15,5 +16,8 @@ import {TranslateModule} from "@ngx-translate/core";
   styleUrl: './faq.component.scss'
 })
 export class FaqComponent {
-
+  private readonly _titleService = inject(TitleService);
+  constructor() {
+    this._titleService.setTitle('GLOBAL.FAQ');
+  }
 }
