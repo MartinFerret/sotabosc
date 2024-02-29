@@ -19,7 +19,8 @@ export class AdminInterfaceComponent {
   readonly #router = inject(Router);
   signInWithGoogle () {
     this.#authService.googleLogin().then((result) => {
-      if (result && result.user.email === environment.email) {
+      if (result && result.user.email === environment.email ||
+          result.user.email === environment.email2) {
         this.#router.navigate(['/admin']);
       } else {
         this.#router.navigate(['']);

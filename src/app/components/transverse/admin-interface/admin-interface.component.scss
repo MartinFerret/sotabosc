@@ -1,12 +1,20 @@
-.sign-in {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+:host ::ng-deep {
+  .sign-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  & img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 1rem;
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .p-button {
+    background-color: var(--sbc-white);
+    border: 1px solid var(--sbc-green);
+    color: var(--sbc-green);
   }
 }
