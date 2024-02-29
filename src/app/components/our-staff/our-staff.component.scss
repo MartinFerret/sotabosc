@@ -1,4 +1,9 @@
 :host ::ng-deep {
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 7rem;
+  }
   section.footer-section {
     width: 100%;
     height: 600px;

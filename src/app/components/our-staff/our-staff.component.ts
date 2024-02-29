@@ -3,6 +3,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {PanelModule} from "primeng/panel";
 import {TranslateModule} from "@ngx-translate/core";
 import {TitleService} from "../../services/title.service";
+import {DividerModule} from "primeng/divider";
 
 @Component({
   selector: 'app-our-staff',
@@ -10,7 +11,8 @@ import {TitleService} from "../../services/title.service";
   imports: [
     NgOptimizedImage,
     PanelModule,
-    TranslateModule
+    TranslateModule,
+    DividerModule
   ],
   templateUrl: './our-staff.component.html',
   styleUrl: './our-staff.component.scss'
