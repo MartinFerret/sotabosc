@@ -224,6 +224,10 @@ h2::before {
       & .reversed {
         order: 0;
         margin-top: -530px;
+
+        & img {
+          margin-bottom: 10%;
+        }
       }
 
       &__description {

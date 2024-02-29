@@ -1,0 +1,130 @@
+:host ::ng-deep {
+  section.footer-section {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-top: 250px;
+
+    & .description {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & div.scriptures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8rem;
+        & p {
+          width: 70%;
+          line-height: 2rem;
+        }
+      }
+
+      & .p-panel-content {
+        border: none;
+      }
+    }
+
+    & .image {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    padding: 0 0 1rem 0;
+    position: relative;
+    z-index: 8;
+    color: var(--sbc-white);
+  }
+
+  h2::before {
+    content: "";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: var(--sbc-green);
+    transform: rotate(2deg);
+    border-radius: 20% 25% 20% 24%;
+    padding: 10px 3px 3px 10px;
+    z-index: -1;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    h2 {
+      font-size: var(--sbc-h2-mobile);
+    }
+
+    p {
+      font-size: var(--sbc-p-mobile);
+    }
+
+    section.footer-section {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+
+      & .description {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        & .p-panel-content {
+          border: none;
+        }
+      }
+
+      & .image {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+          width: 90%;
+          height: 100%;
+        }
+      }
+    }
+    .scriptures {
+      justify-content: center;
+      width: 100%;
+
+      & h2 {
+        text-align: center;
+      }
+      & p {
+        line-height: 2rem;
+      }
+    }
+  }
+}

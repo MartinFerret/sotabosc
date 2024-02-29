@@ -54,4 +54,9 @@ export const routes: Routes = [
     loadComponent: () => import('./components/faq/faq.component').then(c => c.FaqComponent),
     title: 'Preguntes Freqüents'
   },
+  {
+    path: 'les-acompanyants',
+    loadComponent: () => import('./components/our-staff/our-staff.component').then((c) => c.OurStaffComponent),
+    title: 'Les acompanyants'
+  }
 ];
