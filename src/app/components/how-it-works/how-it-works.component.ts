@@ -25,7 +25,7 @@ export class HowItWorksComponent implements OnInit {
   private readonly _translateService = inject(TranslateService);
   private readonly _titleService = inject(TitleService);
   constructor() {
-    this._titleService.setTitle('GLOBAL.HOW_IT_WORKS');
+    this._titleService.setTitle('GLOBAL.DAY_IN_SOTABOSC');
   }
 
   ngOnInit() {
