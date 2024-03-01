@@ -1,4 +1,4 @@
-import {APP_INITIALIZER, ApplicationConfig, importProvidersFrom} from '@angular/core';
+import {APP_INITIALIZER, ApplicationConfig, importProvidersFrom, isDevMode} from '@angular/core';
 import {
   InMemoryScrollingOptions,
   provideRouter,
@@ -16,6 +16,7 @@ import {getAuth, provideAuth} from "@angular/fire/auth";
 import {getFirestore, provideFirestore} from "@angular/fire/firestore";
 import {getStorage, provideStorage} from "@angular/fire/storage";
 import {AngularFireModule} from "@angular/fire/compat";
+import { provideServiceWorker } from '@angular/service-worker';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -34,23 +35,29 @@ export function appInitializerFactory(translate: TranslateService) {
 }
 
 export const appConfig: ApplicationConfig = {
-  providers: [  {
-    provide: APP_INITIALIZER,
-    useFactory: appInitializerFactory,
-    deps: [TranslateService],
-    multi: true
-  },provideRouter(routes, withComponentInputBinding(), withInMemoryScrolling(scrollConfig)), importProvidersFrom([
-    AngularFireModule.initializeApp(environment.firebase),
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore()),
-    provideStorage(() => getStorage())
-  ]), provideAnimations(), provideHttpClient(), TranslateModule.forRoot({
-    defaultLanguage: 'ca',
-    loader: {
-      provide: TranslateLoader,
-      useFactory: HttpLoaderFactory,
-      deps: [HttpClient],
-    },
-  }).providers!],
+  providers: [{
+        provide: APP_INITIALIZER,
+        useFactory: appInitializerFactory,
+        deps: [TranslateService],
+        multi: true
+    }, provideRouter(routes, withComponentInputBinding(), withInMemoryScrolling(scrollConfig)), importProvidersFrom([
+        AngularFireModule.initializeApp(environment.firebase),
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideAuth(() => getAuth()),
+        provideFirestore(() => getFirestore()),
+        provideStorage(() => getStorage())
+    ]), provideAnimations(), provideHttpClient(), TranslateModule.forRoot({
+        defaultLanguage: 'ca',
+        loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient],
+        },
+    }).providers!, provideServiceWorker('ngsw-worker.js', {
+        enabled: !isDevMode(),
+        registrationStrategy: 'registerWhenStable:30000'
+    }), provideServiceWorker('ngsw-worker.js', {
+        enabled: !isDevMode(),
+        registrationStrategy: 'registerWhenStable:30000'
+    })],
 };
