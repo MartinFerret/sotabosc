@@ -56,8 +56,8 @@ h2::before {
       align-items: center;
       margin-top: 1rem;
       & img {
-        width: 80%;
-        height: 550px;
+        width: 90%;
+        height: 480px;
       }
     }
 
@@ -100,8 +100,8 @@ h2::before {
       height: 50%;
 
       & img {
-        width: 80%;
-        height: 550px;
+        width: 90%;
+        height: 480px;
       }
     }
 
@@ -140,6 +140,10 @@ h2::before {
       }
     }
   }
+
+  &__pedagogy {
+   margin-bottom: 10rem;
+  }
 }
 
 .tree {
@@ -173,8 +177,8 @@ h2::before {
         margin-top: 3rem;
 
         & img {
-          width: 90%;
-          height: 100%;
+          width: 60%;
+          height: 400px;
         }
       }
 
@@ -212,8 +216,8 @@ h2::before {
         height: 40%;
 
         & img {
-          width: 90%;
-          height: 60%;
+          width: 60%;
+          height: 400px;
         }
       }
 
@@ -223,7 +227,7 @@ h2::before {
 
       & .reversed {
         order: 0;
-        margin-top: -530px;
+        margin-top: -400px;
 
         & img {
           margin-bottom: 10%;
@@ -270,4 +274,129 @@ h2::before {
     padding: 0;
   }
 }
+
+  @media only screen and (max-width: 525px) {
+    .we {
+      width: 100%;
+      height: 1300px;
+      margin-top: 1.3rem;
+
+      &__hero {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__image,
+        &__description {
+          width: 100%;
+        }
+
+        &__image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 25%;
+          margin-top: 3rem;
+
+          & img {
+            width: 90%;
+            height: 100%;
+          }
+        }
+
+        &__description {
+          display: flex;
+          height: 50%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: justify;
+          margin-top: 9rem;
+        }
+      }
+
+      &__pedagogy,
+      &__pedagogy__two {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__image,
+        &__description {
+          width: 100%;
+          height: 50%;
+        }
+
+        &__image {
+          display: flex;
+          order: -1;
+          justify-content: center;
+          align-items: center;
+          height: 40%;
+
+          & img {
+            width: 90%;
+            height: 60%;
+          }
+        }
+
+        & .first {
+          margin-top: -200px;
+        }
+
+        & .reversed {
+          order: 0;
+          margin-top: -400px;
+
+          & img {
+            margin-bottom: 10%;
+          }
+        }
+
+        &__description {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          &__blocks {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            &__block {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              & .text {
+                margin-top: 3rem;
+                width: 420px;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+                & p {
+                  margin: 0;
+                  width: 80%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .tree {
+      padding: 0;
+    }
+  }
 }

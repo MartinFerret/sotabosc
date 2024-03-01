@@ -54,16 +54,16 @@ export class NavbarComponent implements OnInit {
         routerLink: ['#'],
         items: [
           {
+            label: this.translateService.instant('OUR_STAFF.STAFF'),
+            routerLink: ['/les-acompanyants'],
+            routerLinkActiveOptions: true,
+            icon: 'pi pi-user'
+          },
+          {
             label: this.translateService.instant('GLOBAL.OUR_PEDAGOGY'),
             routerLink: ['/la-nostra-pedagogia'],
             routerLinkActiveOptions: true,
             icon: 'pi pi-star'
-          },
-          {
-            label: this.translateService.instant('GLOBAL.DAY_IN_SOTABOSC'),
-            routerLink: ['/un-dia-a-sotabosc'],
-            routerLinkActiveOptions: true,
-            icon: 'pi pi-sun'
           },
           {
             label: this.translateService.instant('GLOBAL.OUR_SPACE'),
@@ -72,10 +72,10 @@ export class NavbarComponent implements OnInit {
             icon: 'pi pi-heart'
           },
           {
-            label: this.translateService.instant('OUR_STAFF.STAFF'),
-            routerLink: ['/les-acompanyants'],
+            label: this.translateService.instant('GLOBAL.DAY_IN_SOTABOSC'),
+            routerLink: ['/un-dia-a-sotabosc'],
             routerLinkActiveOptions: true,
-            icon: 'pi pi-user'
+            icon: 'pi pi-sun'
           },
         ]
       },
@@ -99,7 +99,7 @@ export class NavbarComponent implements OnInit {
       },
       {
         label: "Idioma",
-        icon: 'pi pi-language',
+        icon: 'pi pi-globe',
         routerLink: ['#'],
         items: [
           {

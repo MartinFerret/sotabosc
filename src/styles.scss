@@ -41,7 +41,11 @@ body {
 }
 
 .p-timeline small {
-  font-size: .9em;
+  font-size: .8em;
+}
+
+section > div.timeline > p-timeline > div > div:nth-child(1) > div.p-timeline-event-separator {
+  height: 90px !important;
 }
 
 .p-menuitem-link {
