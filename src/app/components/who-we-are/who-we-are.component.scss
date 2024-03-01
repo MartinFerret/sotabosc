@@ -177,7 +177,7 @@ h2::before {
         margin-top: 3rem;
 
         & img {
-          width: 60%;
+          width: 80%;
           height: 400px;
         }
       }
@@ -227,7 +227,8 @@ h2::before {
 
       & .reversed {
         order: 0;
-        margin-top: -400px;
+        margin-top: -500px;
+        margin-bottom: 5rem;
 
         & img {
           margin-bottom: 10%;
@@ -352,7 +353,7 @@ h2::before {
 
         & .reversed {
           order: 0;
-          margin-top: -400px;
+          margin-top: -700px;
 
           & img {
             margin-bottom: 10%;
