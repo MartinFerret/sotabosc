@@ -65,7 +65,7 @@ p {
       }
 
       & .marker-container {
-        margin-right: 4rem;
+        margin-right: 8rem;
       }
     }
   }
@@ -130,7 +130,7 @@ p {
       order: 3;
       &__block {
         display: flex;
-        justify-content: center;
+        //justify-content: center;
         align-items: center;
         flex-direction: row;
         margin: 20px 0 0 0;
