@@ -17,7 +17,7 @@ import {TitleService} from "../../services/title.service";
     NgOptimizedImage,
     TranslateModule,
     RouterLink,
-    FaIconComponent
+    FaIconComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

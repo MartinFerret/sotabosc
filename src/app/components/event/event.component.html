@@ -12,7 +12,7 @@
               <p>{{ event.date }} a las {{ event.hour }}</p>
             }
             @if(event.price) {
-              {{ event.price | currency: 'EUR' }}
+              <p>{{ event.price | currency: 'EUR' }}</p>
             } @else {
               <p>Gratis.</p>
             }
@@ -26,3 +26,4 @@
       </div>
     }
 </section>
+

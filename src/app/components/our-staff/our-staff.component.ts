@@ -8,12 +8,12 @@ import {DividerModule} from "primeng/divider";
 @Component({
   selector: 'app-our-staff',
   standalone: true,
-  imports: [
-    NgOptimizedImage,
-    PanelModule,
-    TranslateModule,
-    DividerModule
-  ],
+    imports: [
+        NgOptimizedImage,
+        PanelModule,
+        TranslateModule,
+        DividerModule,
+    ],
   templateUrl: './our-staff.component.html',
   styleUrl: './our-staff.component.scss'
 })

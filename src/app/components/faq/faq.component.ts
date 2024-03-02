@@ -7,11 +7,11 @@ import {TitleService} from "../../services/title.service";
 @Component({
   selector: 'app-faq',
   standalone: true,
-  imports: [
-    DividerModule,
-    AccordionModule,
-    TranslateModule
-  ],
+    imports: [
+        DividerModule,
+        AccordionModule,
+        TranslateModule,
+    ],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss'
 })

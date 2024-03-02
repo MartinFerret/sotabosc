@@ -17,6 +17,7 @@ import {getFirestore, provideFirestore} from "@angular/fire/firestore";
 import {getStorage, provideStorage} from "@angular/fire/storage";
 import {AngularFireModule} from "@angular/fire/compat";
 import { provideServiceWorker } from '@angular/service-worker';
+import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -46,7 +47,7 @@ export const appConfig: ApplicationConfig = {
         provideAuth(() => getAuth()),
         provideFirestore(() => getFirestore()),
         provideStorage(() => getStorage())
-    ]), provideAnimations(), provideHttpClient(), TranslateModule.forRoot({
+    ]), provideAnimations(), provideHttpClient() ,TranslateModule.forRoot({
         defaultLanguage: 'ca',
         loader: {
             provide: TranslateLoader,

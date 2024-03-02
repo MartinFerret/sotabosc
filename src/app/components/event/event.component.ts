@@ -14,16 +14,16 @@ import {TitleService} from "../../services/title.service";
 @Component({
   selector: 'app-event',
   standalone: true,
-  imports: [
-    PanelModule,
-    NgForOf,
-    AsyncPipe,
-    CurrencyPipe,
-    ButtonModule,
-    BadgeModule,
-    DividerModule,
-    TranslateModule
-  ],
+    imports: [
+        PanelModule,
+        NgForOf,
+        AsyncPipe,
+        CurrencyPipe,
+        ButtonModule,
+        BadgeModule,
+        DividerModule,
+        TranslateModule,
+    ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './event.component.html',
   styleUrl: './event.component.scss'

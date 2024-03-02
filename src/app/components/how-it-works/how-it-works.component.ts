@@ -10,13 +10,13 @@ import {TitleService} from "../../services/title.service";
 @Component({
   selector: 'app-how-it-works',
   standalone: true,
-  imports: [
-    TimelineModule,
-    NgOptimizedImage,
-    PanelModule,
-    DividerModule,
-    TranslateModule
-  ],
+    imports: [
+        TimelineModule,
+        NgOptimizedImage,
+        PanelModule,
+        DividerModule,
+        TranslateModule,
+    ],
   templateUrl: './how-it-works.component.html',
   styleUrl: './how-it-works.component.scss'
 })

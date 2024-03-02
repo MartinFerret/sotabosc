@@ -10,12 +10,12 @@ import {TitleService} from "../../services/title.service";
 @Component({
   selector: 'app-who-we-are',
   standalone: true,
-  imports: [
-    TranslateModule,
-    DividerModule,
-    FontAwesomeModule,
-    NgOptimizedImage
-  ],
+    imports: [
+        TranslateModule,
+        DividerModule,
+        FontAwesomeModule,
+        NgOptimizedImage
+    ],
   templateUrl: './who-we-are.component.html',
   styleUrl: './who-we-are.component.scss'
 })

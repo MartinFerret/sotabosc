@@ -5,7 +5,6 @@ import {faLocationDot, faEnvelope, faCamera} from '@fortawesome/free-solid-svg-i
 import {ReactiveFormsModule} from "@angular/forms";
 import {TranslateModule} from "@ngx-translate/core";
 import {TitleService} from "../../services/title.service";
-import {Event} from "../../models/event.model";
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +13,7 @@ import {Event} from "../../models/event.model";
     ButtonModule,
     FaIconComponent,
     ReactiveFormsModule,
-    TranslateModule
+    TranslateModule,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'

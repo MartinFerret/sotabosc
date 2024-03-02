@@ -8,11 +8,11 @@ import {TitleService} from "../../services/title.service";
   selector: 'app-our-space',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    TranslateModule,
-    DividerModule,
-    NgOptimizedImage
-  ],
+    imports: [
+        TranslateModule,
+        DividerModule,
+        NgOptimizedImage,
+    ],
   templateUrl: './our-space.component.html',
   styleUrl: './our-space.component.scss'
 })

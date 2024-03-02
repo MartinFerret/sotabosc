@@ -428,13 +428,13 @@ h2::before {
       &__left {
         width: 100%;
         height: 45%;
-        margin: 5px auto;
+        margin: 0 auto;
         text-align: center;
 
         & img {
           width: 90%;
-          height: 400px;
-          margin: 10px auto;
+          height: 50%;
+          margin: 0 auto;
         }
       }
 
@@ -473,7 +473,7 @@ h2::before {
 
       &__image > img {
         width: 90%;
-        height: 550px;
+        height: 500px;
         margin: 10px auto;
       }
 
@@ -508,6 +508,17 @@ h2::before {
           }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .ourspace {
+    width: 100%;
+    height: 100%;
+
+    &__indoor {
+      margin-bottom: 8rem;
     }
   }
 }
