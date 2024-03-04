@@ -364,7 +364,7 @@ h2::before {
           justify-content: center;
           align-items: center;
           text-align: justify;
-          margin-top: 9rem;
+          margin-top: 4rem;
         }
       }
 
@@ -397,7 +397,7 @@ h2::before {
         }
 
         & .first {
-          margin-top: -200px;
+          margin-top: -400px;
         }
 
         & .reversed {
@@ -450,7 +450,7 @@ h2::before {
       }
 
       &__pedagogy__two {
-        margin: 45rem 0;
+        margin: 45rem 0 0 0;
         &__description {
           width: 100%;
           display: flex;
