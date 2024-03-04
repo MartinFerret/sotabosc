@@ -228,14 +228,14 @@
       width: 100%;
       min-height: auto;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       justify-content: center;
       margin-bottom: -7rem;
       margin-top: 3rem;
 
       & .explanations__wrapper {
         width: 90%;
-        height: 900px;
+        height: 800px;
         margin: 1rem auto;
         position: relative;
         display: flex;

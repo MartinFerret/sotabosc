@@ -1,7 +1,7 @@
 :host ::ng-deep {
   section.header {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,14 +106,14 @@
 
       & .footer {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
         align-items: center;
         justify-content: center;
 
         & .card {
           margin: 1rem;
-          width: 32%;
+          width: auto;
           border-radius: .4rem;
           border: 1px solid var(--sbc-green);
           padding: 3rem  2rem;
