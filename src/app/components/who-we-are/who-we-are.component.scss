@@ -474,25 +474,5 @@ h2::before {
       padding: 0;
     }
   }
-  @media only screen and (max-width: 1400px) {
-    h1 {
-      text-align: center;
-      font-size: 1.5rem;
-      margin-top: 6rem;
-    }
 
-    .we {
-      width: 100%;
-
-      &__hero {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-      }
-    }
-  }
   }
