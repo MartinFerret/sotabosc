@@ -2,16 +2,28 @@
 <p-divider></p-divider>
 
 <section class="footer-section">
-  <div class="image">
-    <img ngSrc="./assets/images/how-it-works/our-staff-2.webp" alt="Sotabosc" height="800" width="600"/>
-  </div>
-  <p-panel class="description" [showHeader]="false">
-    <div class="scriptures">
-      <h2>{{ "HOW_IT_WORKS.ROLE_TITLE" | translate }}</h2>
-      <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_ONE" | translate }}</p>
-      <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_TWO" | translate }}</p>
-      <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_THREE" | translate }}</p>
-      <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_FOUR" | translate }}</p>
+  <div class="footer-section-part-one">
+    <div class="image">
+      <img ngSrc="./assets/images/how-it-works/our-staff-2.webp" alt="Sotabosc" height="800" width="600"/>
     </div>
-  </p-panel>
+    <p-panel class="description" [showHeader]="false">
+      <div class="scriptures">
+        <h2>{{ "HOW_IT_WORKS.ROLE_TITLE" | translate }}</h2>
+        <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_ONE" | translate }}</p>
+        <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_TWO" | translate }}</p>
+      </div>
+    </p-panel>
+  </div>
+  <p-divider></p-divider>
+  <div class="footer-section-part-two">
+    <div class="image">
+      <img ngSrc="./assets/images/how-it-works/our-staff-natalia-foret.jpg" alt="Sotabosc" height="800" width="600"/>
+    </div>
+    <p-panel class="description" [showHeader]="false">
+      <div class="scriptures">
+        <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_THREE" | translate }}</p>
+        <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_FOUR" | translate }}</p>
+      </div>
+    </p-panel>
+  </div>
 </section>

@@ -4,7 +4,16 @@
     font-size: 1.5rem;
     margin-top: 7rem;
   }
-  section.footer-section {
+
+  .footer-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-section-part-one,
+  .footer-section-part-two {
     width: 100%;
     height: auto;
     display: flex;
@@ -12,6 +21,7 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
+    margin: 1rem 0;
 
     & .description {
       width: 50%;
@@ -52,6 +62,14 @@
     }
   }
 
+  .footer-section-part-two > .image {
+    order: 4;
+  }
+
+  .footer-section-part-two > .description {
+    padding-left: 7%;
+  }
+
   h2 {
     font-size: 1.7rem;
     padding: 0 0 1rem 0;
@@ -81,7 +99,12 @@
       font-size: var(--sbc-h1-mobile);
       margin-top: 7rem;
     }
-    section.footer-section {
+
+    .footer-section-part-two > .image {
+      order: -3;
+    }
+    .footer-section-part-one,
+    .footer-section-part-two {
       width: 100%;
       height: auto;
       display: flex;
@@ -91,7 +114,7 @@
       text-align: justify;
 
       & .description {
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -103,7 +126,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          margin-right: 8rem;
+          margin: 0 auto;
           & p {
             width: 100%;
             line-height: 2rem;
@@ -116,7 +139,7 @@
       }
 
       & .image {
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -147,7 +170,8 @@
       font-size: var(--sbc-p-mobile);
     }
 
-    section.footer-section {
+    .footer-section-part-one,
+    .footer-section-part-two {
       width: 100%;
       height: auto;
       display: flex;
@@ -182,6 +206,14 @@
           height: 100%;
         }
       }
+    }
+
+    .footer-section-part-two > .image {
+      order: -3;
+    }
+
+    .footer-section-part-two > .description {
+      padding-left: 7%;
     }
     .scriptures {
       justify-content: center;
