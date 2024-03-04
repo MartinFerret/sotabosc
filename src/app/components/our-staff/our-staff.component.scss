@@ -226,6 +226,12 @@
 
     .footer-section-part-two > .description {
       padding-left: 7%;
+      display: flex;
+      justify-content: center;
+
+      & .scriptures {
+        padding-right: 2rem;
+      }
     }
     .scriptures {
       justify-content: center;
