@@ -9,10 +9,11 @@ import {CurrencyPipe, NgForOf, NgIf, SlicePipe, TitleCasePipe} from "@angular/co
 import {TableModule} from "primeng/table";
 import {ButtonModule} from "primeng/button";
 import {ConfirmService} from "../../../../services/confirm.service";
-import {ConfirmationService} from "primeng/api";
+import {ConfirmationService, MessageService} from "primeng/api";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
 import {SidebarComponent} from "./components/sidebar/sidebar.component";
 import {EventService} from "../../../../services/event.service";
+import {ToastModule} from "primeng/toast";
 
 @Component({
   selector: 'app-overview',
@@ -27,7 +28,8 @@ import {EventService} from "../../../../services/event.service";
     TitleCasePipe,
     ConfirmDialogModule,
     SidebarComponent,
-    SlicePipe
+    SlicePipe,
+    ToastModule
   ],
   templateUrl: './overview.component.html',
   styleUrl: './overview.component.scss'
@@ -36,6 +38,7 @@ export class OverviewComponent {
 
   private readonly _confirmService = inject(ConfirmService);
   private readonly _eventService = inject(EventService);
+  private readonly _toastService = inject(MessageService);
   eventToEdit! : any;
   events = input.required<Event[] | undefined>()
   @Output() deleteEvent = new EventEmitter<string>();
@@ -79,5 +82,10 @@ export class OverviewComponent {
   modifyEvent(event: any) {
     this._eventService.modifyEvent(this.eventToEdit.title, event);
     this.displaySidebar.set(false);
+    this._toastService.add({
+      icon: 'pi pi-check',
+      severity: 'success',
+      detail: 'Editat correctament, carregar la pàgina.'
+    })
   }
 }
