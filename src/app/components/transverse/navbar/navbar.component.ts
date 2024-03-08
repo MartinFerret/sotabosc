@@ -80,7 +80,7 @@ export class NavbarComponent implements OnInit {
       },
       {
         label: this.translateService.instant('GLOBAL.EVENTS'),
-        routerLink: ['/noticias'],
+        routerLink: ['/noticies'],
         routerLinkActiveOptions: true,
         icon: 'pi pi-clock'
       },
@@ -102,14 +102,12 @@ export class NavbarComponent implements OnInit {
         items: [
           {
             label: this.translateService.instant('GLOBAL.SPANISH'),
-            routerLink: ['#'],
             command: () => {
               this.translateService.use('es');
             },
           },
           {
             label: this.translateService.instant('GLOBAL.CATALAN'),
-            routerLink: ['#'],
             command: () => {
               this.translateService.use('ca');
             },

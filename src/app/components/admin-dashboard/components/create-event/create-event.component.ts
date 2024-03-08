@@ -68,7 +68,7 @@ export class CreateEventComponent implements OnInit, OnDestroy {
         detail: 'Esdeveniment creat amb èxit'
       })
       this.eventForm.reset();
-      this.router.navigateByUrl('/noticias');
+      this.router.navigateByUrl('/noticies');
     } else {
       this.toastService.add({
         icon: 'pi pi-times',
