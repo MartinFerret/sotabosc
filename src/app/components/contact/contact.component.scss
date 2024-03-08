@@ -1,7 +1,12 @@
 :host ::ng-deep {
-  section.header {
+  .container {
+    position: relative;
     width: 100%;
     height: 100vh;
+  }
+  section.header {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +51,7 @@
 
       & .card {
         margin: 2rem 1rem;
-        width: 30%;
+        width: auto;
         border-radius: .4rem;
         border: 1px solid var(--sbc-green);
         padding: 3rem  2rem;
@@ -63,17 +68,33 @@
       }
     }
   }
+  section.footer-part {
+    width: 100%;
+    border-top: 1px solid var(--sbc-green);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
 
   @media only screen and (max-width: 1100px) {
-    section.header {
+    .container {
+      position: relative;
       width: 100%;
       height: auto;
+    }
+    section.header {
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
 
       & .title {
-        margin: 5rem auto;
+        margin: 0 auto;
         text-align: center;
 
         & h1 {
@@ -130,15 +151,24 @@
         }
       }
     }
+    section.footer-part {
+      display: none;
+    }
   }
 
   @media only screen and (max-width: 525px) {
+    .container {
+      position: relative;
+      width: 100%;
+      height: 1350px;
+    }
     section.header {
       width: 100%;
-      height: auto;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
 
       & .title {
         margin: 5rem auto;
@@ -197,6 +227,17 @@
           border: none;
         }
       }
+    }
+    section.footer-part {
+      width: 100%;
+      border-top: 1px solid var(--sbc-green);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      font-size: var(--sbc-p-mobile);
     }
   }
 }
