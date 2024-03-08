@@ -72,6 +72,11 @@ export class OverviewComponent {
   }
   eventDeletion(title: string) {
     this.deleteEvent.emit(title);
+    this._toastService.add({
+      icon: 'pi pi-check',
+      severity: 'success',
+      detail: 'Esdeveniment esborrat amb èxit, carregar la pàgina.'
+    })
   }
 
   editEventAndDisplaySidebar(event: Event) {

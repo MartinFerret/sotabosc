@@ -21,5 +21,6 @@ export class OurStaffComponent {
   private readonly _titleService = inject(TitleService);
   constructor() {
     this._titleService.setTitle('OUR_STAFF.STAFF');
+    this._titleService.setDescription("");
   }
 }

@@ -20,5 +20,6 @@ export class OurSpaceComponent {
   private readonly _titleService = inject(TitleService);
   constructor() {
     this._titleService.setTitle('GLOBAL.OUR_SPACE');
+    this._titleService.setDescription("");
   }
 }

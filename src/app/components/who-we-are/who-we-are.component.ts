@@ -28,5 +28,6 @@ export class WhoWeAreComponent {
   private readonly _titleService = inject(TitleService);
   constructor() {
     this._titleService.setTitle('GLOBAL.OUR_PEDAGOGY');
+    this._titleService.setDescription("");
   }
 }
