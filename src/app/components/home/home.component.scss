@@ -1,9 +1,5 @@
 :host ::ng-deep {
-  .test {
-    width: 100%;
-    height: auto;
-  }
-  .panel-content {
+  .p-panel-content {
     border: none;
     display: flex;
     flex-wrap: wrap;
@@ -148,7 +144,6 @@
     flex-wrap: wrap !important;
     justify-content: center;
     align-items: center;
-    //margin-bottom: 200px;
 
     &__left {
       width: 100%;
@@ -308,7 +303,6 @@
       flex-wrap: wrap !important;
       justify-content: center;
       align-items: center;
-      margin-bottom: 200px;
 
       &__left {
         width: 90%;
