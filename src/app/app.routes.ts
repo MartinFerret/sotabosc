@@ -58,5 +58,10 @@ export const routes: Routes = [
     path: 'les-acompanyants',
     loadComponent: () => import('./components/our-staff/our-staff.component').then((c) => c.OurStaffComponent),
     title: 'Les acompanyants'
+  },
+  {
+    path: '**',
+    loadComponent: () => import('./components/transverse/notfound/notfound.component').then((c) => c.NotfoundComponent),
+    title: 'Not found'
   }
 ];

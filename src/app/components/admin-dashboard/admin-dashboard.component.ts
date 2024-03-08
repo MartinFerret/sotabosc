@@ -7,7 +7,6 @@ import {ActivatedRoute} from "@angular/router";
 import {OverviewComponent} from "./components/overview/overview.component";
 import {EventService} from "../../services/event.service";
 import {ConfirmService} from "../../services/confirm.service";
-import {BannerPanelComponent} from "./components/banner-panel/banner-panel.component";
 import {Subscription} from "rxjs";
 
 @Component({
@@ -19,7 +18,6 @@ import {Subscription} from "rxjs";
     CreateEventComponent,
     ToastModule,
     OverviewComponent,
-    BannerPanelComponent
   ],
   providers: [MessageService, ConfirmService, ConfirmationService],
   templateUrl: './admin-dashboard.component.html',

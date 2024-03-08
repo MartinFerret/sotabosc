@@ -1,0 +1,11 @@
+<section>
+  <div class="body">
+    <div class="image">
+      <img ngSrc="assets/images/404.webp" alt="404" height="408" width="612" [priority]="true">
+    </div>
+    <div class="text">
+      <p>{{ "GLOBAL.404_FIRST" | translate }}</p>
+      <p>{{ "GLOBAL.404_SECOND" | translate }} <a [routerLink]="['/']">{{ "GLOBAL.404_LINK" | translate }}</a>.</p>
+    </div>
+  </div>
+</section>

@@ -51,7 +51,6 @@ export class NavbarComponent implements OnInit {
       {
         label: this.translateService.instant('GLOBAL.WHO_WE_ARE'),
         icon: 'pi pi-cloud',
-        routerLink: ['#'],
         items: [
           {
             label: this.translateService.instant('OUR_STAFF.STAFF'),
@@ -100,7 +99,6 @@ export class NavbarComponent implements OnInit {
       {
         label: "Idioma",
         icon: 'pi pi-globe',
-        routerLink: ['#'],
         items: [
           {
             label: this.translateService.instant('GLOBAL.SPANISH'),
