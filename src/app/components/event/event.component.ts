@@ -1,10 +1,9 @@
 import {ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {Event} from '../../models/event.model';
 import {PanelModule} from "primeng/panel";
-import {AsyncPipe, CurrencyPipe, NgForOf} from "@angular/common";
+import {AsyncPipe, CurrencyPipe, NgStyle} from "@angular/common";
 import {ActivatedRoute} from "@angular/router";
 import {ButtonModule} from "primeng/button";
-import {BadgeModule} from "primeng/badge";
 import {DividerModule} from "primeng/divider";
 import {Observable, Subscription} from "rxjs";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
@@ -14,16 +13,15 @@ import {TitleService} from "../../services/title.service";
 @Component({
   selector: 'app-event',
   standalone: true,
-    imports: [
-        PanelModule,
-        NgForOf,
-        AsyncPipe,
-        CurrencyPipe,
-        ButtonModule,
-        BadgeModule,
-        DividerModule,
-        TranslateModule,
-    ],
+  imports: [
+    PanelModule,
+    AsyncPipe,
+    CurrencyPipe,
+    ButtonModule,
+    DividerModule,
+    TranslateModule,
+    NgStyle,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './event.component.html',
   styleUrl: './event.component.scss'
