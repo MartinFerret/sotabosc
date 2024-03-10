@@ -45,7 +45,7 @@ export class CreateEventComponent implements OnInit, OnDestroy {
   eventForm = new FormGroup({
     id: new FormControl(0, [Validators.required]),
     title: new FormControl(''),
-    description: new FormControl('', [Validators.required]),
+    description: new FormControl('', [Validators.required, Validators.max(3)]),
     date: new FormControl('', [Validators.required]),
     hour: new FormControl('', [Validators.required]),
     image: new FormControl(''),

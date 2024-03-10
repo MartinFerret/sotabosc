@@ -1,4 +1,7 @@
 :host ::ng-deep {
+  img {
+    cursor: pointer;
+  }
   .p-menubar {
     border: none;
     background-color: white !important;

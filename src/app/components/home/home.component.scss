@@ -1,33 +1,22 @@
 :host ::ng-deep {
   .p-panel-content {
-    border: none;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
-
-    & div.image {
-      width: 50%;
-      height: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-      padding-left: 2rem;
-
-      & img {
-        width: auto;
-        height: auto;
-      }
-    }
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../../../assets/images/home/home-foret-fleurs.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
 
     & div.hero {
-      width: 50%;
+      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      color: var(--sbc-white);
+      text-align: center;
 
       & h2 {
         font-size: 1.2rem;
@@ -35,7 +24,7 @@
       }
 
       & p {
-        max-width: 80%;
+        width: 60%;
         line-height: 1.5rem;
         text-align: justify;
       }
@@ -179,17 +168,7 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      margin-top: 2rem;
-
-      & div.image {
-        width: 70%;
-        height: 400px;
-
-        & img {
-          width: 70%;
-          height: 400px;
-        }
-      }
+      margin-top: 5rem;
 
       & div.hero {
         width: 100%;
@@ -199,6 +178,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 5rem;
 
         & h2 {
           font-size: 1.5rem;
@@ -207,6 +187,7 @@
         & p {
           font-size: var(--sbc-p-mobile);
           line-height: normal;
+          width: 80%;
         }
 
         & .hero__buttons {
@@ -359,18 +340,6 @@
       height: 100%;
       margin-top: 2rem;
 
-      & div.image {
-        width: 100%;
-        height: 320px;
-        padding-left: 0 !important;
-        margin-top: 20px !important;
-
-        & img {
-          width: 100%;
-          height: 400px;
-        }
-      }
-
       & div.hero {
         width: 100%;
         height: auto;
@@ -379,7 +348,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: -10px;
+        margin-top: 5rem;
 
         & h2 {
           font-size: var(--sbc-h2-mobile);
@@ -389,6 +358,7 @@
         & p {
           font-size: var(--sbc-p-mobile);
           line-height: 17px;
+          width: 90%;
         }
 
         & .hero__buttons {

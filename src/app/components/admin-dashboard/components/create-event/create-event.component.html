@@ -7,7 +7,7 @@
     </span>
     <span class="p-float-label input">
       <textarea pInputTextarea rows="10" cols="30" id="description" [formControl]="eventForm.controls.description"></textarea>
-      <label for="description">{{ "ADMIN.FORM.DESCRIPTION" | translate }} *</label>
+      <label for="description">{{ "ADMIN.FORM.DESCRIPTION" | translate }} * (10 caracteres máximo)</label>
     </span>
     <span class="p-float-label input">
       <input pInputText id="hour" [formControl]="eventForm.controls.hour"/>
