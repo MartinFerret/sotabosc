@@ -20,6 +20,6 @@ export class OurSpaceComponent {
   private readonly _titleService = inject(TitleService);
   constructor() {
     this._titleService.setTitle('GLOBAL.OUR_SPACE');
-    this._titleService.setDescription("");
+    this._titleService.setDescription("Com a instal.lacions, Disposem de diferents espais interiors i exteriors. Interiors tenim un petit refugi amb dues sales grans per a cadascun dels grups d’infants. Una sala amb materials i propostes i a l’altra el mateix però afegin un wc i una habitació per dormir.");
   }
 }

@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {Event} from '../../models/event.model';
 import {PanelModule} from "primeng/panel";
-import {AsyncPipe, CurrencyPipe, NgStyle} from "@angular/common";
+import {AsyncPipe, CurrencyPipe, NgStyle, SlicePipe} from "@angular/common";
 import {ActivatedRoute} from "@angular/router";
 import {ButtonModule} from "primeng/button";
 import {DividerModule} from "primeng/divider";
@@ -21,6 +21,7 @@ import {TitleService} from "../../services/title.service";
     DividerModule,
     TranslateModule,
     NgStyle,
+    SlicePipe,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './event.component.html',

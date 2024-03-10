@@ -342,13 +342,13 @@
 
       & div.hero {
         width: 100%;
-        height: auto;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 5rem;
+        margin-top: .5rem;
 
         & h2 {
           font-size: var(--sbc-h2-mobile);

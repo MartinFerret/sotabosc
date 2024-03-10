@@ -26,7 +26,8 @@ export class HowItWorksComponent implements OnInit {
   private readonly _titleService = inject(TitleService);
   constructor() {
     this._titleService.setTitle('GLOBAL.DAY_IN_SOTABOSC');
-    this._titleService.setDescription("");
+    this._titleService.setDescription("Com és un dia en una escoleta alternativa?\n" +
+      "En el nostre espai seguim uns horarios i rutines de vegades canviants que us expliquem a continuació.");
   }
 
   ngOnInit() {
