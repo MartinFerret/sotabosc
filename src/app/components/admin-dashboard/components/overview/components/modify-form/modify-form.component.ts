@@ -43,9 +43,9 @@ export class ModifyFormComponent implements OnInit {
     title: new FormControl('', [Validators.required]),
     description: new FormControl('', [Validators.required]),
     date: new FormControl('', [Validators.required]),
-    hour: new FormControl('', [Validators.required]),
+    hour: new FormControl(''),
     image: new FormControl(''),
-    price: new FormControl(10, [Validators.required]),
+    price: new FormControl(10),
     isOpen: new FormControl(true, [Validators.required]),
     googleFormLink: new FormControl(''),
   });

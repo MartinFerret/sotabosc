@@ -9,9 +9,6 @@
           <div class="informations">
             @if (event.date) {
               <p>{{ event.date }}
-                @if(event.hour) {
-                  <span>a les {{ event.hour }}</span>
-                }
               </p>
             }
             @if(event.price > 0) {
