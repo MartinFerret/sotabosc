@@ -2,6 +2,7 @@ export const environment = {
   production: false,
   email: 'ferretmartin91@gmail.com',
   email2: 'espaisotabosc@gmail.com',
+  email3: 'majdaferret@gmail.com',
   firebase: {
     apiKey: "AIzaSyDmhkcf1HuDj8_EyvqT2jG48hgh8oWGABI",
     authDomain: "sotabosc-944d1.firebaseapp.com",

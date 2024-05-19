@@ -15,6 +15,7 @@ import {InputNumberModule} from "primeng/inputnumber";
 import {InputSwitchModule} from "primeng/inputswitch";
 import {InputTextModule} from "primeng/inputtext";
 import {InputTextareaModule} from "primeng/inputtextarea";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-modify-form',
@@ -27,7 +28,8 @@ import {InputTextareaModule} from "primeng/inputtextarea";
     InputSwitchModule,
     InputTextModule,
     InputTextareaModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule
   ],
   templateUrl: './modify-form.component.html',
   styleUrl: './modify-form.component.scss'

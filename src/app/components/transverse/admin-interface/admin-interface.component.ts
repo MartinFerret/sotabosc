@@ -22,7 +22,8 @@ export class AdminInterfaceComponent {
   signInWithGoogle () {
     this.#authService.googleLogin().then((result) => {
       if (result && result.user.email === environment.email ||
-          result.user.email === environment.email2) {
+          result.user.email === environment.email2 ||
+        result.user.email === environment.email3) {
         this.#router.navigate(['/admin']);
       } else {
         this.#router.navigate(['']);

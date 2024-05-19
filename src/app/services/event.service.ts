@@ -5,9 +5,9 @@ import {
   deleteDoc,
   doc,
   Firestore,
-  getDoc,
+  getDoc, query,
   setDoc,
-  updateDoc
+  updateDoc, where
 } from "@angular/fire/firestore";
 import {Observable} from "rxjs";
 import {Event} from "../models/event.model";
@@ -23,6 +23,12 @@ export class EventService {
   getEvents() : Observable<Event[]> {
     const events = collection(this.firestore, Constants.events);
     return collectionData(events) as Observable<Event[]>;
+  }
+
+  getEventsByStatus() : Observable<Event[]> {
+    const events = collection(this.firestore, Constants.events);
+    const queries = query(events, where('isOpen', '==', true));
+    return collectionData(queries) as Observable<Event[]>;
   }
 
   createEvent(event: Event, docName: string){

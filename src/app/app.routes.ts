@@ -22,7 +22,7 @@ export const routes: Routes = [
     path: 'noticies',
     loadComponent: () => import('./components/event/event.component').then(c => c.EventComponent),
     resolve: {
-      events: () => inject(EventService).getEvents(),
+      events: () => inject(EventService).getEventsByStatus(),
     },
     title: 'Inici'
   },
