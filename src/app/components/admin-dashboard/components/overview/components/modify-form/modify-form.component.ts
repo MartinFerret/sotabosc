@@ -16,6 +16,7 @@ import {InputSwitchModule} from "primeng/inputswitch";
 import {InputTextModule} from "primeng/inputtext";
 import {InputTextareaModule} from "primeng/inputtextarea";
 import {TranslateModule} from "@ngx-translate/core";
+import {Event} from "../../../../../../models/event.model";
 
 @Component({
   selector: 'app-modify-form',
@@ -37,7 +38,7 @@ import {TranslateModule} from "@ngx-translate/core";
 export class ModifyFormComponent implements OnInit {
   private readonly _cdref = inject(ChangeDetectorRef);
 
-  @Input({ required: true }) eventToEdit!: any;
+  @Input({ required: true }) eventToEdit!: Event;
   @Output() eventToPersist = new EventEmitter<Event>();
 
   eventForm = new FormGroup({
@@ -67,10 +68,10 @@ export class ModifyFormComponent implements OnInit {
 
   editExistingEvent() {
     if (this.eventForm.valid) {
-      const modifiedEvent: any = this.buildFormValues();
+      const modifiedEvent: Event = this.buildFormValues();
       if (this.eventToEdit) {
         this.eventToPersist.emit(modifiedEvent);
-        this._cdref.markForCheck();
+        this._cdref.detectChanges();
       }
     }
   }

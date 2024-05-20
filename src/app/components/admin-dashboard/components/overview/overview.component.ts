@@ -1,4 +1,6 @@
 import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
   EventEmitter,
   inject, input,
@@ -14,10 +16,12 @@ import {ConfirmDialogModule} from "primeng/confirmdialog";
 import {SidebarComponent} from "./components/sidebar/sidebar.component";
 import {EventService} from "../../../../services/event.service";
 import {ToastModule} from "primeng/toast";
+import {Event} from "../../../../models/event.model";
 
 @Component({
   selector: 'app-overview',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ConfirmService, ConfirmationService],
   imports: [
     NgIf,
@@ -38,10 +42,12 @@ export class OverviewComponent {
 
   private readonly _confirmService = inject(ConfirmService);
   private readonly _eventService = inject(EventService);
+  private readonly _cdref = inject(ChangeDetectorRef);
   private readonly _toastService = inject(MessageService);
-  eventToEdit! : any;
+  eventToEdit! : Event;
   events = input.required<Event[] | undefined>()
   @Output() deleteEvent = new EventEmitter<string>();
+  @Output() dupdateEvent = new EventEmitter<Event>();
   displaySidebar = signal(false);
 
   tableData: TableDataColumnModel = {
@@ -75,8 +81,9 @@ export class OverviewComponent {
     this._toastService.add({
       icon: 'pi pi-check',
       severity: 'success',
-      detail: 'Esdeveniment esborrat amb èxit, carregar la pàgina.'
+      detail: 'Esdeveniment esborrat amb èxit.'
     })
+    this._cdref.detectChanges();
   }
 
   editEventAndDisplaySidebar(event: Event) {
@@ -84,13 +91,16 @@ export class OverviewComponent {
     this.eventToEdit = event;
   }
 
-  modifyEvent(event: any) {
-    this._eventService.modifyEvent(this.eventToEdit.title, event);
+  modifyEvent(event: Event) {
+    this._eventService.modifyEvent(this.eventToEdit.title, event).then(() => {
+      this.eventToEdit = event;
+    });
     this.displaySidebar.set(false);
     this._toastService.add({
       icon: 'pi pi-check',
       severity: 'success',
       detail: 'Editat correctament, carregar la pàgina.'
     })
+    this._cdref.detectChanges();
   }
 }

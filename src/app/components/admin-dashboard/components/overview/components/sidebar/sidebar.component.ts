@@ -3,6 +3,7 @@ import {SidebarModule} from "primeng/sidebar";
 import {ButtonModule} from "primeng/button";
 import {DividerModule} from "primeng/divider";
 import {ModifyFormComponent} from "../modify-form/modify-form.component";
+import {Event} from "../../../../../../models/event.model";
 
 @Component({
   selector: 'app-sidebar',
@@ -34,7 +35,7 @@ export class SidebarComponent {
     this.sizeUpPanel = !this.sizeUpPanel;
   }
 
-  editExistingEvent(event: any) {
+  editExistingEvent(event: Event) {
     this.eventToPersist.emit(event);
   }
 }

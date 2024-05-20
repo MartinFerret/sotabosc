@@ -30,7 +30,7 @@
       <p-inputSwitch id="isOpen" [formControl]="eventForm.controls.isOpen"> </p-inputSwitch>
     </span>
     <span class="input">
-      <p-fileUpload mode="basic" [chooseLabel]="'ADMIN.FORM.UPLOAD_IMAGE' | translate" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" [maxFileSize]="1000000" (onUpload)="onUpload($event)" styleClass="p-button-outlined"></p-fileUpload>
+      <p-fileUpload mode="basic" [chooseLabel]="'ADMIN.FORM.UPLOAD_IMAGE' | translate" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" [maxFileSize]="1000000" (onUpload)="onUpload($event)" styleClass="p-button-outlined" [auto]="true" ></p-fileUpload>
     </span>
     <p-button [label]="'GLOBAL.CREATE' | translate" (click)="createEvent()"></p-button>
   </form>
