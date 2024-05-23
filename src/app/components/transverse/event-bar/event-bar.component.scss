@@ -3,12 +3,12 @@
     & .event-bar {
       z-index: 200;
       width: 100%;
-      height: 4.5rem;
-      position: absolute;
+      height: 1.5rem;
+      position: fixed;
       top: 6rem;
       left: 0;
       right: 0;
-      background-color: var(--sbc-green-secondary);
+      background-color: var(--sbc-green);
       display: flex !important;
       flex-direction: row !important;
       justify-content: center !important;
@@ -19,7 +19,7 @@
       }
 
       & p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   }

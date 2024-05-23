@@ -1,7 +1,7 @@
 <h1>{{ 'GLOBAL.EVENTS' | translate }}</h1>
 <section>
     @for (event of events$; let index = $index; track event.id) {
-      <div class="container" [ngStyle]="{'order': index}">
+      <div class="container" [ngStyle]="{'order': -index}">
         <p-panel [showHeader]="false">
           <div class="image">
             <img [src]="event.imageUrl | async" alt="Evento">
