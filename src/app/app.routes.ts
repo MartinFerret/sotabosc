@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import {EventService} from "./services/event.service";
 import {inject} from "@angular/core";
+import {adminGuard} from "./auth.guard";
 
 export const routes: Routes = [
   {
@@ -28,6 +29,7 @@ export const routes: Routes = [
   },
   {
     path: 'admin',
+    canActivate: [adminGuard],
     loadComponent: () => import('./components/admin-dashboard/admin-dashboard.component').then(c => c.AdminDashboardComponent),
     resolve: {
       events: () => inject(EventService).getEvents(),

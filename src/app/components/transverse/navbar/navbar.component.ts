@@ -1,14 +1,14 @@
-import {Component, inject, OnChanges, OnInit, signal, SimpleChanges} from '@angular/core';
+import {Component, inject, OnInit, signal} from '@angular/core';
 import {MenuItem} from "primeng/api";
 import {MenubarModule} from "primeng/menubar";
 import {InputTextModule} from "primeng/inputtext";
-import {NgOptimizedImage} from "@angular/common";
+import {NgIf, NgOptimizedImage} from "@angular/common";
 import {ButtonModule} from "primeng/button";
 import {EventService} from "../../../services/event.service";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
 import {EventBarComponent} from "../event-bar/event-bar.component";
 import {TranslateService} from "@ngx-translate/core";
-import {Title} from "@angular/platform-browser";
+import {AuthService} from "../../../services/auth.service";
 
 @Component({
   selector: 'app-navbar',
@@ -20,6 +20,7 @@ import {Title} from "@angular/platform-browser";
     NgOptimizedImage,
     ButtonModule,
     EventBarComponent,
+    NgIf,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
@@ -30,7 +31,8 @@ export class NavbarComponent implements OnInit {
 
   items: MenuItem[] = [] as MenuItem[];
   config = signal(false);
-  translateService = inject(TranslateService);
+  readonly translateService = inject(TranslateService);
+  readonly authService = inject(AuthService);
 
   ngOnInit() {
     this.loadConfig();
@@ -124,5 +126,9 @@ export class NavbarComponent implements OnInit {
         this.config.set(config['isActive']);
       }
     })
+  }
+
+  signOut() {
+    this.authService.googleLogOut();
   }
 }
