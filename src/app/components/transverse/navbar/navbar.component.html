@@ -5,7 +5,7 @@
     </ng-template>
     <ng-template pTemplate="end">
       @if(authService._auth.currentUser) {
-        <i class="pi pi-external-link" (click)="signOut()"  [pTooltip]="translateService.instant('GLOBAL.LOG_OUT')" [tooltipPosition]="'left'"></i>
+        <i class="pi pi-external-link" (click)="signOut()" [pTooltip]="translateService.instant('GLOBAL.LOG_OUT')" [tooltipPosition]="'left'"></i>
       }
     </ng-template>
   </p-menubar>
