@@ -114,7 +114,10 @@
     "EMAIL": "Correu electronic",
     "FOLLOW_US": "Segueix-nos",
     "LOCALIZATION": "Localizacio",
-    "FIND_US": "Ens trobaras a"
+    "FIND_US": "Ens trobaras a",
+    "CALL_US": "Truca'ns",
+    "PHONE": "Teléfon"
+
   },
   "FAQ": {
     "TITLE": "Preguntes freqüents",

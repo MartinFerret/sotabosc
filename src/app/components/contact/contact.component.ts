@@ -1,7 +1,7 @@
 import {Component, inject} from '@angular/core';
 import {ButtonModule} from "primeng/button";
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
-import {faLocationDot, faEnvelope, faCamera} from '@fortawesome/free-solid-svg-icons';
+import {faLocationDot, faEnvelope, faCamera, faPhone} from '@fortawesome/free-solid-svg-icons';
 import {ReactiveFormsModule} from "@angular/forms";
 import {TranslateModule} from "@ngx-translate/core";
 import {TitleService} from "../../services/title.service";
@@ -24,6 +24,7 @@ export class ContactComponent {
   faLocationDot = faLocationDot;
   faEnvelope = faEnvelope;
   faCamera = faCamera;
+  faPhone = faPhone;
 
   private readonly _titleService = inject(TitleService);
 

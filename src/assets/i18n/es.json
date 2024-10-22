@@ -113,7 +113,9 @@
     "EMAIL": "Correo electronico",
     "FOLLOW_US": "Siguenos",
     "LOCALIZATION": "Localizacion",
-    "FIND_US": "Encuentranos"
+    "FIND_US": "Encuentranos",
+    "CALL_US": "Llamarnos",
+    "PHONE": "Teléfono"
   },
   "FAQ": {
     "TITLE": "Preguntas frecuentes",
