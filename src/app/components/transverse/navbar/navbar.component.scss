@@ -8,6 +8,7 @@
     position: fixed;
     z-index: 100;
     border-radius: 0;
+    font-family: "Barlow Semi Condensed", sans-serif !important;
     top:0;
     left: 0;
     right: 0;
@@ -53,8 +54,21 @@
       right: 0;
       font-size: .7rem;
 
+      & .p-submenu-list {
+        background-color: white !important;
+      }
+
       & .p-menubar-start {
         margin-right: 2px;
+      }
+
+      .p-menuitem-link {
+        background-color: white;
+      }
+
+      .p-menuitem-text {
+        font-size: 1rem;
+        font-weight: 500;
       }
 
       & .p-element {

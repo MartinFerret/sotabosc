@@ -1,32 +1,64 @@
 <section>
   <p-panel [showHeader]="false">
     <div class="hero">
-      <h2>{{ "HOME.HERO.TITLE" | translate }}</h2>
-      <p>{{ "HOME.HERO.TEXT" | translate }}</p>
-      <div class="hero__buttons">
-        <p-button [label]="'HOME.HERO.PEDAGOGY_BUTTON' | translate" [routerLink]="['/la-nostra-pedagogia']"></p-button>
-        <p-button [label]="'GLOBAL.EVENTS' | translate" [routerLink]="['/noticies']" routerLink="/events" styleClass="p-button-outlined"></p-button>
+      <div class="left">
+        <h1>{{ "HOME.HERO.TITLE" | translate }}</h1>
+        <div class="hero__buttons">
+          <p-button [label]="'HOME.HERO.PEDAGOGY_BUTTON' | translate" [icon]="'pi pi-arrow-up-right'" [routerLink]="['/la-nostra-pedagogia']" class="button-primary"></p-button>
+          <p-button [label]="'GLOBAL.EVENTS' | translate" [icon]="'pi pi-calendar-plus'" [routerLink]="['/noticies']" routerLink="/events" styleClass="p-button-outlined" class="button-secondary"></p-button>
+        </div>
       </div>
     </div>
   </p-panel>
 </section>
 
 <section>
-  <div class="explanations">
-    <div class="explanations__wrapper step-one">
-      <div class="center">
-        <p-button [label]="'HOME.HERO.DAY_IN_SOTABOSC' | translate" [routerLink]="['/un-dia-a-sotabosc']"></p-button>
+  <div class="reliability">
+    <div class="text">
+      <h1>{{ "HOME.HERO.TEXT" | translate }}</h1>
+      <div class="text-svg">
+        <i class="pi pi-arrow-right"></i>
+        <p>{{ "HOME.HERO.SUBTEXT" | translate }}</p>
+      </div>
+      <div class="text-svg">
+        <i class="pi pi-arrow-right"></i>
+        <p>{{ "HOME.HERO.SUBTEXT1" | translate }}</p>
+      </div>
+      <div class="text-svg">
+        <i class="pi pi-arrow-right"></i>
+        <p>{{ "HOME.HERO.SUBTEXT2" | translate }}</p>
+      </div>
+      <div class="text-svg">
+        <i class="pi pi-arrow-right"></i>
+        <p>{{ "HOME.HERO.SUBTEXT3" | translate }}</p>
+      </div>
+      <div class="text-svg">
+        <i class="pi pi-arrow-right"></i>
+        <p>{{ "HOME.HERO.SUBTEXT4" | translate }}</p>
+      </div>
+      <div class="buttons">
+        <p-button [label]="'HOME.HERO.DAY_IN_SOTABOSC' | translate" [routerLink]="['/un-dia-a-sotabosc']" styleClass="p-button-outlined button" class="button-secondary"></p-button>
+        <p-button [label]="'GLOBAL.OUR_SPACE' | translate" [routerLink]="['/el-nostre-espai']" styleClass="p-button-outlined button2" class="button-secondary"></p-button>
       </div>
     </div>
-    <div class="explanations__wrapper step-two">
-      <div>
-        <p-button [label]="'GLOBAL.OUR_SPACE' | translate" [routerLink]="['/el-nostre-espai']"></p-button>
-      </div>
+    <div class="image"></div>
+  </div>
+</section>
+
+<section>
+  <div class="motivation">
+    <div class="motivation__block">
+      <fa-icon [icon]="faPaw" size="4x"></fa-icon>
+      <p>{{ "HOME.MOTIVATION.STEP_TWO" | translate }}</p>
     </div>
-    <div class="explanations__wrapper step-three">
-      <div>
-        <p-button [label]="'GLOBAL.FAQ' | translate" [routerLink]="['/preguntes-freqüents']"></p-button>
-      </div>
+    <div class="motivation__block">
+      <fa-icon [icon]="faTree" size="4x"></fa-icon>
+      <p>{{ "HOME.MOTIVATION.STEP_ONE" | translate }}</p>
+      <p>{{ "HOME.MOTIVATION.STEP_ONE_PART_TWO" | translate }}</p>
+    </div>
+    <div class="motivation__block">
+      <fa-icon [icon]="faSeedling" size="4x"></fa-icon>
+      <p>{{ "HOME.MOTIVATION.STEP_THREE" | translate }}</p>
     </div>
   </div>
 </section>
@@ -38,31 +70,89 @@
   </div>
 </section>
 
-<section>
-  <div class="motivation">
-    <div class="motivation__block">
-      <fa-icon [icon]="faTree" size="4x"></fa-icon>
-      <p>{{ "HOME.MOTIVATION.STEP_ONE" | translate }}</p>
-      <p>{{ "HOME.MOTIVATION.STEP_ONE_PART_TWO" | translate }}</p>
-    </div>
-    <div class="motivation__block">
-      <fa-icon [icon]="faPaw" size="4x"></fa-icon>
-      <p>{{ "HOME.MOTIVATION.STEP_TWO" | translate }}</p>
-    </div>
-    <div class="motivation__block">
-      <fa-icon [icon]="faSeedling" size="4x"></fa-icon>
-      <p>{{ "HOME.MOTIVATION.STEP_THREE" | translate }}</p>
-    </div>
-  </div>
-</section>
+<section class="testimonials-section">
+  <h2>{{ "HOME.TESTIMONIALS.TITLE" | translate }}</h2>
+  <p class="description">{{ "HOME.TESTIMONIALS.SUBTITLE" | translate }}</p>
 
-<section>
-  <div class="photos">
-    <div class="photos__left">
-      <img ngSrc="./assets/images/home/home-foret-fleurs.webp" alt="photo" height="600" width="800"/>
-      <img ngSrc="./assets/images/home/home-pluie.webp" alt="photo" height="600" width="800"/>
-      <img ngSrc="./assets/images/home/home-fumier.webp" alt="photo" height="600" width="800"/>
-      <img ngSrc="./assets/images/home/home-conte-foret.webp" alt="photo" height="600" width="800"/>
+  <div class="testimonials">
+    <div class="testimonial-card">
+      <p class="testimonial-quote">“És una escola diferent, on els nens poden créixer lliures i tranquils.”</p>
+      <p class="testimonial-author">Sarah Lemoine</p>
+      <p class="testimonial-role">Pare de XXX</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">“Aprenen a respectar els animals i el medi ambient de manera natural.”</p>
+      <p class="testimonial-author">Julien Bernard</p>
+      <p class="testimonial-role">Mare de xxx</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">“El nostre fill ve feliç cada dia. Estar envoltat de natura li ha fet molt bé.”</p>
+      <p class="testimonial-author">Nadia Merabet</p>
+      <p class="testimonial-role">Pare de XXX </p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">“El nostre fill ve feliç cada dia. Estar envoltat de natura li ha fet molt bé.”</p>
+      <p class="testimonial-author">Nadia Merabet</p>
+      <p class="testimonial-role">Pare de XXX </p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">“El nostre fill ve feliç cada dia. Estar envoltat de natura li ha fet molt bé.”</p>
+      <p class="testimonial-author">Nadia Merabet</p>
+      <p class="testimonial-role">Pare de XXX </p>
     </div>
   </div>
 </section>
+<div class="wave">
+  <svg xmlns="http://www.w3.org/2000/svg" height="200px" width="300px" viewBox="0 0 300 300"><path fill="#2DAC7B" d="M78.3 189.56L20.88 141.5 40.14 118.5 78.3 150.44 126.1 110.44 173.89 150.44 221.69 110.44 279.12 158.5 259.86 181.5 221.69 149.56 173.89 189.56 126.1 149.56 78.3 189.56z"></path></svg>
+</div>
+
+<section class="gallery-section">
+  <div class="gallery-grid">
+    <img src="assets/images/home/home-4.webp" alt="Photo 1">
+    <img src="assets/images/home/home-4.webp" alt="Photo 2">
+    <img src="assets/images/home/home-4.webp" alt="Photo 3">
+    <img src="assets/images/home/home-4.webp" alt="Photo 4">
+    <img src="assets/images/home/home-4.webp" alt="Photo 5">
+    <img src="assets/images/home/home-4.webp" alt="Photo 6">
+    <img src="assets/images/home/home-4.webp" alt="Photo 7">
+    <img src="assets/images/home/home-4.webp" alt="Photo 8">
+    <img src="assets/images/home/home-4.webp" alt="Photo 9">
+    <img src="assets/images/home/home-4.webp" alt="Photo 10">
+    <img src="assets/images/home/home-4.webp" alt="Photo 11">
+    <img src="assets/images/home/home-4.webp" alt="Photo 12">
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__logo">
+      <a href="#">
+        <img src="assets/images/home/home-logo.webp" alt="Logo" />
+      </a>
+    </div>
+
+    <nav class="footer__nav">
+      <a [routerLink]="['/la-nostra-pedagogia']">{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</a>
+      <a [routerLink]="['/noticies']">{{ "GLOBAL.EVENTS" | translate }}</a>
+      <a [routerLink]="['/preguntes-freqüents']">{{ "GLOBAL.FAQ" | translate }}</a>
+      <a [routerLink]="['/contacte']">{{ "GLOBAL.CONTACT" | translate }}</a>
+    </nav>
+
+    <div class="footer__contacts">
+      <a href="mailto:espaisotabosc@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/+34668530571" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom" style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
+    &copy; 2025 Espai Sotabosc. {{ "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
+  </div>
+</footer>
+
+
+

@@ -2,7 +2,12 @@
   "HOME": {
     "HERO": {
       "TITLE": "BENVINGUDES A LA NOSTRA ESCOLETA A LA NATURA!",
-      "TEXT": "Al setembre de 2021 neix Espai Sotabosc, un projecte educatiu no homologat que acull infants fins als 6 anys. El nostre entorn d'aprenentatge és la natura. La vivim i la coneixem a partir d'un acompanyament des del respecte, la calma, l'amor i la presència. Estem ubicades a prop del poble d'El Catllar, a les instal·lacions de la Granja-Escola Corral de Neri, de les quals també podem gaudir diàriament.",
+      "TEXT": "Al setembre de 2021...",
+      "SUBTEXT": "Neix Espai Sotabosc.",
+      "SUBTEXT1": "Un projecte educatiu no homologat que acull infants fins als 6 anys.",
+      "SUBTEXT2": "El nostre entorn d'aprenentatge és la natura.",
+      "SUBTEXT3": "La vivim i la coneixem a partir d'un acompanyament des del respecte, la calma, l'amor i la presència.",
+      "SUBTEXT4": " Estem ubicades a prop del poble d'El Catllar, a les instal·lacions de la Granja-Escola Corral de Neri, de les quals també podem gaudir diàriament.",
       "WHO_BUTTON": "Qui som",
       "PEDAGOGY_BUTTON": "Pedagogia",
       "DAY_IN_SOTABOSC": "Un Dia a Sotabosc"
@@ -16,6 +21,10 @@
       "STEP_ONE_PART_TWO": "(18 mesos a 6 anys)",
       "STEP_TWO": "Infància, bosc i animals",
       "STEP_THREE": "Ràtios reduïdes i mirada respectuosa"
+    },
+    "TESTIMONIALS": {
+      "TITLE": "L'opinió dels pares",
+      "SUBTITLE": "Opinions recollides entre les famílies."
     }
   },
   "GLOBAL": {
@@ -33,7 +42,7 @@
     "SPANISH": "Castellano",
     "CATALAN" : "Catalá",
     "SIGN_IN": "Connexió",
-    "COPYRIGHTS": "Tots els drets reservats",
+    "COPYRIGHTS": "Tots els drets reservats.",
     "404_FIRST": "Vaja, no s'ha trobat la pàgina que cerques.",
     "404_SECOND": "Comproveu l'URL o torneu al nostre",
     "404_LINK": "pàgina d'inici.",
@@ -74,7 +83,8 @@
     "OUTDOOR_FARM_TEXT": " A la finca confrontada a la nostra, hi\nha la Granja- Escola Corral de Neri. Amb més\nde 25 anys d’experiència, és un espai preparat\nper la infància on trobarem animals i\ninstal·lacions lúdiques, de les quals podem\ngaudir diàriament."
   },
   "OUR_STAFF": {
-    "STAFF": "Les acompanyants"
+    "STAFF": "Les acompanyants",
+    "TITLE": "CREIXENT I APRENENT EN UN ENTORN NATURAL"
   },
   "WHO_WE_ARE":{
     "TITLE": "Qui som",
@@ -108,6 +118,18 @@
       "UPLOAD_IMAGE": "Carrega una imatge"
     }
   },
+  "FORM": {
+    "NAME": "Nom",
+    "LASTNAME": "Cognom",
+    "PHONE": "Telefono",
+    "EMAIL": "Correo",
+    "OBJECT": "Com ha conegut la nostra guarderia",
+    "SELECT": "-- Seleccioneu --",
+    "WEBSITE": "Pàgina web",
+    "OTHER": "Altre",
+    "MESSAGE": "Missatge",
+    "RECOMMENDED": "M'ho ha dit una persona coneguda"
+  },
   "CONTACT": {
     "CONTACT_US": "Contacta'ns",
     "QUESTIONS": "Tens algun dubte? Posa't en contacte amb nosaltres.",
@@ -116,7 +138,23 @@
     "LOCALIZATION": "Localizacio",
     "FIND_US": "Ens trobaras a",
     "CALL_US": "Truca'ns",
-    "PHONE": "Teléfon"
+    "PHONE": "Teléfon",
+    "ADDRESS": "L’Espai Sotabosc és una escola a l’aire lliure situada a",
+    "SPECIFICATIONS": "molt a prop de les instal·lacions de la Granja-Escola Corral de Neri, en un entorn natural privilegiat.",
+    "PHONE_SENTENCE": "Per a qualsevol consulta, ens podeu trucar al",
+    "HOURS": "Estem oberts de dilluns a divendres, de 9 del matí a 4 de la tarda. Els caps de setmana, l’escola roman tancada.",
+    "FORM": {
+      "NAME": "Nombre",
+      "LASTNAME": "Appellido",
+      "PHONE": "Teléfono",
+      "EMAIL": "Correo",
+      "SUBJECT": "Asunto",
+      "SELECT": "-- Seleccione --",
+      "QUESTION": "Pregunta",
+      "INSCRIPTION": "Inscripción / Visita",
+      "OTHER": "Otro",
+      "MESSAGE": "Mensaje"
+    }
 
   },
   "FAQ": {

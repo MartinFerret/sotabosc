@@ -1,29 +1,61 @@
 <h1>{{ "OUR_STAFF.STAFF" | translate }}</h1>
-<p-divider></p-divider>
-
 <section class="footer-section">
-  <div class="footer-section-part-one">
-    <div class="image">
-      <img ngSrc="./assets/images/how-it-works/our-staff-2.webp" alt="Sotabosc" height="800" width="600" [priority]="true"/>
-    </div>
-    <p-panel class="description" [showHeader]="false">
-      <div class="scriptures">
-        <h2>{{ "HOW_IT_WORKS.ROLE_TITLE" | translate }}</h2>
-        <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_ONE" | translate }}</p>
-        <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_TWO" | translate }}</p>
+  <section>
+    <div class="reliability">
+      <div class="text">
+        <div class="scriptures">
+          <h2>{{ "HOW_IT_WORKS.ROLE_TITLE" | translate }}</h2>
+          <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_ONE" | translate }}</p>
+          <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_TWO" | translate }}</p>
+        </div>
       </div>
-    </p-panel>
-  </div>
-  <p-divider></p-divider>
-  <div class="footer-section-part-two">
-    <div class="image">
-      <img ngSrc="./assets/images/how-it-works/our-staff-natalia-foret.jpg" alt="Sotabosc" height="800" width="600"/>
-    </div>
-    <p-panel class="description" [showHeader]="false">
-      <div class="scriptures">
-        <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_THREE" | translate }}</p>
-        <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_FOUR" | translate }}</p>
+      <div class="image">
+        <img src="./assets/images/how-it-works/our-staff-2.webp" alt="">
       </div>
-    </p-panel>
-  </div>
+    </div>
+  </section>
+  <section>
+    <div class="reliability reversed">
+      <div class="text">
+        <div class="scriptures">
+          <h2>{{ "OUR_STAFF.TITLE" | translate  }}</h2>
+          <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_THREE" | translate }}</p>
+          <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_FOUR" | translate }}</p>
+        </div>
+      </div>
+      <div class="image">
+        <img ngSrc="./assets/images/how-it-works/our-staff-natalia-foret.jpg" alt="Sotabosc" height="800" width="600"/>
+      </div>
+    </div>
+  </section>
 </section>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__logo">
+      <a href="#">
+        <img src="assets/images/home/home-logo.webp" alt="Logo" />
+      </a>    </div>
+
+    <nav class="footer__nav">
+      <a [routerLink]="['/la-nostra-pedagogia']">{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</a>
+      <a [routerLink]="['/noticies']">{{ "GLOBAL.EVENTS" | translate }}</a>
+      <a [routerLink]="['/preguntes-freqüents']">{{ "GLOBAL.FAQ" | translate }}</a>
+      <a [routerLink]="['/contacte']">{{ "GLOBAL.CONTACT" | translate }}</a>
+    </nav>
+
+    <div class="footer__contacts">
+      <a href="mailto:espaisotabosc@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/+34668530571" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom" style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
+    &copy; 2025 Espai Sotabosc. {{ "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
+  </div>
+</footer>

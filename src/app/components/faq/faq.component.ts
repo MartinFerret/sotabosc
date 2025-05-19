@@ -3,15 +3,17 @@ import {DividerModule} from "primeng/divider";
 import {AccordionModule} from "primeng/accordion";
 import {TranslateModule} from "@ngx-translate/core";
 import {TitleService} from "../../services/title.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-faq',
   standalone: true,
-    imports: [
-        DividerModule,
-        AccordionModule,
-        TranslateModule,
-    ],
+  imports: [
+    DividerModule,
+    AccordionModule,
+    TranslateModule,
+    RouterLink,
+  ],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss'
 })

@@ -6,17 +6,19 @@ import {DividerModule} from "primeng/divider";
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {TimelineItems} from "../../models/event.model";
 import {TitleService} from "../../services/title.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-how-it-works',
   standalone: true,
-    imports: [
-        TimelineModule,
-        NgOptimizedImage,
-        PanelModule,
-        DividerModule,
-        TranslateModule,
-    ],
+  imports: [
+    TimelineModule,
+    NgOptimizedImage,
+    PanelModule,
+    DividerModule,
+    TranslateModule,
+    RouterLink,
+  ],
   templateUrl: './how-it-works.component.html',
   styleUrl: './how-it-works.component.scss'
 })

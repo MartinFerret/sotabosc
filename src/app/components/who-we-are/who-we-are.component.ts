@@ -5,17 +5,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHandshake, faTree, faPaw, faHeart } from '@fortawesome/free-solid-svg-icons';
 import {NgOptimizedImage} from "@angular/common";
 import {TitleService} from "../../services/title.service";
+import {RouterLink} from "@angular/router";
 
 
 @Component({
   selector: 'app-who-we-are',
   standalone: true,
-    imports: [
-        TranslateModule,
-        DividerModule,
-        FontAwesomeModule,
-        NgOptimizedImage
-    ],
+  imports: [
+    TranslateModule,
+    DividerModule,
+    FontAwesomeModule,
+    NgOptimizedImage,
+    RouterLink
+  ],
   templateUrl: './who-we-are.component.html',
   styleUrl: './who-we-are.component.scss'
 })

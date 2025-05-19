@@ -1,39 +1,86 @@
-<section class="container">
-<section class="header">
-  <div class="title">
-    <h1>{{ 'CONTACT.CONTACT_US' | translate }}</h1>
-    <p>{{ 'CONTACT.QUESTIONS' | translate }}</p>
+<div class="contact-wrapper">
+  <div class="about-us">
+    <div class="title">
+      <h1>{{ 'CONTACT.CONTACT_US' | translate }}</h1>
+      <p>{{ 'CONTACT.QUESTIONS' | translate }}</p>
+    </div>
+    <p>{{ "CONTACT.ADDRESS" | translate }} <strong>El Catllar</strong>, {{ "CONTACT.SPECIFICATIONS" | translate }}</p>
+    <p>{{ "CONTACT.PHONE_SENTENCE" | translate }} <strong>668 530 571</strong>.</p>
+    <p>{{ "CONTACT.HOURS" | translate }}</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3002.9068664351908!2d1.3056163765756341!3d41.18019850882027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sfr!2ses!4v1747594632295!5m2!1sfr!2ses" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-  <section class="footer">
-    <div class="card">
-      <fa-icon [icon]="faEnvelope" size="2x"></fa-icon>
-      <h3>{{ 'CONTACT.EMAIL' | translate }}</h3>
-      <p> espaisotabosc&#64;gmail.com</p>
-      <a href="mailto:espaisotabosc@gmail.com"><p-button [label]="'CONTACT.CONTACT_US' | translate " ></p-button></a>
+  <div class="form">
+    <div class="names">
+      <div class="firstname">
+        <label for="firstname">{{ "FORM.NAME" | translate }} *</label>
+        <input type="text" id="firstname" name="firstname">
+      </div>
+      <div class="lastname">
+        <label for="lastname">{{ "FORM.LASTNAME" | translate }} *</label>
+        <input type="text" id="lastname" name="lastname">
+      </div>
     </div>
-    <div class="card">
-      <fa-icon [icon]="faCamera" size="2x"></fa-icon>
-      <h3>Instagram</h3>
-      <p>&#64;espaisotabosc</p>
-      <a target="_blank" href="https://www.instagram.com/espaisotabosc/"><p-button [label]=" 'CONTACT.FOLLOW_US' | translate "></p-button></a>
+    <div class="contact-methods">
+      <div class="email">
+        <label for="email">{{ "FORM.EMAIL" | translate }} *</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="phone">
+        <label for="phone">{{ "FORM.PHONE" | translate }}</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
     </div>
-    <div class="card">
-      <fa-icon [icon]="faPhone" size="2x"></fa-icon>
-      <h3>{{ 'CONTACT.PHONE' | translate }}</h3>
-      <p>668.530.571</p>
-      <p-button [label]=" 'CONTACT.CALL_US' | translate "></p-button>
+    <div class="contact-type">
+      <div class="type">
+        <label for="contact-type">{{ "FORM.OBJECT" | translate }} *</label>
+        <select id="contact-type" name="contact-type">
+          <option value="">-- {{ "FORM.SELECT" | translate }} --</option>
+          <option value="booking">Instagram</option>
+          <option value="questions">{{ "FORM.WEBSITE" | translate }}</option>
+          <option value="other">{{ "FORM.RECOMMENDED" | translate }}</option>
+          <option value="other">{{ "FORM.OTHER" | translate }}</option>
+        </select>
+      </div>
     </div>
-    <div class="card">
-      <fa-icon [icon]="faLocationDot" size="2x"></fa-icon>
-      <h3>{{ 'CONTACT.LOCALIZATION' | translate }}</h3>
-      <p>El Catllar, Tarragona</p>
-      <a target="_blank" href="https://www.google.es/maps/place/Granja+Escola+Corral+de+Neri/@41.1801945,1.3056164,17z/data=!3m1!4b1!4m6!3m5!1s0x12a3fd321a8b0685:0x90a095d8d06363bc!8m2!3d41.1801945!4d1.3081913!16s%2Fg%2F1v7x_tbd?entry=ttu"><p-button [label]=" 'CONTACT.FIND_US' | translate "></p-button></a>
+    <div class="contact-message">
+      <div class="message">
+        <label for="message">{{ "FORM.MESSAGE" | translate }} *</label>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+      </div>
     </div>
-  </section>
-</section>
-  <section class="footer-part">
-    <p>{{ 'GLOBAL.ALL_RIGHTS_RESERVED' | translate }} ® | <a href="https://www.linkedin.com/in/martin-ferret/" target="_blank">Ferret Martin</a></p>
-  </section>
-</section>
+    <p-button [label]="'Enviar'" [icon]="'pi pi-send'"></p-button>
+  </div>
+</div>
 
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__logo">
+      <a href="#">
+        <img src="assets/images/home/home-logo.webp" alt="Logo" />
+      </a>
+    </div>
+
+    <nav class="footer__nav">
+      <a [routerLink]="['/la-nostra-pedagogia']">{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</a>
+      <a [routerLink]="['/noticies']">{{ "GLOBAL.EVENTS" | translate }}</a>
+      <a [routerLink]="['/preguntes-freqüents']">{{ "GLOBAL.FAQ" | translate }}</a>
+      <a [routerLink]="['/contacte']">{{ "GLOBAL.CONTACT" | translate }}</a>
+    </nav>
+
+    <div class="footer__contacts">
+      <a href="mailto:espaisotabosc@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/+34668530571" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom" style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
+    &copy; 2025 Espai Sotabosc. {{ "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
+  </div>
+</footer>
 

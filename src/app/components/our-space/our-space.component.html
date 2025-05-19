@@ -1,57 +1,93 @@
 <h1>{{ "OUR_SPACE.MAIN_TITLE" | translate }}</h1>
-<p-divider></p-divider>
 <div class="ourspace">
   <div>
-    <div class="ourspace__wrapper">
-      <div class="ourspace__wrapper__explanations">
-        <h2>{{ "OUR_SPACE.INDOOR_TITLE" | translate }}</h2>
-        <div class="ourspace__wrapper__explanations__block__indoor">
+    <div class="reliability">
+      <div class="text">
+        <div class="scriptures">
+          <h2>{{ "OUR_SPACE.INDOOR_TITLE" | translate }}</h2>
           <p>{{ "OUR_SPACE.INDOOR_TEXT" | translate }}</p>
           <p>{{ "OUR_SPACE.INDOOR_TEXT_SECOND" | translate }}</p>
-          <p>{{ "OUR_SPACE.INDOOR_TEXT_LIST_ONE" | translate }}</p>
-          <p>{{ "OUR_SPACE.INDOOR_TEXT_LIST_TWO" | translate }}</p>
+          <p>- {{ "OUR_SPACE.INDOOR_TEXT_LIST_ONE" | translate }}</p>
+          <p>- {{ "OUR_SPACE.INDOOR_TEXT_LIST_TWO" | translate }}</p>
         </div>
       </div>
-      <div class="ourspace__wrapper__image">
+      <div class="image">
         <img ngSrc="./assets/images/our-space/our-space-espace-interieur.webp" alt="Espai interior" height="600" width="800" [priority]="true"/>
       </div>
     </div>
-    <div class="ourspace__indoor">
-      <div class="ourspace__indoor__left">
-        <img ngSrc="./assets/images/our-space/our-space-3.webp" alt="Sotabosc" height="800" width="1093">
+    <div class="photo-row">
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
       </div>
-      <div class="ourspace__indoor__right">
-        <img ngSrc="./assets/images/our-space/our-space-8.webp" alt="Sotabosc" height="395" width="637">
-        <img ngSrc="./assets/images/our-space/our-space-9.webp" alt="Sotabosc" height="395" width="637">
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
       </div>
     </div>
-    <p-divider></p-divider>
-    <div class="ourspace__outdoor">
-      <div class="ourspace__outdoor__explanations">
-        <h2>{{ "OUR_SPACE.OUTDOOR_TITLE" | translate }}</h2>
-        <div class="ourspace__outdoor__explanations__block">
-          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_GARDEN_TITLE" | translate }}</span><br><br> {{ "OUR_SPACE.OUTDOOR_GARDEN_TEXT" | translate }}</p>
-        </div>
-        <div class="ourspace__outdoor__explanations__block">
-          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_BOSC_TITLE" | translate }}</span><br><br> {{ "OUR_SPACE.OUTDOOR_BOSC_TEXT" | translate }}</p>
-        </div>
-        <div class="ourspace__outdoor__explanations__block">
-          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_FARM_TITLE" | translate }}</span><br><br>{{ "OUR_SPACE.OUTDOOR_FARM_TEXT" | translate }}</p>
+    <div class="wave">
+      <svg xmlns="http://www.w3.org/2000/svg" height="200px" width="300px" viewBox="0 0 300 300"><circle cx="48.8" cy="150" r="18.89" fill="#e9deaf"></circle><circle cx="96.57" cy="150" r="18.89" fill="#e9deaf"></circle><circle cx="251.2" cy="150" r="18.89" fill="#e9deaf"></circle><rect width="96.85" height="37.78" x="125.46" y="131.11" fill="#e9deaf" rx="18.89" ry="18.89"></rect></svg>    </div>
+
+    <div class="reliability reversed">
+      <div class="text">
+        <div class="scriptures">
+          <h2>{{ "OUR_SPACE.OUTDOOR_TITLE" | translate }}</h2>
+          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_GARDEN_TITLE" | translate }}</span><br> {{ "OUR_SPACE.OUTDOOR_GARDEN_TEXT" | translate }}</p>
+          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_BOSC_TITLE" | translate }}</span><br> {{ "OUR_SPACE.OUTDOOR_BOSC_TEXT" | translate }}</p>
+          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_FARM_TITLE" | translate }}</span><br>{{ "OUR_SPACE.OUTDOOR_FARM_TEXT" | translate }}</p>
         </div>
       </div>
-      <div class="ourspace__outdoor__image">
+      <div class="image">
         <img ngSrc="./assets/images/our-space/our-space-exterieur-lilia.webp" alt="Sotabosc" height="600" width="800"/>
       </div>
     </div>
-    <div class="ourspace__indoor">
-      <div class="ourspace__indoor__left">
-        <img ngSrc="./assets/images/our-space/our-space-exterior-nerea-story.jpg" alt="Sotabosc" height="3024" width="4032"/>
+    <div class="photo-row">
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
       </div>
-      <div class="ourspace__indoor__right">
-        <img ngSrc="./assets/images/our-space/our-space-ane.webp" alt="Sotabosc" height="292" width="519"/>
-        <img ngSrc="./assets/images/our-space/our-space-7.webp" alt="Sotabosc" height="395" width="637"/>
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
       </div>
     </div>
   </div>
 </div>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__logo">
+      <a href="#">
+        <img src="assets/images/home/home-logo.webp" alt="Logo" />
+      </a>    </div>
 
+    <nav class="footer__nav">
+      <a [routerLink]="['/la-nostra-pedagogia']">{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</a>
+      <a [routerLink]="['/noticies']">{{ "GLOBAL.EVENTS" | translate }}</a>
+      <a [routerLink]="['/preguntes-freqüents']">{{ "GLOBAL.FAQ" | translate }}</a>
+      <a [routerLink]="['/contacte']">{{ "GLOBAL.CONTACT" | translate }}</a>
+    </nav>
+
+    <div class="footer__contacts">
+      <a href="mailto:espaisotabosc@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/+34668530571" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom" style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
+    &copy; 2025 Espai Sotabosc. {{ "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
+  </div>
+</footer>

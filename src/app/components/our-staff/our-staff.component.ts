@@ -4,16 +4,20 @@ import {PanelModule} from "primeng/panel";
 import {TranslateModule} from "@ngx-translate/core";
 import {TitleService} from "../../services/title.service";
 import {DividerModule} from "primeng/divider";
+import {ButtonModule} from "primeng/button";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-our-staff',
   standalone: true,
-    imports: [
-        NgOptimizedImage,
-        PanelModule,
-        TranslateModule,
-        DividerModule,
-    ],
+  imports: [
+    NgOptimizedImage,
+    PanelModule,
+    TranslateModule,
+    DividerModule,
+    ButtonModule,
+    RouterLink,
+  ],
   templateUrl: './our-staff.component.html',
   styleUrl: './our-staff.component.scss'
 })

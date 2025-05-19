@@ -3,16 +3,18 @@ import {TranslateModule} from "@ngx-translate/core";
 import {DividerModule} from "primeng/divider";
 import {NgOptimizedImage} from "@angular/common";
 import {TitleService} from "../../services/title.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-our-space',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [
-        TranslateModule,
-        DividerModule,
-        NgOptimizedImage,
-    ],
+  imports: [
+    TranslateModule,
+    DividerModule,
+    NgOptimizedImage,
+    RouterLink,
+  ],
   templateUrl: './our-space.component.html',
   styleUrl: './our-space.component.scss'
 })

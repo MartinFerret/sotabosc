@@ -1,7 +1,8 @@
 :host ::ng-deep {
   .wrapper {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+    background-image: url("../../../assets/images/contact-hero.png");
   }
   h1 {
     text-align: center;
@@ -41,6 +42,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      & img {
+        border-radius: 16px !important;
+      }
     }
   }
 
@@ -49,7 +54,7 @@
     padding: 0 0 1rem 0;
     position: relative;
     z-index: 8;
-    color: var(--sbc-white);
+    color: var(--sbc-black);
   }
 
   h2::before {
@@ -60,7 +65,7 @@
     margin-left: -3px;
     margin-right: -3px;
     position: absolute;
-    background: var(--sbc-green);
+    background-color: rgba(0, 0, 0, 0.05);
     transform: rotate(2deg);
     border-radius: 20% 25% 20% 24%;
     padding: 10px 3px 3px 10px;

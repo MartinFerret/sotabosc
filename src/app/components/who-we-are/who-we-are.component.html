@@ -1,9 +1,8 @@
 <h1>{{ "GLOBAL.OUR_PEDAGOGY" | translate }}</h1>
-<p-divider></p-divider>
 <div class="we">
   <div class="we__hero">
     <div class="we__hero__image">
-      <img ngSrc="./assets/images/who-we-are/who-we-are-enfants-main.webp" [priority]="true" alt="Sotabosc" height="600" width="800"/>
+      <img src="./assets/images/who-we-are/who-we-are-enfants-main.webp"  alt="Sotabosc" />
     </div>
     <div class="we__hero__description">
       <h2>{{ "WHO_WE_ARE.OUR_PROJECT" | translate }}</h2>
@@ -16,17 +15,14 @@
     </div>
   </div>
 
-  <div class="we__pedagogy">
+  <div class="we__pedagogy image-right">
     <div class="we__pedagogy__image first">
-      <img ngSrc="./assets/images/who-we-are/who-we-are-maths.webp" alt="Sotabosc" height="480" width="640"/>
+      <img src="./assets/images/who-we-are/who-we-are-maths.webp" alt="Sotabosc" />
     </div>
     <div class="we__pedagogy__description">
       <h2>{{ "WHO_WE_ARE.OUR_PEDAGOGY" | translate }}</h2>
       <div class="we__pedagogy__description__blocks">
         <div class="we__pedagogy__description__blocks__block">
-          <div class="handshake">
-            <fa-icon [icon]="faHandshake" size="4x"></fa-icon>
-          </div>
           <div class="text">
             <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_ONE" | translate }}</p>
             <br>
@@ -34,9 +30,6 @@
           </div>
         </div>
         <div class="we__pedagogy__description__blocks__block">
-          <div class="test">
-            <fa-icon [icon]="faTree" size="4x"></fa-icon>
-          </div>
           <div class="tree text">
             <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_THREE" | translate }}</p>
             <br>
@@ -49,15 +42,12 @@
 
   <div class="we__pedagogy__two">
     <div class="we__pedagogy__two__image reversed">
-      <img ngSrc="./assets/images/who-we-are/who-we-are-cheval.webp" alt="Sotabosc" height="600" width="800"/>
+      <img src="./assets/images/who-we-are/who-we-are-cheval.webp" alt="Sotabosc" />
     </div>
     <div class="we__pedagogy__two__description">
+      <h2>CONVIURE AMB ELS ANIMALS I CRÉIXER EN DIVERSITAT</h2>
       <div class="we__pedagogy__two__description__blocks">
-        <div class="we__pedagogy__two__description__blocks__block"></div>
         <div class="we__pedagogy__two__description__blocks__block">
-          <div>
-            <fa-icon [icon]="faPaw" size="4x"></fa-icon>
-          </div>
           <div class="paw text">
             <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_FIVE" | translate }}</p>
             <br>
@@ -67,9 +57,6 @@
           </div>
         </div>
         <div class="we__pedagogy__two__description__blocks__block">
-          <div>
-            <fa-icon [icon]="faHeart" size="4x"></fa-icon>
-          </div>
           <div class="heart text">
             <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_EIGHT" | translate }}</p>
             <br>
@@ -80,3 +67,33 @@
     </div>
   </div>
 </div>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__logo">
+      <a href="#">
+        <img src="assets/images/home/home-logo.webp" alt="Logo" />
+      </a>    </div>
+
+    <nav class="footer__nav">
+      <a [routerLink]="['/la-nostra-pedagogia']">{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</a>
+      <a [routerLink]="['/noticies']">{{ "GLOBAL.EVENTS" | translate }}</a>
+      <a [routerLink]="['/preguntes-freqüents']">{{ "GLOBAL.FAQ" | translate }}</a>
+      <a [routerLink]="['/contacte']">{{ "GLOBAL.CONTACT" | translate }}</a>
+    </nav>
+
+    <div class="footer__contacts">
+      <a href="mailto:espaisotabosc@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/+34668530571" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom" style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
+    &copy; 2025 Espai Sotabosc. {{ "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
+  </div>
+</footer>

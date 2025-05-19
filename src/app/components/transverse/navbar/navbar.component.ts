@@ -2,11 +2,10 @@ import {Component, inject, OnInit, signal} from '@angular/core';
 import {MenuItem} from "primeng/api";
 import {MenubarModule} from "primeng/menubar";
 import {InputTextModule} from "primeng/inputtext";
-import {NgIf, NgOptimizedImage} from "@angular/common";
+import {NgOptimizedImage} from "@angular/common";
 import {ButtonModule} from "primeng/button";
 import {EventService} from "../../../services/event.service";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
-import {EventBarComponent} from "../event-bar/event-bar.component";
 import {TranslateService} from "@ngx-translate/core";
 import {AuthService} from "../../../services/auth.service";
 
@@ -19,8 +18,7 @@ import {AuthService} from "../../../services/auth.service";
     InputTextModule,
     NgOptimizedImage,
     ButtonModule,
-    EventBarComponent,
-    NgIf,
+
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
@@ -48,35 +46,29 @@ export class NavbarComponent implements OnInit {
         label: this.translateService.instant('GLOBAL.HOME'),
         routerLink: ['/'],
         routerLinkActiveOptions: true,
-        icon: 'pi pi-home'
       },
       {
         label: this.translateService.instant('GLOBAL.WHO_WE_ARE'),
-        icon: 'pi pi-cloud',
         items: [
           {
             label: this.translateService.instant('OUR_STAFF.STAFF'),
             routerLink: ['/les-acompanyants'],
             routerLinkActiveOptions: true,
-            icon: 'pi pi-user'
           },
           {
             label: this.translateService.instant('GLOBAL.OUR_PEDAGOGY'),
             routerLink: ['/la-nostra-pedagogia'],
             routerLinkActiveOptions: true,
-            icon: 'pi pi-star'
           },
           {
             label: this.translateService.instant('GLOBAL.OUR_SPACE'),
             routerLink: ['/el-nostre-espai'],
             routerLinkActiveOptions: true,
-            icon: 'pi pi-heart'
           },
           {
             label: this.translateService.instant('GLOBAL.DAY_IN_SOTABOSC'),
             routerLink: ['/un-dia-a-sotabosc'],
             routerLinkActiveOptions: true,
-            icon: 'pi pi-sun'
           },
         ]
       },
@@ -84,19 +76,16 @@ export class NavbarComponent implements OnInit {
         label: this.translateService.instant('GLOBAL.EVENTS'),
         routerLink: ['/noticies'],
         routerLinkActiveOptions: true,
-        icon: 'pi pi-clock'
       },
       {
         label: this.translateService.instant('GLOBAL.FAQ'),
         routerLink: ['/preguntes-freqüents'],
         routerLinkActiveOptions: true,
-        icon: 'pi pi-search'
       },
       {
         label: this.translateService.instant('GLOBAL.CONTACT'),
         routerLink: ['/contacte'],
         routerLinkActiveOptions: true,
-        icon: 'pi pi-envelope'
       },
       {
         label: "Idioma",

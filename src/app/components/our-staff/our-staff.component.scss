@@ -14,6 +14,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    background-image: url("../../../assets/images/contact-hero.png");
+    background-repeat: no-repeat;
   }
 
   .footer-section-part-one,
@@ -79,7 +81,7 @@
     padding: 0 0 1rem 0;
     position: relative;
     z-index: 8;
-    color: var(--sbc-white);
+    color: var(--sbc-black);
   }
 
   h2::before {
@@ -90,7 +92,6 @@
     margin-left: -3px;
     margin-right: -3px;
     position: absolute;
-    background: var(--sbc-green);
     transform: rotate(2deg);
     border-radius: 20% 25% 20% 24%;
     padding: 10px 3px 3px 10px;
@@ -246,3 +247,133 @@
     }
   }
 }
+
+.reliability {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f0db;
+  border-radius: 16px;
+  padding: 32px;
+  color: black;
+  gap: 32px;
+  flex-wrap: wrap;
+
+  .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 300px;
+
+    h1, h2 {
+      color: black;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .text-svg {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 0.8rem;
+
+      i.pi {
+        font-size: 1.2rem;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    padding: 24px;
+
+    .text {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+
+      h1, h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px;
+    gap: 24px;
+
+    .text {
+      h1, h2 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.reliability.reversed {
+  flex-direction: row-reverse;
+  background-color: #ebe1b8;
+  color: black;
+
+  .text {
+    text-align: left;
+  }
+}
+
