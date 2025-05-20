@@ -52,9 +52,13 @@
             accept="image/*"
             [maxFileSize]="1000000"
             (onUpload)="onUpload($event)"
+            (onSelect)="onImageSelect($event)"
             styleClass="p-button-outlined"
             [auto]="true"
           ></p-fileUpload>
+          <div *ngIf="previewImage" class="image-preview">
+            <img [src]="previewImage" alt="Preview" style="max-width: 100%; max-height: 300px;" />
+          </div>
         </div>
       </div>
 

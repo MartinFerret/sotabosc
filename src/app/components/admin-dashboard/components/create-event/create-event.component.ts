@@ -15,6 +15,7 @@ import {TranslateModule} from "@ngx-translate/core";
 import {Router} from "@angular/router";
 import {Subscription} from "rxjs";
 import {CardModule} from "primeng/card";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-create-event',
@@ -32,6 +33,7 @@ import {CardModule} from "primeng/card";
     FileUploadModule,
     TranslateModule,
     CardModule,
+    NgIf,
   ],
   templateUrl: './create-event.component.html',
   styleUrl: './create-event.component.scss'
@@ -43,6 +45,7 @@ export class CreateEventComponent implements OnInit, OnDestroy {
   router = inject(Router);
   subscription: Subscription = new Subscription();
   eventNumber: number = 1;
+  previewImage: string | null = null;
 
   eventForm = new FormGroup({
     id: new FormControl(0, [Validators.required]),
@@ -58,6 +61,17 @@ export class CreateEventComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getNumberEvents();
+  }
+
+  onImageSelect(event: any): void {
+    const file: File = event.files?.[0];
+    if (file && file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        this.previewImage = reader.result as string;
+      };
+      reader.readAsDataURL(file);
+    }
   }
 
    createEvent() {
