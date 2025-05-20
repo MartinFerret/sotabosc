@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px !important;
 }
 
-.p-button {
+.p-button:not(.admin) {
   background-color: var(--sbc-green);
   border: 1px solid var(--sbc-green);
   color: white;

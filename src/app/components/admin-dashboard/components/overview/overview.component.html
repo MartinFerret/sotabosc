@@ -1,15 +1,17 @@
 <p-confirmDialog></p-confirmDialog>
 <p-toast></p-toast>
-@if (displaySidebar()) {
-  <app-sidebar
-    [displaySidebar]="displaySidebar()"
-    [eventToEdit]="eventToEdit"
-    (eventToPersist)="modifyEvent($event)"
-  >
-  </app-sidebar>
-}
-<section>
-  <h1>Contingut</h1>
+
+<!-- Sidebar (toujours dans le DOM pour éviter un problème de rendu async) -->
+<app-sidebar
+  *ngIf="displaySidebar()"
+  [displaySidebar]="displaySidebar()"
+  [eventToEdit]="eventToEdit"
+  (eventToPersist)="modifyEvent($event)"
+></app-sidebar>
+
+<section class="events-section">
+  <h1 class="title">Contingut</h1>
+
   @if (events()?.length) {
     <p-table
       [multiSortMeta]="tableData.filters"
@@ -18,45 +20,43 @@
       [rows]="25"
       [value]="events() ?? []"
       dataKey="id"
-      styleClass="p-datatable-striped mt-2"
+      styleClass="p-datatable-striped custom-table elegant-table mt-2"
       [columns]="tableData.headers"
     >
       <ng-template pTemplate="header">
         <tr>
           @for (data of tableData.headers; track tableData.headers) {
-            <th
-              [id]="data.field"
-            >
-              <div class="text-overflow-ellipsis">
-                {{ data.header }}
-              </div>
+            <th>
+              <span class="header-cell">{{ data.header }}</span>
             </th>
           }
-          <th id="actionBtn">Accions</th>
+          <th class="header-cell action-header">Accions</th>
         </tr>
       </ng-template>
-      <ng-template
-        let-event
-        pTemplate="body"
-      >
+
+      <ng-template let-event pTemplate="body">
         <tr>
-          <td>{{ event.title | titlecase }}</td>
-          <td>{{ event.description | slice: 0: 10 }}...</td>
-          <td>{{ event.date }}</td>
-          <td>{{ event.hour }}</td>
-          <td>{{ event.price | currency: 'EUR' }}</td>
-          <td>{{ event.isOpen ? 'Obert' : 'Tancat' }}</td>
-          <td>
-            <div class="buttons-container">
+          <td class="cell">{{ event.title | titlecase }}</td>
+          <td class="cell description">{{ event.description | slice: 0: 60 }}...</td>
+          <td class="cell">{{ event.date }}</td>
+          <td class="cell">{{ event.hour }}</td>
+          <td class="cell">{{ event.price | currency: 'EUR' }}</td>
+          <td class="cell">
+            <span class="badge" [ngClass]="event.isOpen ? 'open' : 'closed'">
+              {{ event.isOpen ? 'Obert' : 'Tancat' }}
+            </span>
+          </td>
+          <td class="cell action-cell">
+            <div class="action-buttons">
               <p-button
                 [icon]="'pi pi-pencil'"
                 (click)="editEventAndDisplaySidebar(event)"
-                styleClass="p-button-sm p-button-text"
+                styleClass="p-button-sm p-button-text icon-button edit-btn admin"
               ></p-button>
               <p-button
                 [icon]="'pi pi-trash'"
                 (click)="confirmDeletion(event.title)"
-                styleClass="p-button-sm p-button-text p-button-outlined"
+                styleClass="p-button-sm p-button-text icon-button delete-btn admin"
               ></p-button>
             </div>
           </td>
@@ -65,3 +65,4 @@
     </p-table>
   }
 </section>
+

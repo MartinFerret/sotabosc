@@ -14,6 +14,7 @@ import {AngularFireStorage} from "@angular/fire/compat/storage";
 import {TranslateModule} from "@ngx-translate/core";
 import {Router} from "@angular/router";
 import {Subscription} from "rxjs";
+import {CardModule} from "primeng/card";
 
 @Component({
   selector: 'app-create-event',
@@ -30,6 +31,7 @@ import {Subscription} from "rxjs";
     ToastModule,
     FileUploadModule,
     TranslateModule,
+    CardModule,
   ],
   templateUrl: './create-event.component.html',
   styleUrl: './create-event.component.scss'

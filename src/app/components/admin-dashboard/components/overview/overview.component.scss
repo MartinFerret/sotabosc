@@ -1,18 +1,123 @@
 :host ::ng-deep {
-  .buttons-container {
-    display: flex;
-    flex-direction: row;
+  .events-section {
+    padding: 3rem 2rem;
 
-    & .p-element {
-      margin: 0 1rem !important;
+    .title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 2rem;
     }
   }
 
-  @media only screen and (max-width: 525px) {
+  .elegant-table {
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #374151;
+
+    th {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #6b7280;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid #e5e7eb;
+
+      &.action-header {
+        text-align: center;
+      }
+    }
+
+    td.cell {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid #f3f4f6;
+      vertical-align: middle;
+
+      &.description {
+        color: #6b7280;
+        font-style: italic;
+      }
+
+      &.action-cell {
+        text-align: center;
+      }
+    }
+
+    tr:hover td {
+      background-color: #f9fafb;
+      transition: background-color 0.25s ease;
+    }
+
+    .header-cell {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+
+      &.open {
+        background-color: #ecfdf5;
+        color: #059669;
+      }
+
+      &.closed {
+        background-color: #fef2f2;
+        color: #b91c1c;
+      }
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+
+      .icon-button {
+        transition: transform 0.15s ease;
+        border-radius: 9999px;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &.edit-btn {
+          color: #2563eb !important;
+        }
+
+        &.delete-btn {
+          color: #dc2626 !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .elegant-table {
+      font-size: 0.85rem;
+
+      th, td {
+        padding: 0.75rem 1rem;
+      }
+
+      .action-buttons {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @media (max-width: 525px) {
     .p-confirm-dialog-reject {
       background-color: white !important;
       border: 1px solid var(--sbc-green);
-      outline: none;
       color: var(--sbc-green);
     }
   }

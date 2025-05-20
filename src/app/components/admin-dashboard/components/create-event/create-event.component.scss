@@ -1,41 +1,95 @@
 :host ::ng-deep {
-  section {
-    padding-top: 1.7rem !important;
+  .form-wrapper {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
 
-    & form {
-      & .input {
-        margin: 1.5rem 0;
-        & input,
-        textarea{
-          width: 35rem;
-        }
+    p-card {
+      width: 100%;
+      max-width: 800px;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 1.2rem;
+
+      .form-title {
+        font-size: 1.8rem;
+        color: #3f51b5;
+        text-align: center;
+        margin: 1rem 0;
       }
-    }
 
-    & .p-fileupload {
-      margin: 2rem 0 !important;
-    }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
 
-    & .switch {
-      & label {
-        margin-right: 1rem;
+        .form-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 1.5rem;
+        }
+
+        .input {
+          display: flex;
+          flex-direction: column;
+
+          input,
+          textarea,
+          p-inputnumber,
+          .p-inputtext {
+            width: 100%;
+          }
+        }
+
+        .switch {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding-top: 0.5rem;
+        }
+
+        .upload {
+          padding-top: 1rem;
+        }
+
+        .submit-btn {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 1rem;
+        }
       }
     }
   }
 
   @media only screen and (max-width: 525px) {
-    section {
-      width: 100%;
+    .form-wrapper {
+      padding: 1rem;
 
-      & form {
-        & .input {
-          margin: 1.5rem 0;
-          & input,
-          textarea{
-            width: 90%;
+      p-card {
+        form {
+          .form-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .submit-btn {
+            justify-content: center;
           }
         }
       }
     }
   }
+}
+
+.input {
+  position: relative;
+
+  .p-inputtext {
+    width: 100%;
   }
+
+  label {
+    left: 0.75rem !important;
+    top: 0.75rem !important;
+  }
+}
+

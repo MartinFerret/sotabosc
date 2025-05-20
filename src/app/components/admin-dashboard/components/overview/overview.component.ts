@@ -7,7 +7,7 @@ import {
   Output, signal
 } from '@angular/core';
 import {TableDataColumnModel} from "../../../../models/column.model";
-import {CurrencyPipe, NgForOf, NgIf, SlicePipe, TitleCasePipe} from "@angular/common";
+import {CurrencyPipe, NgClass, NgForOf, NgIf, SlicePipe, TitleCasePipe} from "@angular/common";
 import {TableModule} from "primeng/table";
 import {ButtonModule} from "primeng/button";
 import {ConfirmService} from "../../../../services/confirm.service";
@@ -33,7 +33,8 @@ import {Event} from "../../../../models/event.model";
     ConfirmDialogModule,
     SidebarComponent,
     SlicePipe,
-    ToastModule
+    ToastModule,
+    NgClass
   ],
   templateUrl: './overview.component.html',
   styleUrl: './overview.component.scss'
