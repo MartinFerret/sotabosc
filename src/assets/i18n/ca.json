@@ -18,7 +18,7 @@
     },
     "MOTIVATION": {
       "STEP_ONE": "Educació infantil a la natura",
-      "STEP_ONE_PART_TWO": "(18 mesos a 6 anys)",
+      "STEP_ONE_PART_TWO": "(1 a 6 anys)",
       "STEP_TWO": "Infància, bosc i animals",
       "STEP_THREE": "Ràtios reduïdes i mirada respectuosa"
     },
@@ -84,7 +84,12 @@
   },
   "OUR_STAFF": {
     "STAFF": "Les acompanyants",
-    "TITLE": "CREIXENT I APRENENT EN UN ENTORN NATURAL"
+    "TITLE": "CREIXENT I APRENENT EN UN ENTORN NATURAL",
+    "NEREA_DESC1": "Directora del proyecto",
+    "NEREA_DESC2": "Y acompañante del grupo de Lila",
+    "NATALIA_DESC": "Acompanyant del grup dels Cavalls",
+    "MERI_DESC": "Acompanyant del grup dels Conills",
+    "MAJDA_DESC": "Acompanyant de francès"
   },
   "WHO_WE_ARE":{
     "TITLE": "Qui som",

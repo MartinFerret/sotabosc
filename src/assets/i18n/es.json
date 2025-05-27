@@ -18,7 +18,7 @@
     },
     "MOTIVATION": {
       "STEP_ONE": "Educación infantil en la naturaleza",
-      "STEP_ONE_PART_TWO": "(18 meses a\n6 años)",
+      "STEP_ONE_PART_TWO": "(1 a 6 años)",
       "STEP_TWO": "Infancia, bosque y animales",
       "STEP_THREE": "Ratios reducidas y mirada respetuosa"
     },
@@ -82,7 +82,13 @@
     "OUTDOOR_FARM_TEXT": "En la finca colindante a la nuestra, está la Granja-Escuela Corral de Neri. Con más de\n25 años de experiencia, es un espacio preparado para la infancia donde encontraremos animales\ne instalaciones lúdicas, de las que podemos disfrutar a diario."
   },
   "OUR_STAFF": {
-    "STAFF": "Los acompañantes"
+    "STAFF": "Los acompañantes",
+    "TITLE": "CRECIENDO Y APRENDIENDO EN UN ENTORNO NATURAL",
+    "NEREA_DESC1": "Directora del proyecto",
+    "NEREA_DESC2": "Y acompañante del grupo de Lila",
+    "NATALIA_DESC": "Acompañante del grupo de los Caballos",
+    "MERI_DESC": "Acompañante del grupo de los Conejos",
+    "MAJDA_DESC": "Acompañante de francés"
   },
   "WHO_WE_ARE":{
     "TITLE": "Quien somos",
