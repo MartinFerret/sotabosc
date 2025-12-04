@@ -2,6 +2,7 @@
   img {
     cursor: pointer;
   }
+
   .p-menubar {
     border: none;
     background-color: white !important;
@@ -9,7 +10,7 @@
     z-index: 100;
     border-radius: 0;
     font-family: "Barlow Semi Condensed", sans-serif !important;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     font-size: .7rem;
@@ -24,6 +25,7 @@
     & .p-element {
       //margin: 0 auto !important;
       margin: 0 auto;
+
       & .p-menuitem-link {
         //margin-right: 5rem !important;
       }
@@ -49,7 +51,7 @@
       position: fixed;
       z-index: 100;
       border-radius: 0;
-      top:0;
+      top: 0;
       left: 0;
       right: 0;
       font-size: .7rem;
@@ -86,9 +88,10 @@
       }
     }
   }
+
   i {
     font-size: 18px;
     margin-right: 2%;
     cursor: pointer;
   }
-  }
+}

@@ -1,11 +1,11 @@
-import {Component, inject} from '@angular/core';
-import {NgOptimizedImage} from "@angular/common";
-import {PanelModule} from "primeng/panel";
-import {TranslateModule} from "@ngx-translate/core";
-import {TitleService} from "../../services/title.service";
-import {DividerModule} from "primeng/divider";
-import {ButtonModule} from "primeng/button";
-import {RouterLink} from "@angular/router";
+import { Component, inject } from '@angular/core';
+import { NgOptimizedImage } from "@angular/common";
+import { PanelModule } from "primeng/panel";
+import { TranslateModule } from "@ngx-translate/core";
+import { TitleService } from "../../services/title.service";
+import { DividerModule } from "primeng/divider";
+import { ButtonModule } from "primeng/button";
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-our-staff',

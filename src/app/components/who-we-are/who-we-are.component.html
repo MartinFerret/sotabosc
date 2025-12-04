@@ -2,16 +2,17 @@
 <div class="we">
   <div class="we__hero">
     <div class="we__hero__image">
-      <img src="./assets/images/who-we-are/who-we-are-enfants-main.webp"  alt="Sotabosc" />
+      <img src="./assets/images/who-we-are/who-we-are-enfants-main.webp" alt="Sotabosc" />
     </div>
     <div class="we__hero__description">
       <h2>{{ "WHO_WE_ARE.OUR_PROJECT" | translate }}</h2>
       <p class="description">{{ "WHO_WE_ARE.TEXT_ONE" | translate }}</p>
       <p class="description">{{ "WHO_WE_ARE.TEXT_TWO" | translate }}</p>
       <p class="description">{{ "WHO_WE_ARE.TEXT_THREE" | translate }}</p>
-      <p class="description">{{ "WHO_WE_ARE.TEXT_FOUR" | translate }}</p>
-      <p class="description">{{ "WHO_WE_ARE.TEXT_FIVE" | translate }}</p>
-      <p class="description">{{ "WHO_WE_ARE.TEXT_SIX" | translate }}</p>
+      <p class="description"><strong>{{ "WHO_WE_ARE.TEXT_FOUR" | translate }}</strong></p>
+      <p class="description">- {{ "WHO_WE_ARE.TEXT_FIVE" | translate }}</p>
+      <p class="description">- {{ "WHO_WE_ARE.TEXT_SIX" | translate }}</p>
+      <p class="description">{{ "WHO_WE_ARE.TEXT_SEVEN" | translate }}</p>
     </div>
   </div>
 
@@ -66,13 +67,29 @@
       </div>
     </div>
   </div>
+  <div class="we__pedagogy image-right">
+    <div class="we__pedagogy__image first">
+      <img src="./assets/images/who-we-are/who-we-are-sorties.jpeg" alt="Sotabosc" />
+    </div>
+    <div class="we__pedagogy__description">
+      <h2>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_TEN" | translate }}</h2>
+      <div class="we__pedagogy__description__blocks">
+        <div class="we__pedagogy__description__blocks__block">
+          <div class="text">
+            <p>{{ "WHO_WE_ARE.PEDAGOGY_TEXT_ELEVEN" | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <footer class="footer">
   <div class="footer__container">
     <div class="footer__logo">
       <a href="#">
         <img src="assets/images/home/home-logo.webp" alt="Logo" />
-      </a>    </div>
+      </a>
+    </div>
 
     <nav class="footer__nav">
       <a [routerLink]="['/la-nostra-pedagogia']">{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</a>
@@ -85,7 +102,8 @@
       <a href="mailto:espaisotabosc@gmail.com" aria-label="Email">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram">
         <i class="fab fa-instagram"></i>
       </a>
       <a href="https://wa.me/+34668530571" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
@@ -94,6 +112,7 @@
     </div>
   </div>
   <div class="footer__bottom" style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
-    &copy; 2025 <a href="https://www.linkedin.com/in/martin-ferret/" target="_blank">Ferret Martin.</a> {{ "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
+    &copy; 2025 <a href="https://www.linkedin.com/in/martin-ferret/" target="_blank">Ferret Martin.</a> {{
+    "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
   </div>
 </footer>

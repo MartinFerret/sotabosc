@@ -1,12 +1,12 @@
-import {ChangeDetectionStrategy, Component, inject, OnInit} from '@angular/core';
-import {PanelModule} from "primeng/panel";
-import {ButtonModule} from "primeng/button";
-import {NgOptimizedImage} from "@angular/common";
-import {TranslateModule} from "@ngx-translate/core";
-import {RouterLink} from "@angular/router";
-import {FaIconComponent} from '@fortawesome/angular-fontawesome';
-import {faPaw, faSeedling, faTree} from '@fortawesome/free-solid-svg-icons';
-import {TitleService} from "../../services/title.service";
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { PanelModule } from "primeng/panel";
+import { ButtonModule } from "primeng/button";
+import { NgOptimizedImage } from "@angular/common";
+import { TranslateModule } from "@ngx-translate/core";
+import { RouterLink } from "@angular/router";
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+import { faPaw, faSeedling, faTree } from '@fortawesome/free-solid-svg-icons';
+import { TitleService } from "../../services/title.service";
 
 @Component({
   selector: 'app-home',
@@ -23,7 +23,7 @@ import {TitleService} from "../../services/title.service";
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
   faSeedling = faSeedling;
   faPaw = faPaw;
   faTree = faTree;

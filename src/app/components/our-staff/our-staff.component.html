@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="image">
-        <img src="./assets/images/how-it-works/our-staff-2.webp" alt="">
+        <img src="./assets/images/how-it-works/our-staff-meri.jpg" alt="">
       </div>
     </div>
   </section>
@@ -18,13 +18,14 @@
     <div class="reliability reversed">
       <div class="text">
         <div class="scriptures">
-          <h2>{{ "OUR_STAFF.TITLE" | translate  }}</h2>
+          <h2>{{ "OUR_STAFF.TITLE" | translate }}</h2>
           <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_THREE" | translate }}</p>
           <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_FOUR" | translate }}</p>
+          <p>{{ "HOW_IT_WORKS.ROLE_TEXT_PART_FIVE" | translate }}</p>
         </div>
       </div>
       <div class="image">
-        <img ngSrc="./assets/images/how-it-works/our-staff-natalia-foret.jpg" alt="Sotabosc" height="800" width="600"/>
+        <img ngSrc="./assets/images/how-it-works/our-staff-natalia.jpg" alt="Sotabosc" height="800" width="600" />
       </div>
     </div>
   </section>
@@ -35,7 +36,6 @@
       <img src="./assets/images/nerea.jpg" alt="Nerea" />
       <p>Nerea</p>
       <small>{{ "OUR_STAFF.NEREA_DESC1" | translate }}</small>
-      <small> {{ "OUR_STAFF.NEREA_DESC2" | translate }}</small>
     </div>
     <div class="team__member">
       <img src="assets/images/natalia.jpg" alt="Natalia" />
@@ -47,6 +47,11 @@
       <p>Meri</p>
       <small>{{ "OUR_STAFF.MERI_DESC" | translate }}</small>
     </div>
+    <div class="team__member">
+      <img src="assets/images/maria.png" alt="Meri" />
+      <p>Maria</p>
+      <small>{{ "OUR_STAFF.MARIA_DESC" | translate }}</small>
+    </div>
   </div>
 </section>
 <footer class="footer">
@@ -54,7 +59,8 @@
     <div class="footer__logo">
       <a href="#">
         <img src="assets/images/home/home-logo.webp" alt="Logo" />
-      </a>    </div>
+      </a>
+    </div>
 
     <nav class="footer__nav">
       <a [routerLink]="['/la-nostra-pedagogia']">{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</a>
@@ -67,7 +73,8 @@
       <a href="mailto:espaisotabosc@gmail.com" aria-label="Email">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram">
         <i class="fab fa-instagram"></i>
       </a>
       <a href="https://wa.me/+34668530571" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
@@ -76,6 +83,7 @@
     </div>
   </div>
   <div class="footer__bottom" style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
-    &copy; 2025 <a href="https://www.linkedin.com/in/martin-ferret/" target="_blank">Ferret Martin.</a> {{ "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
+    &copy; 2025 <a href="https://www.linkedin.com/in/martin-ferret/" target="_blank">Ferret Martin.</a> {{
+    "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
   </div>
 </footer>

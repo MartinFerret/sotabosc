@@ -84,10 +84,11 @@
   "OUR_STAFF": {
     "STAFF": "Los acompañantes",
     "TITLE": "CRECIENDO Y APRENDIENDO EN UN ENTORNO NATURAL",
-    "NEREA_DESC1": "Directora del proyecto",
-    "NEREA_DESC2": "Y acompañante del grupo de Lila",
-    "NATALIA_DESC": "Acompañante del grupo de los Caballos",
-    "MERI_DESC": "Acompañante del grupo de los Conejos"
+    "NEREA_DESC1": "Directora del proyecto y acompañante del grupo farigoles",
+    "NEREA_DESC2": "",
+    "NATALIA_DESC": "Acompañante del grupo estepes",
+    "MERI_DESC": "Acompañante del grupo romanis",
+    "MARIA_DESC": "Acompañante de soporte"
   },
   "WHO_WE_ARE":{
     "TITLE": "Quien somos",

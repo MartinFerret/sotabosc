@@ -6,57 +6,69 @@
         <div class="scriptures">
           <h2>{{ "OUR_SPACE.INDOOR_TITLE" | translate }}</h2>
           <p>{{ "OUR_SPACE.INDOOR_TEXT" | translate }}</p>
+          <p><strong>- {{ "OUR_SPACE.INDOOR_TEXT_LIST_ONE" | translate }}</strong></p>
+          <p>{{ "OUR_SPACE.INDOOR_TEXT_LIST_ONE_BIS" | translate }}</p>
+          <p><strong>- {{ "OUR_SPACE.INDOOR_TEXT_LIST_TWO" | translate }}</strong></p>
+          <p>{{ "OUR_SPACE.INDOOR_TEXT_LIST_TWO_BIS" | translate }}</p>
           <p>{{ "OUR_SPACE.INDOOR_TEXT_SECOND" | translate }}</p>
-          <p>- {{ "OUR_SPACE.INDOOR_TEXT_LIST_ONE" | translate }}</p>
-          <p>- {{ "OUR_SPACE.INDOOR_TEXT_LIST_TWO" | translate }}</p>
         </div>
       </div>
       <div class="image">
-        <img ngSrc="./assets/images/our-space/our-space-espace-interieur.webp" alt="Espai interior" height="600" width="800" [priority]="true"/>
+        <img ngSrc="./assets/images/our-space/our-space-espace-interieur.webp" alt="Espai interior" height="600"
+          width="800" [priority]="true" />
       </div>
     </div>
     <div class="photo-row">
       <div class="photo">
-        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+        <img src="assets/images/our-space/our-space-lila.jpg" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="assets/images/our-space/our-space-9.jpg" alt="Photo 1" />
       </div>
       <div class="photo">
         <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
       </div>
       <div class="photo">
-        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
-      </div>
-      <div class="photo">
-        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+        <img src="assets/images/our-space/our-space-interieur-dr.jpg" alt="Photo 1" />
       </div>
     </div>
     <div class="wave">
-      <svg xmlns="http://www.w3.org/2000/svg" height="200px" width="300px" viewBox="0 0 300 300"><circle cx="48.8" cy="150" r="18.89" fill="#e9deaf"></circle><circle cx="96.57" cy="150" r="18.89" fill="#e9deaf"></circle><circle cx="251.2" cy="150" r="18.89" fill="#e9deaf"></circle><rect width="96.85" height="37.78" x="125.46" y="131.11" fill="#e9deaf" rx="18.89" ry="18.89"></rect></svg>    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" height="200px" width="300px" viewBox="0 0 300 300">
+        <circle cx="48.8" cy="150" r="18.89" fill="#e9deaf"></circle>
+        <circle cx="96.57" cy="150" r="18.89" fill="#e9deaf"></circle>
+        <circle cx="251.2" cy="150" r="18.89" fill="#e9deaf"></circle>
+        <rect width="96.85" height="37.78" x="125.46" y="131.11" fill="#e9deaf" rx="18.89" ry="18.89"></rect>
+      </svg>
+    </div>
 
     <div class="reliability reversed">
       <div class="text">
         <div class="scriptures">
           <h2>{{ "OUR_SPACE.OUTDOOR_TITLE" | translate }}</h2>
-          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_GARDEN_TITLE" | translate }}</span><br> {{ "OUR_SPACE.OUTDOOR_GARDEN_TEXT" | translate }}</p>
-          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_BOSC_TITLE" | translate }}</span><br> {{ "OUR_SPACE.OUTDOOR_BOSC_TEXT" | translate }}</p>
-          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_FARM_TITLE" | translate }}</span><br>{{ "OUR_SPACE.OUTDOOR_FARM_TEXT" | translate }}</p>
+          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_GARDEN_TITLE" | translate }}</span><br> {{
+            "OUR_SPACE.OUTDOOR_GARDEN_TEXT" | translate }}</p>
+          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_BOSC_TITLE" | translate }}</span><br> {{
+            "OUR_SPACE.OUTDOOR_BOSC_TEXT" | translate }}</p>
+          <p><span class="title">{{ "OUR_SPACE.OUTDOOR_FARM_TITLE" | translate }}</span><br>{{
+            "OUR_SPACE.OUTDOOR_FARM_TEXT" | translate }}</p>
         </div>
       </div>
       <div class="image">
-        <img ngSrc="./assets/images/our-space/our-space-exterieur-lilia.webp" alt="Sotabosc" height="600" width="800"/>
+        <img ngSrc="./assets/images/our-space/our-space-exterior-nerea-story.jpg" alt="Sotabosc" height="600" width="800" />
       </div>
     </div>
     <div class="photo-row">
       <div class="photo">
-        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+        <img src="assets/images/our-space/our-space-exterior-ane-2.jpg" alt="Photo 1" />
       </div>
       <div class="photo">
-        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+        <img src="assets/images/our-space/our-space-exterior-school.jpeg" alt="Photo 1" />
       </div>
       <div class="photo">
-        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+        <img src="assets/images/our-space/our-space-exterior-forest.jpg" alt="Photo 1" />
       </div>
       <div class="photo">
-        <img src="assets/images/our-space/our-space-3.webp" alt="Photo 1" />
+        <img src="assets/images/our-space/our-space-exterior-cheval.jpg" alt="Photo 1" />
       </div>
     </div>
   </div>
@@ -66,7 +78,8 @@
     <div class="footer__logo">
       <a href="#">
         <img src="assets/images/home/home-logo.webp" alt="Logo" />
-      </a>    </div>
+      </a>
+    </div>
 
     <nav class="footer__nav">
       <a [routerLink]="['/la-nostra-pedagogia']">{{ "HOME.HERO.PEDAGOGY_BUTTON" | translate }}</a>
@@ -79,7 +92,8 @@
       <a href="mailto:espaisotabosc@gmail.com" aria-label="Email">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <a href="https://www.instagram.com/espaisotabosc/" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram">
         <i class="fab fa-instagram"></i>
       </a>
       <a href="https://wa.me/+34668530571" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
@@ -88,6 +102,7 @@
     </div>
   </div>
   <div class="footer__bottom" style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
-    &copy; 2025 <a href="https://www.linkedin.com/in/martin-ferret/" target="_blank">Ferret Martin.</a> {{ "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
+    &copy; 2025 <a href="https://www.linkedin.com/in/martin-ferret/" target="_blank">Ferret Martin.</a> {{
+    "GLOBAL.ALL_RIGHTS_RESERVED" | translate }}
   </div>
 </footer>

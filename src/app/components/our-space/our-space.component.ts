@@ -1,9 +1,9 @@
-import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {TranslateModule} from "@ngx-translate/core";
-import {DividerModule} from "primeng/divider";
-import {NgOptimizedImage} from "@angular/common";
-import {TitleService} from "../../services/title.service";
-import {RouterLink} from "@angular/router";
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { TranslateModule } from "@ngx-translate/core";
+import { DividerModule } from "primeng/divider";
+import { NgOptimizedImage } from "@angular/common";
+import { TitleService } from "../../services/title.service";
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-our-space',

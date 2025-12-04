@@ -1,14 +1,14 @@
-import {ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit} from '@angular/core';
-import {Event} from '../../models/event.model';
-import {PanelModule} from "primeng/panel";
-import {AsyncPipe, CurrencyPipe, NgStyle, SlicePipe} from "@angular/common";
-import {ActivatedRoute, RouterLink} from "@angular/router";
-import {ButtonModule} from "primeng/button";
-import {DividerModule} from "primeng/divider";
-import {Observable, Subscription} from "rxjs";
-import {AngularFireStorage} from "@angular/fire/compat/storage";
-import {TranslateModule} from "@ngx-translate/core";
-import {TitleService} from "../../services/title.service";
+import { ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit } from '@angular/core';
+import { Event } from '../../models/event.model';
+import { PanelModule } from "primeng/panel";
+import { AsyncPipe, CurrencyPipe, NgStyle, SlicePipe } from "@angular/common";
+import { ActivatedRoute, RouterLink } from "@angular/router";
+import { ButtonModule } from "primeng/button";
+import { DividerModule } from "primeng/divider";
+import { Observable, Subscription } from "rxjs";
+import { AngularFireStorage } from "@angular/fire/compat/storage";
+import { TranslateModule } from "@ngx-translate/core";
+import { TitleService } from "../../services/title.service";
 
 @Component({
   selector: 'app-event',

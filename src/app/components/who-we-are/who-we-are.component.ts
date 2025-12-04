@@ -1,11 +1,11 @@
-import {Component, inject} from '@angular/core';
-import {TranslateModule} from "@ngx-translate/core";
-import {DividerModule} from "primeng/divider";
+import { Component, inject } from '@angular/core';
+import { TranslateModule } from "@ngx-translate/core";
+import { DividerModule } from "primeng/divider";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHandshake, faTree, faPaw, faHeart } from '@fortawesome/free-solid-svg-icons';
-import {NgOptimizedImage} from "@angular/common";
-import {TitleService} from "../../services/title.service";
-import {RouterLink} from "@angular/router";
+import { NgOptimizedImage } from "@angular/common";
+import { TitleService } from "../../services/title.service";
+import { RouterLink } from "@angular/router";
 
 
 @Component({

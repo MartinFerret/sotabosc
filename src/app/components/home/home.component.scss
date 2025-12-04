@@ -48,6 +48,8 @@
           margin-bottom: 2rem;
           color: #fff;
           text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+          max-width: 900px;
+          line-height: 1.15;
         }
 
         & .hero__buttons {
@@ -60,12 +62,22 @@
             min-width: 200px;
             background-color: var(--sbc-green); // vert intense
             color: #ffffff;
-            font-weight: bold;
+            font-weight: 600;
             border: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 999px;
+            padding: 0.9rem 1.4rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease;
 
             &:hover {
               background-color: #1b5e20;
+              transform: translateY(-1px);
+              box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+            }
+
+            &:focus-visible {
+              outline: 3px solid rgba(255,255,255,0.7);
+              outline-offset: 2px;
             }
           }
         }
@@ -630,7 +642,7 @@
     flex-wrap: wrap;
 
     .image {
-      background-image: url("../../../assets/images/how-it-works/our-staff-2.webp");
+      background-image: url("../../../assets/images/home/homehome.jpeg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;

@@ -52,15 +52,15 @@ export class HowItWorksComponent implements OnInit {
       },
       {
         status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_FIVE'),
-        date: '12h',
+        date: '12h - 12h15',
       },
       {
         status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_SIX'),
-        date: '12h15',
+        date: '12h15 - 12h30',
       },
       {
         status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_SEVEN'),
-        date: '12h30',
+        date: '12h30 - 15h00',
       },
       {
         status: this._translateService.instant('HOW_IT_WORKS.TIMELINE_EIGHT'),

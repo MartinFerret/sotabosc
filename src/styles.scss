@@ -3,7 +3,7 @@
 :root {
   --sbc-white: white;
   --sbc-black: black;
-  --sbc-green: #2dac7b;
+  --sbc-green: #7FBF8F;
   --sbc-green-secondary: #b6c570;
   --sbc-green-ternary: #5cbca4;
   --sbc-brown: #7f6362;
@@ -23,10 +23,16 @@ body {
   font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  font-style: normal;}
+  font-style: normal;
+}
 
 .p-button-outlined {
   background-color: var(--sbc-white) !important;
@@ -35,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .p-button-outlined.button {
   background-color: white !important;
-  color: black  !important;
+  color: black !important;
   border: 1px solid white !important;
   border-radius: 8px !important;
   margin-right: 8px;
@@ -139,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer__logo img {
-  height: 80px;  // un peu plus petit pour mobile
+  height: 80px; // un peu plus petit pour mobile
   width: auto;
   object-fit: contain;
 }
@@ -207,6 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 400px) {
+
   .footer__nav,
   .footer__contacts {
     flex-direction: column;
@@ -217,4 +224,3 @@ h1, h2, h3, h4, h5, h6 {
 .fancybox-image {
   border-radius: 8px;
 }
-
